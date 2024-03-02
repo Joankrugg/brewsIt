@@ -5,4 +5,5 @@ class Beer < ApplicationRecord
   validates :level, presence: :true
   belongs_to :yeast
   belongs_to :color
+  belongs_to :taste
 end
