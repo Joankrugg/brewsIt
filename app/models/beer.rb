@@ -4,4 +4,5 @@ class Beer < ApplicationRecord
   validates :photo, presence: :true
   validates :level, presence: :true
   belongs_to :yeast
+  belongs_to :color
 end
