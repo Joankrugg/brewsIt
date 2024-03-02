@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+Yeast.create({name: 'Lager'})
+Yeast.create({name: 'Ale'})
+Yeast.create({name: 'Spontanée'})
+Yeast.create({name: 'Hybride'})
