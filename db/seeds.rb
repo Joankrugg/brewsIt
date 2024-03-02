@@ -113,12 +113,22 @@
 #Flavour.create({name: 'Résineux'})
 #Flavour.create({name: 'Torréfaction'})
 
-Taste.create({name: 'Acidulée'})
-Taste.create({name: 'Amère'})
-Taste.create({name: 'Sucrée'})
-Taste.create({name: 'Salée'})
-Taste.create({name: 'Umami'})
-Taste.create({name: 'Gras'})
+#Taste.create({name: 'Acidulée'})
+#Taste.create({name: 'Amère'})
+#Taste.create({name: 'Sucrée'})
+#Taste.create({name: 'Salée'})
+#Taste.create({name: 'Umami'})
+#Taste.create({name: 'Gras'})
 
+Texture.create({name: 'Plate'})
+Texture.create({name: 'Pétillante'})
+Texture.create({name: 'Chaleureuse'})
+Texture.create({name: 'Fraiche'})
+Texture.create({name: 'Légère'})
+Texture.create({name: 'Franche'})
+Texture.create({name: 'Crémeuse'})
+Texture.create({name: 'Mousseuse'})
+Texture.create({name: 'Trouble'})
+Texture.create({name: 'Claire'})
 
 puts 'Done !'
