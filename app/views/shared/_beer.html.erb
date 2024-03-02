@@ -1,3 +1,8 @@
-<%= cl_image_tag beer.photo.key %>
-<%= beer.name %>
-<%= beer.level %>
+<%= link_to edit_beer_path(beer) do %>
+  <%= cl_image_tag beer.photo.key, height: 150, width: 150, crop: :fill, class: 'img-fluid' %>
+  <%= beer.name %>
+  <%= beer.level %>%
+  <% if beer.yeast.present? %>
+    <%= beer.yeast.name %>
+  <% end %>
+<% end %>

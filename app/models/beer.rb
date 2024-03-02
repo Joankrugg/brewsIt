@@ -3,4 +3,5 @@ class Beer < ApplicationRecord
   validates :name, presence: :true, uniqueness: true
   validates :photo, presence: :true
   validates :level, presence: :true
+  belongs_to :yeast
 end
