@@ -11,4 +11,9 @@
   <% if beer.taste.present? %>
     <%= beer.taste.name %>
   <% end %>
+  <% if beer.textures.present? %>
+    <% beer.textures.each do |bt|%>
+      <%= bt.name %>
+    <% end %>
+  <% end %>
 <% end %>

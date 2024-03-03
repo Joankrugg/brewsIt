@@ -6,4 +6,6 @@ class Beer < ApplicationRecord
   belongs_to :yeast
   belongs_to :color
   belongs_to :taste
+  has_many :beer_textures
+  has_many :textures, through: :beer_textures
 end
