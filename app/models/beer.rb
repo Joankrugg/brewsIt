@@ -8,4 +8,6 @@ class Beer < ApplicationRecord
   belongs_to :taste
   has_many :beer_textures
   has_many :textures, through: :beer_textures
+  has_many :beer_flavours
+  has_many :flavours, through: :beer_flavours
 end

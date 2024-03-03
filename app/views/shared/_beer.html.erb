@@ -16,4 +16,9 @@
       <%= bt.name %>
     <% end %>
   <% end %>
+  <% if beer.flavours.present? %>
+    <% beer.flavours.each do |bf|%>
+      <%= bf.name %>
+    <% end %>
+  <% end %>
 <% end %>
