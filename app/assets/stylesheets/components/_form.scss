@@ -12,3 +12,76 @@
   border: 1px solid red;
   box-shadow: 0 0 10px #719ECE;
 }
+
+.squaretag-item {
+  display: inline-block;
+}
+
+.squaretag-selector {
+  position: absolute;
+  transform: scale(0);
+}
+
+.squaretag-selector + label {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 22px;
+  font-family: 'Oswald';
+  font-weight: lighter;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: black;
+  color: #607d8b;
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: .1s ease-in-out;
+}
+.squaretag-selector:hover + label {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  transform: scale(1.02);
+}
+
+.squaretag-selector:checked + label {
+  background-color: black;
+  color: white;
+}
+
+.squaretag-block-item {
+  display: block;
+  width: 100%;
+}
+
+.squaretag-block-selector {
+  position: absolute;
+  transform: scale(0);
+}
+
+.squaretag-block-selector + label {
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  font-family: 'Oswald';
+  font-weight: lighter;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: black;
+  color: #607d8b;
+  border: 1px solid black;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: .1s ease-in-out;
+}
+.squaretag-block-selector:hover + label {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  transform: scale(1.02);
+}
+
+.squaretag-block-selector:checked + label {
+  background-color: black;
+  color: white;
+}

@@ -1,12 +1,47 @@
-<%= simple_form_for @beer do |f| %>
-  <%= f.input :photo %>
-  <%= f.input :name %>
-  <%= f.input :level %>
-  <%= f.association :yeast %>
-  <%= f.association :color %>
-  <%= f.association :taste %>
-  <%= f.association :textures, as: :check_boxes %>
-  <%= f.association :flavours, as: :check_boxes %>
-  <%= f.button :submit %>
-
-<% end %>
+<div class="container one-page card">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src='https://res.cloudinary.com/da2krghvd/image/upload/v1709577108/beer_with_foam_byqwvm.jpg' class='img-fluid'>
+    </div>
+    <div class="col-lg-6 mx-auto">
+      <h2>Beer</h2>
+      <%= simple_form_for @beer do |f| %>
+        <div class="form-inputs">
+          <div class="row">
+            <div class="col-lg-6">
+              <%= f.input :photo %>
+            </div>
+            <div class="col-lg-6">
+              <%= f.input :name %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <%= f.association :color %>
+            </div>
+            <div class="col-lg-6">
+              <%= f.association :yeast %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <%= f.association :taste %>
+            </div>
+            <div class="col-lg-6">
+              <%= f.input :level %>
+            </div>
+          </div>
+          <%= f.association :textures, as: :check_boxes, required: false,
+                          input_html: { class: "squaretag-selector" },
+                          item_wrapper_class: 'squaretag-item' %>
+          <%= f.association :flavours, as: :check_boxes, required: false,
+                          input_html: { class: "squaretag-selector" },
+                          item_wrapper_class: 'squaretag-item' %>
+        </div>
+        <div class="form-actions">
+          <%= f.button :submit, "Créér une Bière", class: 'action-btn' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

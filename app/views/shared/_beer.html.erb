@@ -1,24 +1,26 @@
 <%= link_to edit_beer_path(beer) do %>
-  <%= cl_image_tag beer.photo.key, height: 150, width: 150, crop: :fill, class: 'img-fluid' %>
-  <%= beer.name %>
-  <%= beer.level %>%
-  <% if beer.yeast.present? %>
-    <%= beer.yeast.name %>
-  <% end %>
-  <% if beer.color.present? %>
-    <%= beer.color.name %>
-  <% end %>
-  <% if beer.taste.present? %>
-    <%= beer.taste.name %>
-  <% end %>
-  <% if beer.textures.present? %>
-    <% beer.textures.each do |bt|%>
-      <%= bt.name %>
+  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 mx-auto">
+    <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
+    <p class='card-text'><%= beer.name %></p>
+    <p class='card-text'><%= beer.level %> % </p>
+    <% if beer.yeast.present? %>
+      <p class='card-text'><%= beer.yeast.name %></p>
     <% end %>
-  <% end %>
-  <% if beer.flavours.present? %>
-    <% beer.flavours.each do |bf|%>
-      <%= bf.name %>
+    <% if beer.color.present? %>
+      <p class='card-text'><%= beer.color.name %></p>
     <% end %>
-  <% end %>
+    <% if beer.taste.present? %>
+      <p class='card-text'><%= beer.taste.name %></p>
+    <% end %>
+    <% if beer.textures.present? %>
+      <% beer.textures.each do |bt|%>
+        <p class='card-text'><%= bt.name %></p>
+      <% end %>
+    <% end %>
+    <% if beer.flavours.present? %>
+      <% beer.flavours.each do |bf|%>
+        <p class='card-text'><%= bf.name %></p>
+      <% end %>
+    <% end %>
+  </div>
 <% end %>
