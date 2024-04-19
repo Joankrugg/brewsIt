@@ -1,6 +1,27 @@
 .line{
-  border: solid 1px black;
+  border: solid 1px #607d8b;
   border-radius: 4px;
   margin-bottom: 3px;
   padding: 2px;
+  p{
+    color: #607d8b;
+    margin: 0px;
+  }
+  .fa-solid{
+    color: #607d8b;
+  }
+}
+
+.line:hover{
+  background-color: #607d8b;
+  p{
+  color: white;
+  }
+  .fa-solid{
+    color: white;
+  }
+}
+
+.thumbnail{
+  border-radius: 4px;
 }
