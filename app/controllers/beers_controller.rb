@@ -1,7 +1,18 @@
 class BeersController < ApplicationController
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
   def index
-    @beers = Beer.all
+    if params[:query].present?
+      @beers = Beer.where("name LIKE ?", "%#{params[:query]}%")
+    else
+      @beers = Beer.all
+    end
+
+    # Not too clean but it works!
+    if turbo_frame_request?
+      render partial: "beers", locals: { beers: @beers }
+    else
+      render :index
+    end
   end
 
   def new
@@ -44,6 +55,6 @@ class BeersController < ApplicationController
   end
 
   def beer_params
-    params.require(:beer).permit(:name, :photo, :level, :yeast_id, :color_id, :taste_id, texture_ids: [], flavour_ids: [])
+    params.require(:beer).permit(:name, :photo, :level, :style_id, :yeast_id, :color_id, :taste_id, texture_ids: [], flavour_ids: [])
   end
 end
