@@ -34,6 +34,8 @@ gem 'activeadmin', '~> 3.2'
 gem 'cancancan'
 gem 'draper'
 gem 'pundit'
+
+gem 'pg_search'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

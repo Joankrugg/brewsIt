@@ -2,7 +2,7 @@ class BeersController < ApplicationController
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
   def index
     if params[:query].present?
-      @beers = Beer.where("name LIKE ?", "%#{params[:query]}%")
+      @beers = Beer.search_by_name(params[:query])
     else
       @beers = Beer.all
     end
