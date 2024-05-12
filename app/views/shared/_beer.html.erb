@@ -34,3 +34,24 @@
     <% end %>
   </div>
 <% end %>
+<p><strong>Places</strong></p>
+  <% if beer.places.any? %>
+    <ul class="list-group">
+      <% beer.places.each do |place| %>
+        <% if place.name.present? %>
+          <li class="list-group-item"><%= place.name %></li>
+        <% end %>
+        <% if place.address.present? %>
+          <li class="list-group-item"><%= place.address %></li>
+        <% end %>
+        <% if place.city.present? %>
+          <li class="list-group-item"><%= place.city %></li>
+        <% end %>
+        <%= link_to "Delete",
+          place_path(place),
+          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+        %>
+      <% end %>
+    </ul>
+<% end %>
+<br>

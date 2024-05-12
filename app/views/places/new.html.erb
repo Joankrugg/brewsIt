@@ -1,0 +1,16 @@
+<div class="container one-page card">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src='https://res.cloudinary.com/da2krghvd/image/upload/v1709577108/beer_with_foam_byqwvm.jpg' class='img-fluid'>
+    </div>
+    <div class="col-lg-6 mx-auto">
+      <h2>New place</h2>
+      <%= simple_form_for [@beer, @place] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :address %>
+        <%= f.input :city %>
+        <%= f.submit "Submit place", class: "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

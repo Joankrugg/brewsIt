@@ -16,4 +16,5 @@ class Beer < ApplicationRecord
   has_many :textures, through: :beer_textures
   has_many :beer_flavours
   has_many :flavours, through: :beer_flavours
+  has_many :places
 end
