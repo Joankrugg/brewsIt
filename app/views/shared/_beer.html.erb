@@ -42,46 +42,67 @@
 </div>
 
 <p><strong>Places</strong></p>
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Ajouter une taverne
-  </button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Ajouter une taverne
+</button>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Taverne</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <h1>New place</h1>
-          <%= simple_form_for [@beer, @place] do |f| %>
-            <%= f.input :name %>
-            <%= f.input :address %>
-            <%= f.input :city %>
-            <%= f.submit "Submit place", class: "btn btn-primary" %>
-          <% end %>
-        </div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Taverne</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>New place</h1>
+        <%= simple_form_for [beer, @place] do |f| %>
+          <%= f.input :name %>
+          <%= f.input :address %>
+          <%= f.input :city %>
+          <%= f.submit "Submit place", class: "btn btn-primary" %>
+        <% end %>
       </div>
     </div>
   </div>
+</div>
 
-  <% if beer.places.any? %>
+<% if beer.places.any? %>
+  <div class="container">
     <ul class="list-group">
       <% beer.places.each do |place| %>
-        <%= link_to "https://www.google.com/maps/dir/current+location/#{place.to_coordinates.flatten}", target: "_blank" do %>
-          <% if place.name.present? %>
-            <li class="list-group-item"><%= place.name %></li>
-          <% end %>
-          <% if place.address.present? %>
-            <li class="list-group-item"><%= place.address %></li>
-          <% end %>
-          <% if place.city.present? %>
-            <li class="list-group-item"><%= place.city %></li>
-          <% end %>
-        <% end%>
+        <div class="row">
+          <div class="col-3">
+            <% if place.name.present? %>
+              <li class="list-group-item"><%= place.name %></li>
+            <% end %>
+          </div>
+          <div class="col-3">
+            <% if place.address.present? %>
+              <li class="list-group-item"><%= place.address %></li>
+            <% end %>
+          </div>
+          <div class="col-2">
+            <% if place.city.present? %>
+              <li class="list-group-item"><%= place.city %></li>
+            <% end %>
+          </div>
+
+          <div class="col-2">
+            <% unless place.to_coordinates == [nil, nil] %>
+              <%= link_to "https://www.google.com/maps/dir/current+location/#{place.to_coordinates.flatten}", target: "_blank" do %>
+                <li class="list-group-item">y aller</li>
+              <% end %>
+            <% end %>
+          </div>
+          <div class="col-2">
+            <% if place.id.present? %>
+              <li class="list-group-item"><%= link_to 'Supprimer', beer_place_path(@beer, place), method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cette place ?' } %></li>
+            <% end %>
+          </div>
+        </div>
       <% end %>
     </ul>
-  <% end %>
-<br>
+  </div>
+<% end %>
+
