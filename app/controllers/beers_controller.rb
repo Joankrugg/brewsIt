@@ -29,7 +29,7 @@ class BeersController < ApplicationController
   end
 
   def show
-
+    @place = @beer.places.build
   end
 
   def edit

@@ -1,57 +1,87 @@
-<%= link_to edit_beer_path(beer) do %>
-  <div class="card">
-    <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
-    <h2 class='card-title'><%= beer.name %></h2>
-    <h3 class='card-subtitle'>Niveau d'alcool</h3>
-    <p class='card-text'><%= beer.level %> % </p>
-    <% if beer.yeast.present? %>
-      <h3 class='card-subtitle'>Fermentation</h3>
-      <p class='card-text'><%= beer.yeast.name %></p>
-    <% end %>
-    <% if beer.color.present? %>
-      <h3 class='card-subtitle'>Couleur</h3>
-      <p class='card-text'><%= beer.color.name %></p>
-    <% end %>
-    <% if beer.taste.present? %>
-      <h3 class='card-subtitle'>Goût pricipal</h3>
-      <p class='card-text'><%= beer.taste.name %></p>
-    <% end %>
-    <% if beer.textures.present? %>
-      <h3 class='card-subtitle'>Textures</h3>
-      <p class='card-text'>
-        <% beer.textures.each do |bt|%>
-          <%= bt.name %>
+<div class="container">
+  <%= link_to edit_beer_path(beer) do %>
+    <div class="row">
+      <div class="col-6">
+        <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
+      </div>
+      <div class="col-6">
+        <h2 class='card-title'><%= beer.name %></h2>
+        <h3 class='card-subtitle'>Niveau d'alcool</h3>
+        <p class='card-text'><%= beer.level %> % </p>
+        <% if beer.yeast.present? %>
+          <h3 class='card-subtitle'>Fermentation</h3>
+          <p class='card-text'><%= beer.yeast.name %></p>
         <% end %>
-      </p>
-    <% end %>
-    <% if beer.flavours.present? %>
-      <h3 class='card-subtitle'>Arômes</h3>
-      <p class='card-text'>
-        <% beer.flavours.each do |bf|%>
-          <%= bf.name %>
+        <% if beer.color.present? %>
+          <h3 class='card-subtitle'>Couleur</h3>
+          <p class='card-text'><%= beer.color.name %></p>
         <% end %>
-      </p>
-    <% end %>
-  </div>
-<% end %>
+        <% if beer.taste.present? %>
+          <h3 class='card-subtitle'>Goût pricipal</h3>
+          <p class='card-text'><%= beer.taste.name %></p>
+        <% end %>
+        <% if beer.textures.present? %>
+          <h3 class='card-subtitle'>Textures</h3>
+          <p class='card-text'>
+            <% beer.textures.each do |bt|%>
+              <%= bt.name %>
+            <% end %>
+          </p>
+        <% end %>
+        <% if beer.flavours.present? %>
+          <h3 class='card-subtitle'>Arômes</h3>
+          <p class='card-text'>
+            <% beer.flavours.each do |bf|%>
+              <%= bf.name %>
+            <% end %>
+          </p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
 <p><strong>Places</strong></p>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Ajouter une taverne
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Taverne</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1>New place</h1>
+          <%= simple_form_for [@beer, @place] do |f| %>
+            <%= f.input :name %>
+            <%= f.input :address %>
+            <%= f.input :city %>
+            <%= f.submit "Submit place", class: "btn btn-primary" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <% if beer.places.any? %>
     <ul class="list-group">
       <% beer.places.each do |place| %>
-        <% if place.name.present? %>
-          <li class="list-group-item"><%= place.name %></li>
-        <% end %>
-        <% if place.address.present? %>
-          <li class="list-group-item"><%= place.address %></li>
-        <% end %>
-        <% if place.city.present? %>
-          <li class="list-group-item"><%= place.city %></li>
-        <% end %>
-        <%= link_to "Delete",
-          place_path(place),
-          data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
-        %>
+        <%= link_to "https://www.google.com/maps/dir/current+location/#{place.to_coordinates.flatten}", target: "_blank" do %>
+          <% if place.name.present? %>
+            <li class="list-group-item"><%= place.name %></li>
+          <% end %>
+          <% if place.address.present? %>
+            <li class="list-group-item"><%= place.address %></li>
+          <% end %>
+          <% if place.city.present? %>
+            <li class="list-group-item"><%= place.city %></li>
+          <% end %>
+        <% end%>
       <% end %>
     </ul>
-<% end %>
+  <% end %>
 <br>
