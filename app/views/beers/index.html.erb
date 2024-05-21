@@ -5,7 +5,7 @@
   <%= form_with(url: beers_path, method: :get, data: {controller: "search-form", turbo_frame: "beers", turbo_action: "advance"}) do |form| %>
     <%= form.label :query, "recherche par nom:", class: "subtitle" %>
     <div class="">
-      <%= form.text_field :query, class: "", data: {action: "input->search-form#search"} %>
+      <%= form.text_field :query, class: "", id: "search", data: {action: "input->search-form#search"} %>
       <%= form.submit 'Search', class: "" %>
     </div>
   <% end %>
@@ -17,3 +17,4 @@
 
   <%= link_to "New beer", new_beer_path, class: "" %>
 </div>
+
