@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :beers do
     resources :places
   end
+  resources :spots
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

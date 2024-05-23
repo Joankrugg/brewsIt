@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_12_160454) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_21_145231) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -99,6 +99,18 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_12_160454) do
     t.index ["beer_id"], name: "index_places_on_beer_id"
   end
 
+  create_table "spots", force: :cascade do |t|
+    t.string "name"
+    t.string "address"
+    t.string "city"
+    t.integer "type"
+    t.boolean "active"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "type_id"
+    t.index ["type_id"], name: "index_spots_on_type_id"
+  end
+
   create_table "styles", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -112,6 +124,12 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_12_160454) do
   end
 
   create_table "textures", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "types", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -147,4 +165,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_12_160454) do
   add_foreign_key "beers", "tastes"
   add_foreign_key "beers", "yeasts"
   add_foreign_key "places", "beers"
+  add_foreign_key "spots", "types"
 end

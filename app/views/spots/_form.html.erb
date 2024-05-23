@@ -1,0 +1,39 @@
+<div class="container one-page card">
+  <div class="row">
+    <div class="col-lg-6">
+      <img src='https://res.cloudinary.com/da2krghvd/image/upload/v1709577108/beer_with_foam_byqwvm.jpg' class='img-fluid'>
+    </div>
+    <div class="col-lg-6 mx-auto">
+      <h2>Spot</h2>
+      <%= simple_form_for @spot, data: {turbo: false} do |f|%>
+        <div class="form-inputs">
+          <div class="row">
+            <div class="col-lg-6">
+              <%= f.input :name %>
+            </div>
+            <div class="col-lg-6">
+              <%= f.input :city %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <%= f.input :address %>
+            </div>
+            <div class="col-lg-6">
+              <%= f.association :type %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <%= f.input :active %>
+            </div>
+
+          </div>
+        </div>
+        <div class="form-actions">
+          <%= f.button :submit, "Créér un spot", class: 'action-btn' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

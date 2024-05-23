@@ -1,0 +1,23 @@
+<div class="container">
+  <%= link_to edit_spot_path(spot) do %>
+    <div class="row">
+      <div class="col-6">
+        <h2 class='card-title'><%= spot.name %></h2>
+        <h3 class='card-subtitle'>Ville</h3>
+        <p class='card-text'><%= spot.city %> % </p>
+        <% if spot.address.present? %>
+          <h3 class='card-subtitle'>Adresse</h3>
+          <p class='card-text'><%= spot.address%></p>
+        <% end %>
+        <% if spot.type.present? %>
+          <h3 class='card-subtitle'>Couleur</h3>
+          <p class='card-text'><%= spot.type.name %></p>
+        <% end %>
+        <% if spot.active.present? %>
+          <h3 class='card-subtitle'>Statut</h3>
+          <p class='card-text'><%= spot.active %></p>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
