@@ -1,1 +1,26 @@
-// Specific CSS for your home-page
+.background-image{
+  height: 900px;
+  background-image: url('https://res.cloudinary.com/da2krghvd/image/upload/v1716549213/homepage_lzjwak.jpg');
+  background-size: cover;
+  background-position: center; /* Cette propriété centre l'image */
+  background-repeat: no-repeat; /* Cette propriété empêche l'image de se répéter */
+  margin: 0;
+  padding: 0;
+}// Specific CSS for your home-page
+
+.subject{
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.category{
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: white;
+}
