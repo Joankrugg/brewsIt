@@ -1,3 +1,4 @@
 class Taste < ApplicationRecord
-  has_many :taste
+  has_many :beers
+  has_many :styles
 end

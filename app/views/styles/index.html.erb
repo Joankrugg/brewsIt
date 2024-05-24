@@ -1,0 +1,34 @@
+<div class="container">
+  <% @styles.each do |s| %>
+    <div class="row">
+      <%= link_to edit_style_path(s) do %>
+        <%= s.name %>
+        <% if s.level_min.present? %>
+          <%= s.level_min %>
+        <% end %>
+        <% if s.level_max.present? %>
+          <%= s.level_max %>
+        <% end %>
+        <% if s.yeast.present? %>
+          <%= s.yeast.name %>
+        <% end %>
+        <% if s.color.present? %>
+          <%= s.color.name %>
+        <% end %>
+        <% if s.taste.present? %>
+          <%= s.taste.name %>
+        <% end %>
+        <% if s.textures.present? %>
+          <% s.textures.each do |t| %>
+            <%= t.name %>
+          <% end %>
+        <% end %>
+        <% if s.flavours.present? %>
+          <% s.flavours.each do |t| %>
+            <%= t.name %>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+  <% end %>
+</div>

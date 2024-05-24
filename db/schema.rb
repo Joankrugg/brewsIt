@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_21_145231) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_23_145009) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -111,10 +111,36 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_21_145231) do
     t.index ["type_id"], name: "index_spots_on_type_id"
   end
 
+  create_table "style_flavours", force: :cascade do |t|
+    t.bigint "style_id", null: false
+    t.bigint "flavour_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["flavour_id"], name: "index_style_flavours_on_flavour_id"
+    t.index ["style_id"], name: "index_style_flavours_on_style_id"
+  end
+
+  create_table "style_textures", force: :cascade do |t|
+    t.bigint "style_id", null: false
+    t.bigint "texture_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["style_id"], name: "index_style_textures_on_style_id"
+    t.index ["texture_id"], name: "index_style_textures_on_texture_id"
+  end
+
   create_table "styles", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "level_min"
+    t.float "level_max"
+    t.bigint "yeast_id"
+    t.bigint "color_id"
+    t.bigint "taste_id"
+    t.index ["color_id"], name: "index_styles_on_color_id"
+    t.index ["taste_id"], name: "index_styles_on_taste_id"
+    t.index ["yeast_id"], name: "index_styles_on_yeast_id"
   end
 
   create_table "tastes", force: :cascade do |t|
@@ -166,4 +192,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_21_145231) do
   add_foreign_key "beers", "yeasts"
   add_foreign_key "places", "beers"
   add_foreign_key "spots", "types"
+  add_foreign_key "style_flavours", "flavours"
+  add_foreign_key "style_flavours", "styles"
+  add_foreign_key "style_textures", "styles"
+  add_foreign_key "style_textures", "textures"
+  add_foreign_key "styles", "colors"
+  add_foreign_key "styles", "tastes"
+  add_foreign_key "styles", "yeasts"
 end
