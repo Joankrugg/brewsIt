@@ -1,0 +1,43 @@
+<div id="<%= dom_id style %>">
+  <%= link_to style_path(style), data: { turbo: false } do %>
+    <div class="row line">
+      <div class="col-1">
+        <% if style.name.present? %>
+          <%= style.name %>
+        <% end %>
+      </div>
+      <div class="col-2">
+        <% if style.yeast.present? %>
+          <p><%= style.yeast.name %></p>
+        <% end %>
+      </div>
+      <div class="col-2">
+        <% if style.color.present? %>
+          <p><%= style.color.name %></p>
+        <% end %>
+      </div>
+      <div class="col-2">
+        <% if style.taste.present? %>
+          <p><%=style.taste.name %></p>
+        <% end %>
+      </div>
+      <div class="col-2">
+        <% if style.textures.present? %>
+          <% style.textures.each do |t| %>
+            <p class='card-text'><%= t.name %></p>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="col-2">
+        <% if style.flavours.present? %>
+          <% style.flavours.each do |t| %>
+            <p class='card-text'><%= t.name %></p>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="col-1">
+        <i class="fa-solid fa-square-caret-right"></i>
+      </div>
+    </div>
+  <% end %>
+</div>

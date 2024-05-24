@@ -1,34 +1,20 @@
+<p style="color: green"><%= notice %></p>
 <div class="container">
-  <% @styles.each do |s| %>
-    <div class="row">
-      <%= link_to edit_style_path(s) do %>
-        <%= s.name %>
-        <% if s.level_min.present? %>
-          <%= s.level_min %>
-        <% end %>
-        <% if s.level_max.present? %>
-          <%= s.level_max %>
-        <% end %>
-        <% if s.yeast.present? %>
-          <%= s.yeast.name %>
-        <% end %>
-        <% if s.color.present? %>
-          <%= s.color.name %>
-        <% end %>
-        <% if s.taste.present? %>
-          <%= s.taste.name %>
-        <% end %>
-        <% if s.textures.present? %>
-          <% s.textures.each do |t| %>
-            <%= t.name %>
-          <% end %>
-        <% end %>
-        <% if s.flavours.present? %>
-          <% s.flavours.each do |t| %>
-            <%= t.name %>
-          <% end %>
-        <% end %>
-      <% end %>
+  <h1 class="title">Styles</h1>
+
+  <%= form_with(url: styles_path, method: :get, data: {controller: "search-form", turbo_frame: "styles", turbo_action: "advance"}) do |form| %>
+    <%= form.label :query, "recherche par nom:", class: "subtitle" %>
+    <div class="">
+      <%= form.text_field :query, class: "", id: "search", data: {action: "input->search-form#search"} %>
+      <%= form.submit 'Search', class: "" %>
     </div>
   <% end %>
+
+  <!-- render new partial here -->
+  <div class="">
+    <%= render "styles", styles: @styles %>
+  </div>
+
+  <%= link_to "New style", new_style_path, class: "" %>
 </div>
+

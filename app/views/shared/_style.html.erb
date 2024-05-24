@@ -1,0 +1,34 @@
+<div class="container">
+  <%= link_to edit_style_path(style) do %>
+    <div class="row">
+      <div class="col-6">
+        <h2 class='card-title'><%= style.name %></h2>
+        <% if style.yeast.name.present? %>
+          <p class='card-text'><%= style.yeast.name%></p>
+        <% end %>
+        <% if style.color.name.present? %>
+          <p class='card-text'><%= style.color.name%></p>
+        <% end %>
+        <% if style.taste.name.present? %>
+          <p class='card-text'><%= style.taste.name %></p>
+        <% end %>
+        <% if style.level_min.present? %>
+          <p class='card-text'><%= style.level_min %></p>
+        <% end %>
+        <% if style.level_max.present? %>
+          <p class='card-text'><%= style.level_max %></p>
+        <% end %>
+        <% if style.textures.present? %>
+          <% style.textures.each do |t| %>
+            <p class='card-text'><%= t.name %></p>
+          <% end %>
+        <% end %>
+        <% if style.flavours.present? %>
+          <% style.flavours.each do |t| %>
+            <p class='card-text'><%= t.name %></p>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>

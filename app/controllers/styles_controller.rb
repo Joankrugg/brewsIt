@@ -1,7 +1,18 @@
 class StylesController < ApplicationController
   before_action :set_style, only: [:show, :edit, :update, :destroy]
   def index
-    @styles = Style.all
+    if params[:query].present?
+      @styles = Style.search_by_name(params[:query])
+    else
+      @styles = Style.all
+    end
+
+    # Not too clean but it works!
+    if turbo_frame_request?
+      render partial: "styles", locals: { styles: @styles }
+    else
+      render :index
+    end
   end
 
   def new

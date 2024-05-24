@@ -1,7 +1,18 @@
 class SpotsController < ApplicationController
   before_action :set_spot, only: [:show, :edit, :update, :destroy]
   def index
-    @spots = Spot.all
+    if params[:query].present?
+      @spots = Spot.search_by_name(params[:query])
+    else
+      @spots = Spot.all
+    end
+
+    # Not too clean but it works!
+    if turbo_frame_request?
+      render partial: "spots", locals: { spots: @spots }
+    else
+      render :index
+    end
   end
 
   def new
