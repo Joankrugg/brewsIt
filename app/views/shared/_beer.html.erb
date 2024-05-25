@@ -60,27 +60,6 @@
         </div>
       </div>
     </div>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Taverne</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <h1>New place</h1>
-            <%= simple_form_for [beer, @place] do |f| %>
-              <%= f.input :name %>
-              <%= f.input :address %>
-              <%= f.input :city %>
-              <%= f.submit "Submit place", class: "btn btn-primary" %>
-            <% end %>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <% if beer.places.any? %>
       <div class="container">
         <% beer.places.each do |place| %>
@@ -126,4 +105,22 @@
     <% end %>
   </div>
 </div>
-
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Spot</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Nouveau spot</h1>
+        <%= simple_form_for [beer, @place] do |f| %>
+          <%= f.input :name %>
+          <%= f.input :address %>
+          <%= f.input :city %>
+          <%= f.submit "Submit place", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
