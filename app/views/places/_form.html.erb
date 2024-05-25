@@ -1,7 +1,19 @@
-<h1>New place</h1>
-<%= simple_form_for [@beer, @place] do |f| %>
-  <%= f.input :name %>
-  <%= f.input :address %>
-  <%= f.input :city %>
-  <%= f.submit "Submit place", class: "btn btn-primary" %>
-<% end %>
+<div class="background-wrapper">
+  <div class="background-spots"></div>
+</div>
+<div class="content-container">
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-6 mx-auto wall">
+
+        <h1>New place</h1>
+        <%= simple_form_for [@beer, @place] do |f| %>
+          <%= f.input :name %>
+          <%= f.input :address %>
+          <%= f.input :city %>
+          <%= f.submit "Submit place", class: "btn btn-primary" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
