@@ -6,24 +6,6 @@
   color: white;
 }
 
-.background-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.background {
-  width: 100%;
-  height: 100%;
-  background-image: url('https://res.cloudinary.com/da2krghvd/image/upload/v1716554277/Beers_zb6ub5.jpg'); /* Remplacez par le chemin de votre image */
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
-
 .content-container {
   position: relative;
   z-index: 1;
