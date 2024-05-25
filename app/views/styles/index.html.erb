@@ -1,25 +1,25 @@
 <div class="background-wrapper">
   <div class="background-styles"></div>
 </div>
-  <div class="page">
-    <h1 class="title">Bières</h1>
-    <p style="color: green"><%= notice %></p>
-    <%= form_with(url: styles_path, method: :get, data: {controller: "search-form", turbo_frame: "styles", turbo_action: "advance"}) do |form| %>
-      <%= form.label :query, "Recherche:", class: "subtitle" %>
-      <div class="actions">
-        <div class="first">
-          <%= form.text_field :query, class: "search-input", id: "search", data: {action: "input->search-form#search"} %>
-          <%= form.submit 'Go !', class: "search-button" %>
-        </div>
-        <div class="second">
-          <%= link_to "Ajouter un style", new_style_path, class: "create" %>
-        </div>
+<div class="page">
+  <h1 class="title">Bières</h1>
+  <p style="color: green"><%= notice %></p>
+  <%= form_with(url: styles_path, method: :get, data: {controller: "search-form", turbo_frame: "styles", turbo_action: "advance"}) do |form| %>
+    <%= form.label :query, "Recherche:", class: "subtitle" %>
+    <div class="actions">
+      <div class="first">
+        <%= form.text_field :query, class: "search-input", id: "search", data: {action: "input->search-form#search"} %>
+        <%= form.submit 'Go !', class: "search-button" %>
       </div>
-    <% end %>
-  </div>
-  <div class="content-container">
-    <div class="content">
-      <%= render "styles", styles: @styles %>
+      <div class="second">
+        <%= link_to "Ajouter un style", new_style_path, class: "create" %>
+      </div>
     </div>
+  <% end %>
+</div>
+<div class="content-container">
+  <div class="content">
+    <%= render "styles", styles: @styles %>
   </div>
 </div>
+
