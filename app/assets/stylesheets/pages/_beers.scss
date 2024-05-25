@@ -1,0 +1,27 @@
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://res.cloudinary.com/da2krghvd/image/upload/v1716549213/homepage_lzjwak.jpg'); /* Remplacez par le chemin de votre image */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1;
+  padding-top: 260px; /* Ajoutez du padding pour éviter que le contenu ne soit caché sous la navbar */
+}
+
+.content {
+  padding: 20px;
+}

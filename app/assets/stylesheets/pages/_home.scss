@@ -1,3 +1,6 @@
+.page{
+  padding: 80px 20px 0px 20px;
+}
 .background-image{
   height: 900px;
   background-image: url('https://res.cloudinary.com/da2krghvd/image/upload/v1716549213/homepage_lzjwak.jpg');
@@ -6,7 +9,7 @@
   background-repeat: no-repeat; /* Cette propriété empêche l'image de se répéter */
   margin: 0;
   padding: 0;
-}// Specific CSS for your home-page
+}
 
 .subject{
   position: relative;

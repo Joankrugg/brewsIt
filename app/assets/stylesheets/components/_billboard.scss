@@ -1,27 +1,27 @@
 .line{
-  border: solid 1px #607d8b;
-  border-radius: 4px;
-  margin-bottom: 3px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 26px;
+  margin-bottom: 5px;
   padding: 2px;
   p{
-    color: #607d8b;
+    color: black;
     margin: 0px;
   }
   .fa-solid{
-    color: #607d8b;
+    color: black;
   }
 }
 
 .line:hover{
-  background-color: #607d8b;
+  background-color: white;
   p{
-  color: white;
+  color: black;
   }
   .fa-solid{
-    color: white;
+    color: black;
   }
 }
 
 .thumbnail{
-  border-radius: 4px;
+  border-radius: 25px;
 }
