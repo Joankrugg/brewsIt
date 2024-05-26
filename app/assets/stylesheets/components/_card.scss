@@ -27,3 +27,14 @@
   color: #607d8b;
   margin-bottom: 0;
 }
+
+.card-space{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  height: 80vh;
+}
+
+.description{
+  padding: 20px;
+}

@@ -5,23 +5,23 @@
   <div class="content">
     <div class="row">
       <div class="col-lg-6 mx-auto wall">
-        <h2>Beer</h2>
+        <h2>Nouvelle bière</h2>
         <%= simple_form_for @beer, data: {turbo: false} do |f|%>
           <div class="form-inputs">
             <div class="row">
               <div class="col-lg-6">
-                <%= f.input :photo %>
+                <%= f.input :photo, required: false  %>
               </div>
               <div class="col-lg-6">
-                <%= f.input :name %>
+                <%= f.input :name, label: 'Nom', required: false %>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-6">
-                <%= f.association :color %>
+                <%= f.association :color, label: 'Couleur' %>
               </div>
               <div class="col-lg-6">
-                <%= f.association :yeast %>
+                <%= f.association :yeast, label: 'Fermentation' %>
               </div>
             </div>
             <div class="row">
@@ -29,21 +29,21 @@
                 <%= f.association :style %>
               </div>
               <div class="col-lg-3">
-                <%= f.association :taste %>
+                <%= f.association :taste, label: 'Tendance' %>
               </div>
               <div class="col-lg-3">
-                <%= f.input :level %>
+                <%= f.input :level, label: "Niveau d'alcool", required: false, input_html: { min: 0, step: 0.01 } %>
               </div>
             </div>
             <%= f.association :textures, as: :check_boxes, required: false,
                             input_html: { class: "squaretag-selector" },
                             item_wrapper_class: 'squaretag-item' %>
-            <%= f.association :flavours, as: :check_boxes, required: false,
+            <%= f.association :flavours, label: 'Arômes', as: :check_boxes, required: false,
                             input_html: { class: "squaretag-selector" },
                             item_wrapper_class: 'squaretag-item' %>
           </div>
           <div class="form-actions">
-            <%= f.button :submit, "Créér une Bière", class: 'action-btn' %>
+            <%= f.button :submit, "Créer une Bière", class: 'action-btn' %>
           </div>
         <% end %>
       </div>

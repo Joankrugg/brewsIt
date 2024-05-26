@@ -5,34 +5,34 @@
   <div class="content">
     <div class="row">
       <div class="col-lg-6 mx-auto wall">
-        <h2>Spot</h2>
+        <h2>Nouveau spot</h2>
         <%= simple_form_for @spot, data: {turbo: false} do |f|%>
           <div class="form-inputs">
             <div class="row">
               <div class="col-lg-6">
-                <%= f.input :name %>
+                <%= f.input :name, label: "Nom", required: false  %>
               </div>
               <div class="col-lg-6">
-                <%= f.input :city %>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-lg-6">
-                <%= f.input :address %>
-              </div>
-              <div class="col-lg-6">
-                <%= f.association :type %>
+                <%= f.input :city, label: "Ville", required: false %>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-6">
-                <%= f.input :active %>
+                <%= f.input :address, label: "Adresse", required: false %>
+              </div>
+              <div class="col-lg-6">
+                <%= f.association :type, required: false %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <%= f.input :active, label: "Actif", as: :radio_buttons %>
               </div>
 
             </div>
           </div>
           <div class="form-actions">
-            <%= f.button :submit, "Créér un spot", class: 'action-btn' %>
+            <%= f.button :submit, "Créer un spot", class: 'action-btn' %>
           </div>
         <% end %>
       </div>

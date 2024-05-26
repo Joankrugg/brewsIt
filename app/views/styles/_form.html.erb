@@ -5,7 +5,7 @@
   <div class="content">
     <div class="row">
       <div class="col-lg-6 mx-auto wall">
-        <h2>Style</h2>
+        <h2>Nouveau style</h2>
         <%= simple_form_for @style do |f|%>
           <div class="form-inputs">
             <div class="row">
@@ -13,26 +13,26 @@
                 <%= f.input :photo %>
               </div>
               <div class="col-lg-6">
-                <%= f.input :name %>
+                <%= f.input :name, label: 'Nom', required: false %>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-6">
-                <%= f.association :color %>
+                <%= f.association :color, label: 'Couleur' %>
               </div>
               <div class="col-lg-6">
-                <%= f.association :yeast %>
+                <%= f.association :yeast, label: 'Fermentation' %>
               </div>
             </div>
             <div class="row">
               <div class="col-lg-3">
-                <%= f.association :taste %>
+                <%= f.association :taste, label: 'Tendance' %>
               </div>
               <div class="col-lg-3">
-                <%= f.input :level_min %>
+                <%= f.input :level_min, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Minimum" %>
               </div>
               <div class="col-lg-3">
-                <%= f.input :level_max %>
+                <%= f.input :level_max, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Maximum"  %>
               </div>
             </div>
             <%= f.association :textures, as: :check_boxes, required: false,
@@ -43,7 +43,7 @@
                             item_wrapper_class: 'squaretag-item' %>
           </div>
           <div class="form-actions">
-            <%= f.button :submit, "Créér un style", class: 'action-btn' %>
+            <%= f.button :submit, "Créer un style", class: 'action-btn' %>
           </div>
         <% end %>
       </div>

@@ -9,41 +9,36 @@
     <div class="container wall">
       <%= link_to edit_beer_path(beer) do %>
         <div class="row">
-          <div class="col-6">
+          <div class="col-6 col-lg-4 card-space mx-auto">
             <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
           </div>
-          <div class="col-6">
-            <h2 class='card-title'><%= beer.name %></h2>
-            <h3 class='card-subtitle'>Niveau d'alcool</h3>
-            <p class='card-text'><%= beer.level %> % </p>
-            <% if beer.yeast.present? %>
-              <h3 class='card-subtitle'>Fermentation</h3>
-              <p class='card-text'><%= beer.yeast.name %></p>
-            <% end %>
-            <% if beer.color.present? %>
-              <h3 class='card-subtitle'>Couleur</h3>
-              <p class='card-text'><%= beer.color.name %></p>
-            <% end %>
-            <% if beer.taste.present? %>
-              <h3 class='card-subtitle'>Goût pricipal</h3>
-              <p class='card-text'><%= beer.taste.name %></p>
-            <% end %>
-            <% if beer.textures.present? %>
-              <h3 class='card-subtitle'>Textures</h3>
-              <p class='card-text'>
+          <div class="col-6 card-space">
+            <div class="description">
+              <p class='card-subtitle'>Niveau d'alcool : <%= beer.level %> % </p>
+              <% if beer.yeast.present? %>
+                <p class='card-subtitle'>Fermentation : <%= beer.yeast.name %> </p>
+              <% end %>
+              <% if beer.color.present? %>
+                <p class='card-subtitle'>Couleur : <%= beer.color.name %></p>
+              <% end %>
+              <% if beer.taste.present? %>
+                <p class='card-subtitle'>Goût pricipal : <%= beer.taste.name %></p>
+              <% end %>
+              <% if beer.textures.present? %>
+                <p class='card-subtitle'>Textures :
                 <% beer.textures.each do |bt|%>
                   <%= bt.name %>
                 <% end %>
-              </p>
-            <% end %>
-            <% if beer.flavours.present? %>
-              <h3 class='card-subtitle'>Arômes</h3>
-              <p class='card-text'>
-                <% beer.flavours.each do |bf|%>
-                  <%= bf.name %>
-                <% end %>
-              </p>
-            <% end %>
+                </p>
+              <% end %>
+              <% if beer.flavours.present? %>
+                <p class='card-subtitle'>Arômes :
+                  <% beer.flavours.each do |bf|%>
+                    <%= bf.name %>
+                  <% end %>
+                </p>
+              <% end %>
+            </div>
           </div>
         </div>
       <% end %>
@@ -51,7 +46,7 @@
     <div class="container">
       <div class="row">
         <div class="actions">
-          <div class="first"><p class='subtitle'>Places</p></div>
+          <div class="first"><p class='subtitle'>Où la trouver ?</p></div>
           <div class="second">
             <div class="create" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Ajouter un spot
@@ -64,40 +59,38 @@
       <div class="container">
         <% beer.places.each do |place| %>
           <div class="row line">
-            <div class="col-1 d-none d-lg-block">
+            <div class="col-lg-2 col-3">
               <% if place.name.present? %>
                 <%= place.name %>
               <% end %>
             </div>
-            <div class="col-4 col-lg-2">
+            <div class="col-4 col-lg-3 d-none d-lg-block">
               <% if place.address.present? %>
                 <p><%= place.address %></p>
               <% end %>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-3">
               <% if place.city.present? %>
-                <p><%= place.city %></p>
+                <p><%= place.city.downcase.capitalize %></p>
               <% end %>
             </div>
-            <div class="col-2">
-              <% unless place.to_coordinates == [nil, nil] %>
-                <%= link_to "https://www.google.com/maps/dir/current+location/#{place.to_coordinates.flatten}", target: "_blank" do %>
-                  <li class="list-group-item">y aller</li>
-                <% end %>
-              <% end %>
-            </div>
-            <div class="col-2">
+
+            <div class="col-lg-2 col-2">
               <% if place.id.present? %>
                 <li class="list-group-item"><%= link_to 'Éditer', edit_beer_place_path(@beer, place) %></li>
               <% end %>
             </div>
-            <div class="col-2">
+            <div class="col-lg-2 col-2">
               <% if place.id.present? %>
                 <li class="list-group-item"><%= link_to 'Supprimer', beer_place_path(@beer, place), method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cette place ?' } %></li>
               <% end %>
             </div>
-            <div class="col-1">
-              <i class="fa-solid fa-square-caret-right"></i>
+            <div class="col-lg-1 col-2">
+              <% unless place.to_coordinates == [nil, nil] %>
+                <%= link_to "https://www.google.com/maps/dir/current+location/#{place.to_coordinates.flatten}", target: "_blank" do %>
+                  <li class="list-group-item">Y aller </li>
+                <% end %>
+              <% end %>
             </div>
           </div>
         <% end %>
