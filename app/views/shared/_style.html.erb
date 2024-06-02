@@ -1,34 +1,61 @@
-<div class="container">
-  <%= link_to edit_style_path(style) do %>
-    <div class="row">
-      <div class="col-6">
-        <h2 class='card-title'><%= style.name %></h2>
-        <% if style.yeast.name.present? %>
-          <p class='card-text'><%= style.yeast.name%></p>
-        <% end %>
-        <% if style.color.name.present? %>
-          <p class='card-text'><%= style.color.name%></p>
-        <% end %>
-        <% if style.taste.name.present? %>
-          <p class='card-text'><%= style.taste.name %></p>
-        <% end %>
-        <% if style.level_min.present? %>
-          <p class='card-text'><%= style.level_min %></p>
-        <% end %>
-        <% if style.level_max.present? %>
-          <p class='card-text'><%= style.level_max %></p>
-        <% end %>
-        <% if style.textures.present? %>
-          <% style.textures.each do |t| %>
-            <p class='card-text'><%= t.name %></p>
-          <% end %>
-        <% end %>
-        <% if style.flavours.present? %>
-          <% style.flavours.each do |t| %>
-            <p class='card-text'><%= t.name %></p>
-          <% end %>
-        <% end %>
-      </div>
-    </div>
-  <% end %>
+<div class="background-wrapper">
+  <div class="background-styles"></div>
 </div>
+<div class="page">
+
+</div>
+<div class="content-container">
+  <div class="content">
+    <div class="container wall">
+      <%= link_to edit_style_path(style) do %>
+        <div class="row">
+          <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= style.name %></h1>
+          <div class="col-6 col-lg-4 card-space mx-auto">
+            <% if style.photo.present? %>
+              <%= cl_image_tag style.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
+            <% end %>
+          </div>
+          <div class="col-6 card-space">
+            <div class="description">
+              <p class='card-subtitle'>Niveau d'alcool : <%= style.level_min %> % | <%= style.level_max %> %</p>
+              <% if style.yeast.present? %>
+                <p class='card-subtitle'>Fermentation : <%= style.yeast.name %> </p>
+              <% end %>
+              <% if style.color.present? %>
+                <p class='card-subtitle'>Couleur : <%= style.color.name %></p>
+              <% end %>
+              <% if style.taste.present? %>
+                <p class='card-subtitle'>Goût pricipal : <%= style.taste.name %></p>
+              <% end %>
+              <% if style.origin.present? %>
+                <p class='card-subtitle'>Origine : <%= style.origin %> </p>
+              <% end %>
+              <% if style.style_family.present? %>
+                <p class='card-subtitle'>Famille de style : <%= style.style_family %></p>
+              <% end %>
+              <% if style.description.present? %>
+                <p class='card-subtitle'>Description : <%= style.description %></p>
+              <% end %>
+
+
+
+
+              <% if style.textures.present? %>
+                <p class='card-subtitle'>Textures :
+                <% style.textures.each do |bt|%>
+                  <%= bt.name %>
+                <% end %>
+                </p>
+              <% end %>
+              <% if style.flavours.present? %>
+                <p class='card-subtitle'>Arômes :
+                  <% style.flavours.each do |bf|%>
+                    <%= bf.name %>
+                  <% end %>
+                </p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
