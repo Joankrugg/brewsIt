@@ -1,27 +1,27 @@
 require "csv"
 require "open-uri"
 
-CSV.foreach(Rails.root.join('db', 'seeds', 'styles_2.csv'), headers: true) do |row|
-  style = Style.new
-  style.name = row['name']
-  style.style_family = row['style_family']
-  style.origin = row['origin']
-  style.description = row['description']
-  style.color = Color.find(row['color_id'])
-  style.yeast = Yeast.find(row['yeast_id'])
-  style.taste = Taste.find(row['taste_id'])
-  style.level_min = row['level_min']
-  style.level_max = row['level_max']
-
-  # Attribuer l'image à la bière
-  photo = row['photo']
-  if photo.present?
-    file = URI.open(photo)
-    style.photo.attach(io: file, filename: "#{style.name.parameterize}.jpg")
+CSV.foreach(Rails.root.join('db', 'seeds', 'styles.csv'), headers: true) do |row|
+  model_id = row['id']
+  model = Style.find_by(id: model_id)
+  if model
+    model.update(
+      name: row['name'],
+      style_family: row['style_family'],
+      origin: row['origin'],
+      description: row['description'],
+      color_id: row['color_id'],
+      yeast_id: row['yeast_id'],
+      taste_id: row['taste_id'],
+      level_min: row['level_min'],
+      level_max: row['level_max']
+    )
+    puts "Updated model #{model_id}"
+  else
+    puts "Model with id #{model_id} does not exist"
   end
-
-  style.save!
 end
+
 # This file should ensure the existence of records required to run the application in every environment (production,
 # development, test). The code here should be idempotent so that it can be executed at any point in every environment.
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
