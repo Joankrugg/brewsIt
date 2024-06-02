@@ -2,7 +2,7 @@
   <div class="background-styles"></div>
 </div>
 <div class="page">
-  <h1 class="title">Bières</h1>
+  <h1 class="title">Styles</h1>
   <p style="color: green"><%= notice %></p>
   <%= form_with(url: styles_path, method: :get, data: {controller: "search-form", turbo_frame: "styles", turbo_action: "advance"}) do |form| %>
     <%= form.label :query, "Recherche:", class: "subtitle" %>
