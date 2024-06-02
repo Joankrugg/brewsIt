@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_23_145009) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_02_132241) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -138,6 +138,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_23_145009) do
     t.bigint "yeast_id"
     t.bigint "color_id"
     t.bigint "taste_id"
+    t.string "origin"
+    t.string "style_family"
+    t.string "description"
     t.index ["color_id"], name: "index_styles_on_color_id"
     t.index ["taste_id"], name: "index_styles_on_taste_id"
     t.index ["yeast_id"], name: "index_styles_on_yeast_id"

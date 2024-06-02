@@ -55,7 +55,7 @@ class StylesController < ApplicationController
   end
 
   def style_params
-    params.require(:style).permit(:name, :photo, :level_min, :level_max, :yeast_id, :color_id, :taste_id, texture_ids: [], flavour_ids: [])
+    params.require(:style).permit(:name, :photo, :origin, :style_family, :description, :level_min, :level_max, :yeast_id, :color_id, :taste_id, texture_ids: [], flavour_ids: [])
   end
 
 end

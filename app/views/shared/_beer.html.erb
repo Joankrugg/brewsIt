@@ -2,13 +2,14 @@
   <div class="background-beers"></div>
 </div>
 <div class="page">
-  <h1 class="title"><%= beer.name %></h1>
+
 </div>
 <div class="content-container">
   <div class="content">
     <div class="container wall">
       <%= link_to edit_beer_path(beer) do %>
         <div class="row">
+          <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= beer.name %></h1>
           <div class="col-6 col-lg-4 card-space mx-auto">
             <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
           </div>
@@ -55,47 +56,47 @@
         </div>
       </div>
     </div>
-    <% if beer.places.any? %>
-      <div class="container">
+    <div class="container">
+      <% if beer.places.any? %>
         <% beer.places.each do |place| %>
-          <div class="row line">
-            <div class="col-lg-2 col-3">
-              <% if place.name.present? %>
+          <% if place.name.present? %>
+            <div class="row line">
+              <div class="col-lg-2 col-3">
                 <%= place.name %>
-              <% end %>
-            </div>
-            <div class="col-4 col-lg-3 d-none d-lg-block">
-              <% if place.address.present? %>
-                <p><%= place.address %></p>
-              <% end %>
-            </div>
-            <div class="col-lg-2 col-3">
-              <% if place.city.present? %>
-                <p><%= place.city.downcase.capitalize %></p>
-              <% end %>
-            </div>
-
-            <div class="col-lg-2 col-2">
-              <% if place.id.present? %>
-                <li class="list-group-item"><%= link_to 'Éditer', edit_beer_place_path(@beer, place) %></li>
-              <% end %>
-            </div>
-            <div class="col-lg-2 col-2">
-              <% if place.id.present? %>
-                <li class="list-group-item"><%= link_to 'Supprimer', beer_place_path(@beer, place), method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cette place ?' } %></li>
-              <% end %>
-            </div>
-            <div class="col-lg-1 col-2">
-              <% unless place.to_coordinates == [nil, nil] %>
-                <%= link_to "https://www.google.com/maps/dir/current+location/#{place.to_coordinates.flatten}", target: "_blank" do %>
-                  <li class="list-group-item">Y aller </li>
+              </div>
+              <div class="col-4 col-lg-3 d-none d-lg-block">
+                <% if place.address.present? %>
+                  <p><%= place.address %></p>
                 <% end %>
-              <% end %>
-            </div>
+              </div>
+              <div class="col-lg-2 col-3">
+                <% if place.city.present? %>
+                  <p><%= place.city.downcase.capitalize %></p>
+                <% end %>
+              </div>
+
+              <div class="col-lg-2 col-2">
+                <% if place.id.present? %>
+                  <li class="list-group-item"><%= link_to 'Éditer', edit_beer_place_path(beer, place) %></li>
+                <% end %>
+              </div>
+              <div class="col-lg-2 col-2">
+                <% if place.id.present? %>
+                  <li class="list-group-item"><%= link_to 'Supprimer', beer_place_path(beer, place), method: :delete, data: { confirm: 'Êtes-vous sûr de vouloir supprimer cette place ?' } %></li>
+                <% end %>
+              </div>
+              <div class="col-lg-1 col-2">
+                <% unless place.to_coordinates == [nil, nil] %>
+                  <%= link_to "https://www.google.com/maps/dir/current+location/#{place.to_coordinates.flatten}", target: "_blank" do %>
+                    <li class="list-group-item">Y aller </li>
+                  <% end %>
+                <% end %>
+              </div>
+            <% end %>
           </div>
         <% end %>
-      </div>
-    <% end %>
+      <% end %>
+    </div>
   </div>
 </div>
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
