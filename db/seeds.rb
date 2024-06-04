@@ -1,23 +1,28 @@
 require "csv"
 require "open-uri"
 
+CSV.foreach(Rails.root.join('db', 'seeds', 'beers_vb.csv'), headers: true) do |row|
+  beer = Beer.new
+  beer.name = row['name']
+  beer.color = Color.find(row['color_id'])
+  beer.yeast = Yeast.find(row['yeast_id'])
+  beer.taste = Taste.find(row['taste_id'])
+  beer.style = Style.find(row['style_id'])
+  beer.level = row['level']
 
 
-
-CSV.foreach(Rails.root.join('db', 'seeds', 'styles.csv'), headers: true) do |row|
-  style = Style.find_by(id: row['id'])
-  next unless style
-
-  # Gérer l'photo
-  if row['photo'].present?
-    if style.photo.attached?
-      style.photo.purge
-    end
-    photo_file = URI.open(row['photo'])
-    style.photo.attach(io: photo_file, filename: File.basename(URI.parse(row['photo']).path))
+  # Attribuer l'image à la bière
+  photo = row['photo']
+  if photo.present?
+    file = URI.open(photo)
+    beer.photo.attach(io: file, filename: "#{beer.name.parameterize}.jpg")
   end
-  style.save!
+
+  beer.save!
 end
+
+
+
 
 
 # This file should ensure the existence of records required to run the application in every environment (production,

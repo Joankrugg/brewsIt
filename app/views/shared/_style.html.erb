@@ -10,12 +10,12 @@
       <%= link_to edit_style_path(style) do %>
         <div class="row">
           <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= style.name %></h1>
-          <div class="col-6 col-lg-4 card-space mx-auto">
+          <div class="col-12 col-lg-4 card-space mx-auto">
             <% if style.photo.present? %>
               <%= cl_image_tag style.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
             <% end %>
           </div>
-          <div class="col-6 card-space">
+          <div class="col-8 col-lg-6 mx-auto card-space">
             <div class="description">
               <p class='card-subtitle'>Niveau d'alcool : <%= style.level_min %> % | <%= style.level_max %> %</p>
               <% if style.yeast.present? %>

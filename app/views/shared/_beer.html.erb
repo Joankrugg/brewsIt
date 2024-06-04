@@ -10,10 +10,10 @@
       <%= link_to edit_beer_path(beer) do %>
         <div class="row">
           <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= beer.name %></h1>
-          <div class="col-6 col-lg-4 card-space mx-auto">
+          <div class="col-12 col-lg-4 card-space mx-auto">
             <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
           </div>
-          <div class="col-6 card-space">
+          <div class=" col-8 col-lg-6 mx-auto card-space">
             <div class="description">
               <p class='card-subtitle'>Niveau d'alcool : <%= beer.level %> % </p>
               <% if beer.yeast.present? %>
