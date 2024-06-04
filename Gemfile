@@ -36,6 +36,8 @@ gem 'draper'
 gem 'pundit'
 
 gem 'pg_search'
+
+gem 'will_paginate', '~> 4.0'
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
 

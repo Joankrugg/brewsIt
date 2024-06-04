@@ -4,22 +4,21 @@
 <div class="page">
   <h1 class="title">Bières</h1>
   <p style="color: green"><%= notice %></p>
-  <%= form_with(url: beers_path, method: :get, data: {controller: "search-form", turbo_frame: "beers", turbo_action: "advance"}) do |form| %>
+  <%= form_with(url: beers_path, method: :get, data: { controller: "search-form", turbo_frame: "beers", turbo_action: "advance" }) do |form| %>
     <%= form.label :query, "Recherche:", class: "subtitle" %>
     <div class="actions">
       <div class="first">
-        <%= form.text_field :query, class: "search-input", id: "search", data: {action: "input->search-form#search"} %>
+        <%= form.text_field :query, class: "search-input", data: {action: "input->search-form#search"} %>
         <%= form.submit 'Go !', class: "search-button" %>
       </div>
       <div class="second">
         <%= link_to "Ajouter une bière", new_beer_path, class: "create" %>
       </div>
     </div>
+    <div class="content-container">
+      <div class="content">
+        <%= render "beers", beers: @beers %>
+      </div>
+    </div>
   <% end %>
 </div>
-<div class="content-container">
-  <div class="content">
-    <%= render "beers", beers: @beers %>
-  </div>
-</div>
-

@@ -1,10 +1,12 @@
 class BeersController < ApplicationController
   before_action :set_beer, only: [:show, :edit, :update, :destroy]
+  include Turbo::FramesHelper
+
   def index
     if params[:query].present?
-      @beers = Beer.search_by_name(params[:query])
+      @beers = Beer.search_by_name(params[:query]).paginate(page: params[:page], per_page: 20)
     else
-      @beers = Beer.all
+      @beers = Beer.all.paginate(page: params[:page], per_page: 20)
     end
 
     # Not too clean but it works!
