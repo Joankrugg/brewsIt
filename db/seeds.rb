@@ -2,23 +2,29 @@ require "csv"
 require "open-uri"
 
 CSV.foreach(Rails.root.join('db', 'seeds', 'beers_vb.csv'), headers: true) do |row|
-  beer = Beer.new
-  beer.name = row['name']
-  beer.color = Color.find(row['color_id'])
-  beer.yeast = Yeast.find(row['yeast_id'])
-  beer.taste = Taste.find(row['taste_id'])
-  beer.style = Style.find(row['style_id'])
-  beer.level = row['level']
+  begin
+    beer = Beer.new
+    beer.name = row['name']
+    beer.color = Color.find(row['color_id'])
+    beer.yeast = Yeast.find(row['yeast_id'])
+    beer.taste = Taste.find(row['taste_id'])
+    beer.style = Style.find(row['style_id'])
+    beer.level = row['level']
 
+    # Attribuer l'image à la bière
+    photo = row['photo']
+    if photo.present?
+      file = URI.open(photo)
+      beer.photo.attach(io: file, filename: "#{beer.name.parameterize}.jpg")
+    end
 
-  # Attribuer l'image à la bière
-  photo = row['photo']
-  if photo.present?
-    file = URI.open(photo)
-    beer.photo.attach(io: file, filename: "#{beer.name.parameterize}.jpg")
+    beer.save!
+    puts "Modèle créé : #{beer.name}"
+
+  rescue => e
+    puts "Erreur lors de la création du modèle pour #{row['name']}: #{e.message}"
+    next # Passe à la ligne suivante
   end
-
-  beer.save!
 end
 
 
