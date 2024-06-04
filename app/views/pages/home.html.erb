@@ -1,5 +1,16 @@
-<div class="background-image"></div>
-<div class="container">
+<div class="background-image">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12 mx-auto">
+        <div class="slogan">
+          <h2 class='slogan-text'>Trouve tout simplement ta bière !</h2>
+          <%= image_tag 'action.gif', class: 'first-action', id: "scrollImage" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" id="choices">
   <div class="row">
     <div class="col-lg-6 col-12 mx-auto">
       <div class="subject">
@@ -36,4 +47,8 @@
   </div>
 </div>
 
-
+<script>
+    document.getElementById('scrollImage').addEventListener('click', function() {
+        document.getElementById('choices').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
