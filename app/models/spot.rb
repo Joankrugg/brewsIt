@@ -5,8 +5,11 @@ class Spot < ApplicationRecord
     tsearch: { prefix: true }
   }
   belongs_to :type
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
   validates :city, presence: true
-  validates :address, presence: true
-  validates :type, presence: true
+  def location
+    "#{name}, #{zipcode}, #{city}"
+  end
+  geocoded_by :location
+  after_validation :geocode, if: ->(obj){ obj.location.present? and obj.city_changed? }
 end

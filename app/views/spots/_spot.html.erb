@@ -1,9 +1,13 @@
 <div id="<%= dom_id spot %>">
   <%= link_to spot_path(spot), data: { turbo: false } do %>
     <div class="row line">
-      <div class="col-1">
-        <% if spot.name.present? %>
-          <%= spot.name %>
+      <div class="col-5">
+        <% if spot.type.present? && spot.name.present? %>
+          <% if spot.type == 'Brasserie' %>
+            <p>brasserie <%= spot.name %></p>
+          <% else %>
+            <%= spot.name %>
+          <% end %>
         <% end %>
       </div>
       <div class="col-2">
@@ -11,16 +15,7 @@
           <p><%= spot.city %></p>
         <% end %>
       </div>
-      <div class="col-2">
-        <% if spot.address.present? %>
-          <p><%= spot.address %></p>
-        <% end %>
-      </div>
-      <div class="col-2">
-        <% if spot.type.present? %>
-          <p><%=spot.type.name %></p>
-        <% end %>
-      </div>
+
       <div class="col-2">
         <% if spot.active.present? %>
           <p><%=spot.active%></p>

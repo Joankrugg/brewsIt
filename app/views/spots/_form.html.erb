@@ -26,9 +26,17 @@
             </div>
             <div class="row">
               <div class="col-lg-6">
+                <%= f.input :zipcode, label: "code postal", required: false %>
+              </div>
+              <div class="col-lg-6">
                 <%= f.input :active, label: "Actif", as: :radio_buttons %>
               </div>
 
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <%= f.input :website, label: "site web", required: false %>
+              </div>
             </div>
           </div>
           <div class="form-actions">

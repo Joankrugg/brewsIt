@@ -2,9 +2,9 @@ class SpotsController < ApplicationController
   before_action :set_spot, only: [:show, :edit, :update, :destroy]
   def index
     if params[:query].present?
-      @spots = Spot.search_by_name(params[:query])
+      @spots = Spot.search_by_name(params[:query]).paginate(page: params[:page], per_page: 50)
     else
-      @spots = Spot.all
+      @spots = Spot.all.paginate(page: params[:page], per_page: 50)
     end
 
     # Not too clean but it works!
@@ -55,6 +55,6 @@ class SpotsController < ApplicationController
   end
 
   def spot_params
-    params.require(:spot).permit(:name, :address, :city, :type_id, :active)
+    params.require(:spot).permit(:name, :address, :city, :type_id, :active, :zipcode, :website)
   end
 end

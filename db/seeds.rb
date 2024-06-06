@@ -1,25 +1,20 @@
 require "csv"
 require "open-uri"
 
-CSV.foreach(Rails.root.join('db', 'seeds', 'beers_vb.csv'), headers: true) do |row|
+CSV.foreach(Rails.root.join('db', 'seeds', 'brasseries2024.csv'), headers: true) do |row|
   begin
-    beer = Beer.new
-    beer.name = row['name']
-    beer.color = Color.find(row['color_id'])
-    beer.yeast = Yeast.find(row['yeast_id'])
-    beer.taste = Taste.find(row['taste_id'])
-    beer.style = Style.find(row['style_id'])
-    beer.level = row['level']
+    spot = Spot.new
+    spot.name = row['name']
+    spot.type= Type.find(row['type_id'])
+    spot.zipcode = row['zipcode']
+    spot.city = row['city']
+    spot.active = row['active']
+
 
     # Attribuer l'image à la bière
-    photo = row['photo']
-    if photo.present?
-      file = URI.open(photo)
-      beer.photo.attach(io: file, filename: "#{beer.name.parameterize}.jpg")
-    end
 
-    beer.save!
-    puts "Modèle créé : #{beer.name}"
+    spot.save!
+    puts "Modèle créé : #{spot.name}"
 
   rescue => e
     puts "Erreur lors de la création du modèle pour #{row['name']}: #{e.message}"
