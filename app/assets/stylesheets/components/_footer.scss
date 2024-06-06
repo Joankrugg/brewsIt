@@ -1,0 +1,42 @@
+.footer{
+  background-image: linear-gradient(to bottom right, #2f2c2d, #000000);
+  padding: 50px 20px;
+}
+
+.footer-logo{
+  display: block;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item p{
+  color: white;
+  text-align: center;
+  font-family: 'Oswald';
+  font-weight: lighter;
+}
+
+.item h3{
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.copyright{
+  color: white;
+  font-size: 16px;
+}
+
+.main{
+  margin-bottom: 30px;
+}
+
+.map{
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.footer-link{
+  color: white;
+}
