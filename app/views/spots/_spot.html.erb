@@ -3,7 +3,7 @@
     <div class="row line">
       <div class="col-5">
         <% if spot.type.present? && spot.name.present? %>
-          <% if spot.type.name == 'Brasserie' %>
+          <% if spot.type.name == 'Brasserie artisanale' %>
             <p>Brasserie <%= spot.name %></p>
           <% else %>
             <%= spot.name %>
