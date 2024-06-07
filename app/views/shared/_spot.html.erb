@@ -4,7 +4,7 @@
       <div class="col-6">
         <h2 class='card-title'><%= spot.name %></h2>
         <h3 class='card-subtitle'>Ville</h3>
-        <p class='card-text'><%= spot.city %> % </p>
+        <p class='card-text'><%= spot.city %></p>
         <% if spot.address.present? %>
           <h3 class='card-subtitle'>Adresse</h3>
           <p class='card-text'><%= spot.address%></p>
@@ -16,6 +16,10 @@
         <% if spot.active.present? %>
           <h3 class='card-subtitle'>Statut</h3>
           <p class='card-text'><%= spot.active %></p>
+        <% end %>
+        <% if spot.city.present? %>
+          <h3 class='card-subtitle'>latitude</h3>
+          <p class='card-text'><%= spot.latitude %></p>
         <% end %>
       </div>
     </div>

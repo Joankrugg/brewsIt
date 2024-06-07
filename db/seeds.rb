@@ -1,24 +1,37 @@
 require "csv"
 require "open-uri"
+require 'logger'
+
+# Initialize the logger
+logger = Logger.new(STDOUT)
+
+# Set the delay in seconds between each request to respect rate limits
+delay_seconds = 1
 
 CSV.foreach(Rails.root.join('db', 'seeds', 'brasseries2024.csv'), headers: true) do |row|
-  begin
-    spot = Spot.new
-    spot.name = row['name']
-    spot.type= Type.find(row['type_id'])
-    spot.zipcode = row['zipcode']
-    spot.city = row['city']
-    spot.active = row['active']
+  model_id = row['id']
+  model = Spot.find_by(id: model_id)
 
+  if model
+    begin
+      logger.info "Updating Spot ID #{model_id} with data from CSV row"
+      model.update!(
+        name: row['name'],
+        city: row['city'],
+        zipcode: row['zipcode'],
+        website: row['website'],
+        type_id: row['type_id'],
+        active: ActiveRecord::Type::Boolean.new.cast(row['active'])
+      )
+      logger.info "Updated Spot ID #{model_id} with latitude: #{model.latitude}, longitude: #{model.longitude}"
+    rescue ActiveRecord::RecordInvalid => e
+      logger.error "Failed to update Spot ID #{model_id}: #{e.message}"
+    end
 
-    # Attribuer l'image à la bière
-
-    spot.save!
-    puts "Modèle créé : #{spot.name}"
-
-  rescue => e
-    puts "Erreur lors de la création du modèle pour #{row['name']}: #{e.message}"
-    next # Passe à la ligne suivante
+    # Introduce delay to respect rate limit
+    sleep(delay_seconds)
+  else
+    logger.warn "Spot with ID #{model_id} does not exist"
   end
 end
 

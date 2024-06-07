@@ -5,11 +5,26 @@ class Spot < ApplicationRecord
     tsearch: { prefix: true }
   }
   belongs_to :type
-  validates :name, presence: true, uniqueness: true
+  validates :name, presence: true
   validates :city, presence: true
-  def location
-    "#{name}, #{zipcode}, #{city}"
-  end
+  validates :zipcode, presence: true
+
   geocoded_by :location
-  after_validation :geocode, if: ->(obj){ obj.location.present? and obj.city_changed? }
+  after_validation :geocode, if: :location_changed?
+
+  private
+
+  def location
+    "#{name}, #{city}"
+  end
+
+  def location_changed?
+    name_changed? || city_changed?
+  end
+
+  def geocode
+    Rails.logger.info "Geocoding for Spot ID #{id}: #{location}"
+    super
+    Rails.logger.info "Result for Spot ID #{id}: latitude #{latitude}, longitude #{longitude}"
+  end
 end
