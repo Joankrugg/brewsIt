@@ -1,27 +1,50 @@
-<div class="container">
-  <%= link_to edit_spot_path(spot) do %>
-    <div class="row">
-      <div class="col-6">
-        <h2 class='card-title'><%= spot.name %></h2>
-        <h3 class='card-subtitle'>Ville</h3>
-        <p class='card-text'><%= spot.city %></p>
-        <% if spot.address.present? %>
-          <h3 class='card-subtitle'>Adresse</h3>
-          <p class='card-text'><%= spot.address%></p>
-        <% end %>
-        <% if spot.type.present? %>
-          <h3 class='card-subtitle'>Couleur</h3>
-          <p class='card-text'><%= spot.type.name %></p>
-        <% end %>
-        <% if spot.active.present? %>
-          <h3 class='card-subtitle'>Statut</h3>
-          <p class='card-text'><%= spot.active %></p>
-        <% end %>
-        <% if spot.city.present? %>
-          <h3 class='card-subtitle'>latitude</h3>
-          <p class='card-text'><%= spot.latitude %></p>
-        <% end %>
-      </div>
-    </div>
-  <% end %>
+<div class="background-wrapper">
+  <div class="background-spots"></div>
 </div>
+<div class="page">
+
+</div>
+<div class="content-container">
+  <div class="content">
+    <div class="container wall">
+      <%= link_to edit_style_path(spot) do %>
+        <div class="row">
+          <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= spot.name %></h1>
+          <div class="col-12 col-lg-4 card-space mx-auto">
+
+          </div>
+          <div class="col-8 col-lg-6 mx-auto card-space">
+            <div class="description">
+              <p class='card-subtitle'>ville <%= spot.city %></p>
+              <% if spot.zipcode.present? %>
+                <p class='card-subtitle'>Couleur : <%= spot.zipcode %></p>
+              <% end %>
+              <% if spot.type.present? %>
+                <p class='card-subtitle'><%= spot.type.name %> </p>
+              <% end %>
+              <% if spot.color.present? %>
+                <p class='card-subtitle'>Couleur : <%= spot.color.name %></p>
+              <% end %>
+              <% if spot.taste.present? %>
+                <p class='card-subtitle'>Goût pricipal : <%= spot.taste.name %></p>
+              <% end %>
+              <% if spot.origin.present? %>
+                <p class='card-subtitle'>Origine : <%= spot.origin %> </p>
+              <% end %>
+              <% if spot.spot_family.present? %>
+                <p class='card-subtitle'>Famille de spot : <%= spot.spot_family %></p>
+              <% end %>
+              <% if spot.description.present? %>
+                <p class='card-subtitle'>Description : <%= spot.description %></p>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+

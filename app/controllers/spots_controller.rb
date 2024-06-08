@@ -2,9 +2,9 @@ class SpotsController < ApplicationController
   before_action :set_spot, only: [:show, :edit, :update, :destroy]
   def index
     if params[:query].present?
-      @spots = Spot.search_by_name(params[:query]).paginate(page: params[:page], per_page: 50)
+      @spots = Spot.search_by_name(params[:query]).paginate(page: params[:page], per_page: 10)
     else
-      @spots = Spot.all.paginate(page: params[:page], per_page: 50)
+      @spots = Spot.all.paginate(page: params[:page], per_page: 10)
     end
 
     # Not too clean but it works!

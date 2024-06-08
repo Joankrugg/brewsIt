@@ -1,9 +1,7 @@
 <div id="<%= dom_id spot %>">
-
   <div class="row line align-items-center">
-
     <div class="col-8 col-lg-4">
-      <%= link_to spot_path(spot), data: { turbo: false }, class: 'text-decoration-none' do %>
+      <%= link_to edit_spot_path(spot), class: 'text-decoration-none' do %>
         <% if spot.type.present? && spot.name.present? %>
           <% if spot.type.name == 'Brasserie artisanale' %>
             <p class="mb-0">Brasserie <%= spot.name %></p>
@@ -13,33 +11,28 @@
         <% end %>
       <% end %>
     </div>
-
-      <div class="col-2 d-none d-lg-block col-lg-3">
-        <%= link_to spot_path(spot), data: { turbo: false }, class: 'text-decoration-none' do %>
-        <% if spot.city.present? %>
-          <p class="mb-0"><%= spot.city %></p>
-        <% end %>
-        <% end %>
-      </div>
-
-      <div class="col-2 col-lg-3">
-        <%= link_to spot_path(spot), data: { turbo: false }, class: 'text-decoration-none' do %>
-        <% if spot.active.present? %>
-          <% if spot.active? %>
-            <p class="mb-0">En activité</p>
-          <% else %>
-            <p class="mb-0">Cessation d'activité</p>
-          <% end %>
-        <% end %>
-        <% end %>
-      </div>
-
-      <div class="col-2 col-lg-2">
-        <%= link_to "https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=brasserie #{spot.name}, #{spot.city}, #{spot.zipcode}", target: "_blank", class: "btn btn-link p-0" do %>
-          <i class="fa-solid fa-location-dot"></i>
-        <% end %>
-      </div>
+    <div class="col-2 d-none d-lg-block col-lg-3">
+      <%= link_to edit_spot_path(spot), class: 'text-decoration-none' do %>
+      <% if spot.city.present? %>
+        <p class="mb-0"><%= spot.city %></p>
+      <% end %>
+      <% end %>
     </div>
-
-
+    <div class="col-2 col-lg-3">
+      <%= link_to edit_spot_path(spot), class: 'text-decoration-none' do %>
+      <% if spot.active.present? %>
+        <% if spot.active? %>
+          <p class="mb-0">En activité</p>
+        <% else %>
+          <p class="mb-0">Cessation d'activité</p>
+        <% end %>
+      <% end %>
+      <% end %>
+    </div>
+    <div class="col-2 col-lg-2">
+      <%= link_to "https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=brasserie #{spot.name}, #{spot.city}, #{spot.zipcode}", target: "_blank", class: "btn btn-link p-0" do %>
+        <i class="fa-solid fa-location-dot"></i>
+      <% end %>
+    </div>
+  </div>
 </div>
