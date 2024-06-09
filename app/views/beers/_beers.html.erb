@@ -1,3 +1,6 @@
 <%= turbo_frame_tag "beers" do %>
   <%= render beers %>
+  <div class="apple_pagination">
+    <%= will_paginate beers, previous_label: 'Précédent', next_label: 'Suivant' %>
+  </div>
 <% end %>

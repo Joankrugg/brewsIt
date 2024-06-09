@@ -4,9 +4,9 @@ class BeersController < ApplicationController
 
   def index
     if params[:query].present?
-      @beers = Beer.search_by_name(params[:query]).paginate(page: params[:page], per_page: 50)
+      @beers = Beer.search_by_name(params[:query]).paginate(page: params[:page], per_page: 10)
     else
-      @beers = Beer.all.paginate(page: params[:page], per_page: 50)
+      @beers = Beer.all.paginate(page: params[:page], per_page: 10)
     end
 
     # Not too clean but it works!

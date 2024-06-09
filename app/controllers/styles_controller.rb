@@ -2,9 +2,9 @@ class StylesController < ApplicationController
   before_action :set_style, only: [:show, :edit, :update, :destroy]
   def index
     if params[:query].present?
-      @styles = Style.search_by_name(params[:query]).paginate(page: params[:page], per_page: 50)
+      @styles = Style.search_by_name(params[:query]).paginate(page: params[:page], per_page: 15)
     else
-      @styles = Style.all.paginate(page: params[:page], per_page: 50)
+      @styles = Style.all.paginate(page: params[:page], per_page: 15)
     end
 
     # Not too clean but it works!

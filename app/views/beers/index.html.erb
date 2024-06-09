@@ -12,13 +12,13 @@
         <%= form.submit 'Go !', class: "search-button" %>
       </div>
       <div class="second">
-        <%= link_to "Ajouter une bière", new_beer_path, class: "create" %>
-      </div>
-    </div>
-    <div class="content-container">
-      <div class="content">
-        <%= render "beers", beers: @beers %>
+        <%= link_to "Créer une bière", new_beer_path, class: "create" %>
       </div>
     </div>
   <% end %>
+</div>
+<div class="content-container">
+  <div class="content">
+    <%= render "beers", beers: @beers %>
+  </div>
 </div>
