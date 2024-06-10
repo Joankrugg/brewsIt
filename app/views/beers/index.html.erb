@@ -11,11 +11,11 @@
         <%= form.text_field :query, class: "search-input", data: {action: "input->search-form#search"} %>
         <%= form.submit 'Go !', class: "search-button" %>
       </div>
-      <div class="second">
-        <%= link_to "Créer une bière", new_beer_path, class: "create" %>
-      </div>
     </div>
   <% end %>
+  <div class="second">
+    <%= link_to "Créer une bière", new_beer_path, class: "create" %>
+  </div>
 </div>
 <div class="content-container">
   <div class="content">
