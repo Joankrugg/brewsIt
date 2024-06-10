@@ -13,10 +13,12 @@
 <div class="container" id="choices">
   <div class="row">
     <div class="col-lg-6 col-12 mx-auto">
-      <div class="subject">
-        <%= image_tag 'https://res.cloudinary.com/da2krghvd/image/upload/v1716554277/beertrackr_yzeqwv.jpg', class: 'img-fluid' %>
-        <h4 class='category'>BEERTRACKR</h4>
-      </div>
+      <%= link_to new_trackr_path do %>
+        <div class="subject">
+          <%= image_tag 'https://res.cloudinary.com/da2krghvd/image/upload/v1716554277/beertrackr_yzeqwv.jpg', class: 'img-fluid' %>
+          <h4 class='category'>BEERTRACKR</h4>
+        </div>
+      <% end %>
     </div>
     <div class="col-lg-6 col-12 mx-auto">
       <%= link_to beers_path do %>
