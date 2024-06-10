@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   devise_for :users
   root to: "pages#home"
   resources :beers do
@@ -7,6 +6,7 @@ Rails.application.routes.draw do
   end
   resources :spots
   resources :styles
+  resources :trackrs, only: [:new, :create, :show]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

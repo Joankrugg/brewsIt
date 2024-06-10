@@ -1,0 +1,44 @@
+<div class="background-wrapper">
+  <div class="background-styles"></div>
+</div>
+<div class="content-container">
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-6 mx-auto wall">
+        <h2>Beertrackr</h2>
+        <%= simple_form_for @trackr do |f|%>
+          <div class="form-inputs">
+            <div class="row">
+              <div class="col-lg-6">
+                <%= f.association :color, label: 'Couleur' %>
+              </div>
+              <div class="col-lg-6">
+                <%= f.association :yeast, label: 'Fermentation' %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-3">
+                <%= f.association :taste, label: 'Tendance' %>
+              </div>
+              <div class="col-lg-3">
+                <%= f.input :level_min, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Minimum" %>
+              </div>
+              <div class="col-lg-3">
+                <%= f.input :level_max, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Maximum"  %>
+              </div>
+            </div>
+            <%= f.association :textures, as: :check_boxes, required: false,
+                            input_html: { class: "squaretag-selector" },
+                            item_wrapper_class: 'squaretag-item' %>
+            <%= f.association :flavours, as: :check_boxes, required: false,
+                            input_html: { class: "squaretag-selector" },
+                            item_wrapper_class: 'squaretag-item' %>
+          </div>
+          <div class="form-actions">
+            <%= f.button :submit, "Chercher", class: 'action-btn' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

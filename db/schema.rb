@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_07_030414) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_10_132635) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -162,6 +162,37 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_07_030414) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "trackr_flavours", force: :cascade do |t|
+    t.bigint "trackr_id", null: false
+    t.bigint "flavour_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["flavour_id"], name: "index_trackr_flavours_on_flavour_id"
+    t.index ["trackr_id"], name: "index_trackr_flavours_on_trackr_id"
+  end
+
+  create_table "trackr_textures", force: :cascade do |t|
+    t.bigint "trackr_id", null: false
+    t.bigint "texture_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["texture_id"], name: "index_trackr_textures_on_texture_id"
+    t.index ["trackr_id"], name: "index_trackr_textures_on_trackr_id"
+  end
+
+  create_table "trackrs", force: :cascade do |t|
+    t.float "level_min"
+    t.integer "level_max"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "taste_id"
+    t.bigint "yeast_id"
+    t.bigint "color_id"
+    t.index ["color_id"], name: "index_trackrs_on_color_id"
+    t.index ["taste_id"], name: "index_trackrs_on_taste_id"
+    t.index ["yeast_id"], name: "index_trackrs_on_yeast_id"
+  end
+
   create_table "types", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
@@ -206,4 +237,11 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_07_030414) do
   add_foreign_key "styles", "colors"
   add_foreign_key "styles", "tastes"
   add_foreign_key "styles", "yeasts"
+  add_foreign_key "trackr_flavours", "flavours"
+  add_foreign_key "trackr_flavours", "trackrs"
+  add_foreign_key "trackr_textures", "textures"
+  add_foreign_key "trackr_textures", "trackrs"
+  add_foreign_key "trackrs", "colors"
+  add_foreign_key "trackrs", "tastes"
+  add_foreign_key "trackrs", "yeasts"
 end
