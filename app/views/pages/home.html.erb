@@ -3,12 +3,17 @@
     <div class="row">
       <div class="col-lg-6 col-12 mx-auto">
         <div class="slogan">
-          <h2 class='slogan-text'>Trouve tout simplement ta bière !</h2>
+          <h2 class='slogan-text'>Vis des moments bière parfait !</h2>
           <%= image_tag 'action.gif', class: 'first-action', id: "scrollImage" %>
         </div>
       </div>
     </div>
   </div>
+</div>
+<div class="container aim" id="aim">
+  <h3>Savourer, explore et célébre la bière artisanale</h3>
+  <p>Bienvenue sur un des guides incontournables pour tout ce qui concerne la bière ! Que tu sois un amateur passionné ou un curieux en quête de nouvelles saveurs, on t'aide à trouver la bière parfaite, le style qui te correspond, les bars les plus conviviaux, les festivals incontournables, et les meilleures opportunités pour créer tes événements. Explore notre base de données et les recommandations personnalisées pour vivre des expériences inoubliables autour de la bière. Rejoins une communauté de passionnés et transforme chaque dégustation en un moment unique et mémorable.</p>
+
 </div>
 <div class="container" id="choices">
   <div class="row">
@@ -53,6 +58,6 @@
 
 <script>
     document.getElementById('scrollImage').addEventListener('click', function() {
-        document.getElementById('choices').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('aim').scrollIntoView({ behavior: 'smooth' });
     });
 </script>
