@@ -5,7 +5,7 @@ class SpotsController < ApplicationController
     if params[:query].present?
       @spots = Spot.search_by_name(params[:query]).paginate(page: params[:page], per_page: 10)
     else
-      @spots = Spot.all.paginate(page: params[:page], per_page: 10)
+      @spots = Spot.all.order(:city).paginate(page: params[:page], per_page: 10)
     end
 
     # Not too clean but it works!
