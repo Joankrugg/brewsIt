@@ -2,21 +2,25 @@ require "csv"
 require "open-uri"
 
 
-CSV.foreach(Rails.root.join('db', 'seeds', 'brasseries2024.csv'), headers: true) do |row|
-  model_id = row['id']
-  model = Spot.find_by(id: model_id)
-  if model
-    model.update(
-      name: row['name'],
-      type_id: row['type_id'],
-      zipcode: row['zipcode'],
-      city: row['city'],
-      active: row['active'],
-      website: row['website']
-    )
-    puts "Updated model #{model_id}"
-  else
-    puts "Model with id #{model_id} does not exist"
+CSV.foreach(Rails.root.join('db', 'seeds', 'brasseriesupdate.csv'), headers: true) do |row|
+  begin
+    spot = Spot.new
+    spot.name = row['name']
+    spot.type= Type.find(row['type_id'])
+    spot.zipcode = row['zipcode']
+    spot.city = row['city']
+    spot.active = row['active']
+    spot.website = row['website']
+
+
+    # Attribuer l'image à la bière
+
+    spot.save!
+    puts "Modèle créé : #{spot.name}"
+
+  rescue => e
+    puts "Erreur lors de la création du modèle pour #{row['name']}: #{e.message}"
+    next # Passe à la ligne suivante
   end
 end
 

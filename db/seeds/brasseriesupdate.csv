@@ -1,0 +1,1051 @@
+id,name,city,website,type_id,active,zipcode
+1632,des Hauts de France,NOINTEL,www.microbrasseriedeshautsdefrance.fr,2,TRUE,60840
+1633,Les 3 Brasseurs,JAUX,www.les3brasseurs-compiegne.com,2,TRUE,60880
+1634,La Thury,THURY-EN-VALOIS,www.lathury.fr,2,TRUE,60890
+1635,Félicité,MONTAGNY-SAINTE-FÉLICITÉ,brasserie-felicite.fr,2,TRUE,60950
+1636,"Le Bercail
+Rondebulle",ALENÇON,brewpub-lebercail.fr,2,TRUE,61000
+1637,La Normand’Assoiffée,ROIVILLE,,2,TRUE,61120
+1638,de l'Arbre,BAGNOLES DE L'ORNE NORMANDIE,,2,TRUE,61140
+1639,"Ferme-Brasserie de l'Être Soyer
+La Trotteuse",SAINT-BRICE-SOUS-RÂNES,,2,TRUE,61150
+1640,La Chahuteuse,ARGENTAN,,2,TRUE,61200
+1641,Ferme des Chèvres Brasseuses,LES AUTHIEUX-DU-PUITS,www.fermedeschevresbrasseuses.com,2,TRUE,61240
+1642,Bioterre,VALFRAMBERT,www.bioterre.fr,2,TRUE,61250
+1643,du Perche,L'HÔME-CHAMONDOT,brasserieduperche.com,2,TRUE,61290
+1644,des Forges,JUVIGNY VAL D'ANDAINE,brasseriedesforges.fr,2,TRUE,61330
+1645,Praelli,PERCHE EN NOCÉ,,2,TRUE,61340
+1646,d'Ecouves,MAHÉRU,,2,TRUE,61380
+1647,La Vertueuse,LA CHAPELLE-MONTLIGEON,lavertueuse.fr,2,TRUE,61400
+1648,"des Pionniers
+Globe Brewer",SAINT-LANGIS-LÈS-MORTAGNE,brasserie-des-pionniers.com,2,TRUE,61400
+1649,Château de la Bière,LONLAY-L'ABBAYE,chateau-de-la-biere.com,2,TRUE,61700
+1650,L'Arras'In,ARRAS,larrasin.fr,2,TRUE,62000
+1651,Craft Brew Experience,CALAIS,www.craftbrewexperience.com,2,TRUE,62100
+1652,Ferme-Brasserie de Beaumont,HÉNIN-BEAUMONT,www.brasserie-bellus.fr,2,TRUE,62110
+1653,La Flibustière,HÉNIN-BEAUMONT,www.brasserielaflibustiere.fr,2,TRUE,62110
+1654,John's Beer,ROEUX,,2,TRUE,62118
+1655,Dubois,NORRENT-FONTES,brasseriedubois.com,2,TRUE,62120
+1656,Trikazel,NORRENT-FONTES,,2,TRUE,62120
+1657,La Brebis Galeuse,ROËLLECOURT,brebisgaleuse.fr,2,TRUE,62130
+1658,La Risquette,FIENNES,brasserielarisquette.com,2,TRUE,62132
+1659,"de la Lawe
+EARL Ferme des Peupliers",LA COUTURE,www.labellotte.fr,2,TRUE,62136
+1660,des 3 Clochers,BILLY-BERCLAU,brasseriedes3clochers.fr,2,TRUE,62138
+1661,Artésienne,HAISNES,www.brasserie-artesienne.fr,2,TRUE,62138
+1662,White Star,MARCONNE,www.brasserie-artisanale-white-star.com,2,TRUE,62140
+1663,des 7 Bonnettes,ETAING,brasserie-7bonnettes.com,2,TRUE,62156
+1664,de la Ferme de la Tuilerie,VIS-EN-ARTOIS,,2,TRUE,62156
+1665,Saint-Germain,AIX-NOULETTE,www.page24.fr,2,TRUE,62160
+1666,BCA2 - La Rivière,RIVIÈRE,www.bca2.fr,2,TRUE,62173
+1667,"des 2 Caps
+Christophe Noyon Brasseur SARL",TARDINGHEN,www.2caps.fr,2,TRUE,62179
+1668,"Au Rythme des Saisons
+L'Estoupette",RIENCOURT-LÈS-CAGNICOURT,au-rythme-des-saisons.com,2,TRUE,62182
+1669,Le Jardin d'Helant,ECQUEDECQUES,www.lejardindhelant.com,2,TRUE,62190
+1670,L'Intemporelle,WAILLY,,2,TRUE,62217
+1671,de Mai,CARVIN,brasseriedemai.fr,2,TRUE,62220
+1672,"La Drache
+SAS Wattbeer",CARVIN,"www.ladrache.fr
+www.wattbeer.fr",2,TRUE,62220
+1673,"At Home Bière (site d'Athies)
+AHBA",ATHIES,www.athomebiere.com,2,TRUE,62223
+1674,Les 3 Brasseurs,COQUELLES,www.3brasseurs-coquelles.fr,2,TRUE,62231
+1675,OneShot Brewpub,VENDIN-LÈS-BÉTHUNE,,2,TRUE,62232
+1676,du Boulonnais,MARQUISE,brasserieduboulonnais.fr,2,TRUE,62250
+1677,Saint Théodore,LENS,saint-theodore.fr,2,TRUE,62300
+1678,Bois de la Chapelle,TORCY,,2,TRUE,62310
+1679,Les Brasseurs des Terres d'Opale,BAINCTHUN,lesbrasseursdesterresdopale.fr,2,TRUE,62360
+1680,Chromatique,SAINT-LÉONARD,www.brasserie-chromatique.com,2,TRUE,62360
+1681,La Brèche,BÉTHUNE,brasserielabreche.fr,2,TRUE,62400
+1682,Castelain,BÉNIFONTAINE,"www.chti.com
+brasseriecastelain.com",2,TRUE,62410
+1683,des Terres Noires,SALLAUMINES,www.brasseriedesterresnoires.fr,2,TRUE,62430
+1684,Abbaye de Clairmarais,CLAIRMARAIS,www.abbayedeclairmarais.fr,2,TRUE,62500
+1685,Saint-Omer,SAINT-OMER,www.brasserie-saint-omer.com,2,TRUE,62500
+1686,Goudale,ARQUES,www.lagoudale.com,2,TRUE,62510
+1687,Bayart,BOURS,,2,TRUE,62550
+1688,"du Rietz
+Brasserie des Gueux et Mécréants",SACHIN,,2,TRUE,62550
+1689,Le Chaudron Helfic,HELFAUT,lechaudronhelfic.com,2,TRUE,62570
+1690,Paysanne de l'Artois,GAVRELLE,"bierepaysanne.fr
+www.brasseriepaysanne.fr",2,TRUE,62580
+1691,W,NEUVIREUIL,brasseriew.fr,2,TRUE,62580
+1692,Alceste,OIGNIES,brasserie-alceste.business.site,2,TRUE,62590
+1693,Les Pèlerins,ARDRES,brasserielespelerins.fr,2,TRUE,62610
+1694,Les 3 Brasseurs,BRUAY-LA-BUISSIÈRE,www.les3brasseursbruay.com,2,TRUE,62700
+1695,Delbeke,LORGIES,www.brasseriedelbeke.fr,2,TRUE,62840
+1696,Chipchak,SAILLY-SUR-LA-LYS,brasserie-chipchak.fr,2,TRUE,62840
+1697,du Funquet,ESCOEUILLES,,2,TRUE,62850
+1698,d'Écottes,LICQUES,,2,TRUE,62850
+1699,des 3 Pays,LICQUES,,2,TRUE,62850
+1700,du Goulot - Site de Wimereux,WIMEREUX,www.labrasseriedugoulot.com,2,TRUE,62930
+1701,Les 3 Brasseurs,NOYELLES GODAULT,www.les3brasseurs.com,2,TRUE,62950
+1702,Quentovic,BEAURAINVILLE,quentovic.com,2,TRUE,62990
+1703,Brasse Band,CLERMONT-FERRAND,brasseband.com,2,TRUE,63000
+1704,Craft Beers & Cie - Clermont Ferrand,CLERMONT-FERRAND,www.craftbeersetcie.com,2,TRUE,63000
+1705,des Puys,CLERMONT-FERRAND,www.bieres-leplanb.com,2,TRUE,63000
+1706,Midnight Brewing,CLERMONT-FERRAND,,2,TRUE,63000
+1707,Potinga,CLERMONT-FERRAND,,2,TRUE,63000
+1708,Brasserie Grizzly & Brew-pub,CLERMONT-FERRAND,www.grizzlymicrobrasserie.fr,2,TRUE,63100
+1709,"Billd
+Le Réveil des Volcans",MUR-SUR-ALLIER,www.billd.fr,2,TRUE,63111
+1710,Gaïa,PICHERANDE,www.gaia-biere-du-sancy.com,2,TRUE,63113
+1711,Atelier du Malt,COURPIÈRE,atelierdumalt.fr,2,TRUE,63120
+1712,ISKA,CEYRAT,www.microbrasserie-iska.com,2,TRUE,63122
+1713,La Banne,MURAT-LE-QUAIRE,www.brasserielabanne.fr,2,TRUE,63150
+1714,L'Affûtée,BILLOM,www.laffutee.fr,2,TRUE,63160
+1715,Chez le Brasseur,AUBIÈRE,chezlebrasseur.com,2,TRUE,63170
+1716,La Cocotte Maltée,AUBIÈRE,lacocottemaltee.fr,2,TRUE,63170
+1717,Artule,RIOM,artule.fr,2,TRUE,63200
+1718,Le Brasseur Arverne,RIOM,,2,TRUE,63200
+1719,"de Piquat
+La Belle Poule",SAINT-PIERRE-ROCHE,labellepoule-biere.fr,2,TRUE,63210
+1720,L'Ensourceleuse,ARLANC,ensourceleuse.fr,2,TRUE,63220
+1721,Dark Lab Microbrasserie,SAINT-OURS,www.dark-lab.fr,2,TRUE,63230
+1722,"des Monts d'Auvergne
+Durana",LE MONT-DORE,www.biere-durana.fr,2,TRUE,63240
+1723,Le Beerarium,CHAMPEIX,beerarium.com,2,TRUE,63320
+1724,Gauge,ANTOINGT,,2,TRUE,63340
+1725,L'Impro,CHALUS,,2,TRUE,63340
+1726,du Montcelet,VICHEL,,2,TRUE,63340
+1727,Rodil,MARINGUES,,2,TRUE,63350
+1728,du Bougnat,LEMPDES,www.lebougnat.com,2,TRUE,63370
+1729,du Valhalla,PONTAUMUR,www.brasserie-du-valhalla.fr,2,TRUE,63380
+1730,Comboro,CHÂTEAUNEUF-LES-BAINS,,2,TRUE,63390
+1731,La Couzine,APCHAT,lacouzine.fr,2,TRUE,63420
+1732,NK,TEILHÈDE,www.brasserienk.fr,2,TRUE,63460
+1733,Marabout,MARAT,,2,TRUE,63480
+1734,de l'Ecureuil,SAUXILLANGES,www.brasserie-de-lailloux.fr,2,TRUE,63490
+1735,des Sagnes,MENAT,brasserie-des-sagnes.fr,2,TRUE,63560
+1736,du Sancy,BESSE-ET-SAINT-ANASTAISE,brasserie-sancy.fr,2,TRUE,63610
+1737,La Momousse,LA ROCHE-BLANCHE,,2,TRUE,63670
+1738,Wible Brewery,LE CENDRE,,2,TRUE,63670
+1739,des Montagnes,GELLES,www.brasseriedesmontagnes.fr,2,TRUE,63740
+1740,Section C,CHAMBON-SUR-LAC,,2,TRUE,63790
+1741,Balm',COURNON-D'AUVERGNE,,2,TRUE,63800
+1742,Fornabera,SAINT-AMANT-ROCHE-SAVINE,www.fornabera.fr,2,TRUE,63890
+1743,L'Artense,SAINT-SAUVES-D'AUVERGNE,www.lartensebrasserie.fr,2,TRUE,63950
+1744,"Aussau
+B-U",PAU,www.aussau.fr,2,TRUE,64000
+1745,Béarnaise,PAU,www.brasserie-bearnaise.fr,2,TRUE,64000
+1746,Belharra,BAYONNE,www.belharra.eus,2,TRUE,64100
+1747,Europub,BILLÈRE,europub-64.fr,2,TRUE,64140
+1748,Greenwitch,BILLÈRE,www.brasserie-greenwitch.fr,2,TRUE,64140
+1749,du Bélou,VIELLENAVE-D'ARTHEZ,,2,TRUE,64170
+1750,Shakespeare,NAVARRENX,www.shakespearebrasserie.com,2,TRUE,64190
+1751,La Biarrote,BIARRITZ,www.labiarrote.fr,2,TRUE,64200
+1752,Lamiña,ASCARAT,,2,TRUE,64220
+1753,Les 3 Brasseurs,LESCAR,www.les3brasseurs.com,2,TRUE,64230
+1754,Kipett,BRISCOUS,,2,TRUE,64240
+1755,Etxeko Bob’s Beer,HASPARREN,www.etxekobobsbeer.fr,2,TRUE,64240
+1756,Arrobio,ESPELETTE,arrobio.com,2,TRUE,64250
+1757,Bipil,ESPELETTE,www.bipil-aguerria.com,2,TRUE,64250
+1758,Garagardotegia Arkatza,ITXASSOU,,2,TRUE,64250
+1759,Geretx,LOUHOSSOA,brasserie-geretx.com,2,TRUE,64250
+1760,Clouque,SALIES-DE-BÉARN,clouque.com,2,TRUE,64270
+1761,La Caldeira,BOSDARROS,www.lacaldeira.com,2,TRUE,64290
+1762,de l'Arrec,ESTIALESCQ,www.brasseriedelarrec.fr,2,TRUE,64290
+1763,Akerbeltz,ASCAIN,www.akerbeltz.fr,2,TRUE,64310
+1764,"Hizketa
+Nofrani SARL",SAINT-PÉE-SUR-NIVELLE,bieres.hizketa.com,2,TRUE,64310
+1765,L'Esbariade,BOUMOURT,lesbariade.business.site,2,TRUE,64370
+1766,Naba,OLORON-SAINTE-MARIE,,2,TRUE,64400
+1767,Lescarré,POURSIUGUES-BOUCOUE,,2,TRUE,64410
+1768,La Ruze,BOURNOS,,2,TRUE,64450
+1769,Random Hops,BALIROS,,2,TRUE,64510
+1770,du Pays Basque,BARDOS,brasseriedupaysbasque.com,2,TRUE,64520
+1771,ChrisDom,GER,,2,TRUE,64530
+1772,Pontacus,PONTACQ,www.pontacus.com,2,TRUE,64530
+1773,La Superbe,ANGLET,lasuperbe.fr,2,TRUE,64600
+1774,Kalon Còr,TARBES,www.brasseriekaloncor.fr,2,TRUE,65000
+1775,Walbrew,TARBES,,2,TRUE,65000
+1776,Le Loux,CHEUST,,2,TRUE,65100
+1777,"des Aouits
+Brasserie Balaise",LOURDES,www.brasseriedesaouits.fr,2,TRUE,65100
+1778,du Pays Toy,SASSIS,brasserie-paystoy.com,2,TRUE,65120
+1779,des Pics,SAINT-LAURENT-DE-NESTE,www.brasserie-des-pics.fr,2,TRUE,65150
+1780,Metronome,LESPOUEY,brasseriemetronome.com,2,TRUE,65190
+1781,Les Brasseurs de l'Adour,BAGNÈRES-DE-BIGORRE,www.lesbrasseursdeladour.fr,2,TRUE,65200
+1782,IN'OC,LALANNE-TRIE,www.brasserie-inoc.com,2,TRUE,65220
+1783,"L'Aoucataise
+Pyrene SARL",ARREAU,www.laoucataise.fr,2,TRUE,65240
+1784,du Pays des Gaves,ARGELÈS-GAZOST,brasseriedesgaves.com,2,TRUE,65400
+1785,La Méridienne,IBOS,lameridienneibos.business.site,2,TRUE,65420
+1786,Lebbe,VILLEFRANQUE,,2,TRUE,65700
+1787,La Boc,PERPIGNAN,,2,TRUE,66000
+1788,du Choucas,ÉGAT,,2,TRUE,66120
+1789,La Canetoise,CANET-EN-ROUSSILLON,,2,TRUE,66140
+1790,Força,MILLAS,,2,TRUE,66170
+1791,La Ferme Ta Gueule,MILLAS,lftg.fr,2,TRUE,66170
+1792,Boaça,ALÉNYA,,2,TRUE,66200
+1793,du Mouli,SAINT-PIERRE-DEL-FORCATS,www.brasseriedumouli.com,2,TRUE,66210
+1794,"TOT VA BE
+TVB",SAINT-PAUL-DE-FENOUILLET,tot-va-be.eatbu.com,2,TRUE,66220
+1795,de l'Ours,PRATS-DE-MOLLO-LA-PRESTE,labrasseriedelours.fr,2,TRUE,66230
+1796,Prats-de-Mollo,PRATS-DE-MOLLO-LA-PRESTE,,2,TRUE,66230
+1797,Rull,LE SOLER,www.biereducanigou.fr,2,TRUE,66270
+1798,L'Alzina,MARQUIXANES,www.biere-alzina.com,2,TRUE,66320
+1799,Pyrénéiste,PALAU-DE-CERDAGNE,,2,TRUE,66340
+1800,Milles,TOULOUGES,www.brasserie-milles.com,2,TRUE,66350
+1801,Senglar,MANTET,,2,TRUE,66360
+1802,Le Traquenard,CÉRET,,2,TRUE,66400
+1803,L'Albéricaine,LE PERTHUS,,2,TRUE,66480
+1804,Blaoblank,MAUREILLAS-LAS-ILLAS,blaoblank.eu,2,TRUE,66480
+1805,Fresca,SAINT-HIPPOLYTE,,2,TRUE,66510
+1806,Bruma Brew,CALCE,,2,TRUE,66600
+1807,L'Art de la Joie,RIVESALTES,,2,TRUE,66600
+1808,"Artisanale du Roussillon (B.A.R.)
+XOT Bières",RIVESALTES,"www.la-bar.beer
+le-xot.fr",2,TRUE,66600
+1809,Geck-eau,VINGRAU,,2,TRUE,66600
+1810,La Trabuc,BANYULS-SUR-MER,,2,TRUE,66650
+1811,L'Atelier Gabriel,BAGES,,2,TRUE,66670
+1812,La Canya,SAINT-ANDRÉ,brasserielacanya.fr,2,TRUE,66690
+1813,Cap d'Ona,ARGELÈS-SUR-MER,www.cap-dona.com,2,TRUE,66700
+1814,Gypa,EYNE,,2,TRUE,66800
+1815,"Au Bord du Lit
+Guirliguigui",FILLOLS,,2,TRUE,66820
+1816,"Au Brasseur
+Almibra",STRASBOURG,www.aubrasseur.fr,2,TRUE,67000
+1817,Mandala,STRASBOURG,www.mandala-strasbourg.fr,2,TRUE,67000
+1818,"Tigre Bock Fabrik
+SAS Le Tigre",STRASBOURG,,2,TRUE,67000
+1819,Bendorf,STRASBOURG,www.brasserie-bendorf.fr,2,TRUE,67100
+1820,Roue Libre,STRASBOURG,brasserie-roue-libre.fr,2,TRUE,67100
+1821,3 Mâts,STRASBOURG,www.brasserie3mats.com,2,TRUE,67100
+1822,Brassin des Frangins,PLOBSHEIM,brassindesfrangins.fr,2,TRUE,67115
+1823,L'Altenbière,DORLISHEIM,www.altenbiere.fr,2,TRUE,67120
+1824,de Framont,GRANDFONTAINE,,2,TRUE,67130
+1825,BroBrew,RUSS,brobrew.fr,2,TRUE,67130
+1826,"La Saint Pierre
+Alsabières",SAINT PIERRE,www.lasaintpierre.com,2,TRUE,67140
+1827,de Matzenheim,MATZENHEIM,www.matten.fr,2,TRUE,67150
+1828,du Narrengarten,SIEGEN,,2,TRUE,67160
+1829,Holtzmann,WINGERSHEIM,www.brasserie-holtzmann.fr,2,TRUE,67170
+1830,La Houblonnière Pfister,WINGERSHEIM,,2,TRUE,67170
+1831,"Labbb
+Les 3 Brasseurs",STRASBOURG,www.les3brasseurs.com,2,TRUE,67200
+1832,Bières Artisanales Artzner,STRASBOURG,www.biere-perle.com,2,TRUE,67200
+1833,Bücher Bernardswiller,BERNARDSWILLER,www.labbb.fr,2,TRUE,67210
+1834,Kronenbourg,OBERNAI,kronenbourg.com,2,TRUE,67210
+1835,L'Abreuvoir,BREITENBACH,www.brasserie-abreuvoir.com,2,TRUE,67220
+1836,Guth,SAINT-MAURICE,microbrasserie-guth.wixsite.com/microbrasserie-guth,2,TRUE,67220
+1837,La Petite Brasserie,BENFELD,www.lapetitebrasserie.net,2,TRUE,67230
+1838,JPR5,OBERHOFFEN-SUR-MODER,www.jpr5.fr,2,TRUE,67240
+1839,Le 100ème Singe,ALTWILLER,brasserie-centieme-singe.fr,2,TRUE,67260
+1840,L'Antre du Houblon,SARRE-UNION,www.lantreduhoublon.fr,2,TRUE,67260
+1841,Blüeme,ALTECKENDORF,brasserie.blueme.fr,2,TRUE,67270
+1842,Gabriel,DURNINGEN,,2,TRUE,67270
+1843,La Pastel,GEISWILLER,www.bierelapastel.fr,2,TRUE,67270
+1844,Météor,HOCHFELDEN,www.brasserie-meteor.fr,2,TRUE,67270
+1845,Les 3 Galopins,MELSHEIM,,2,TRUE,67270
+1846,"Heineken France
+Brasserie de l'Espérance",SCHILTIGHEIM,www.heineken.fr,2,TRUE,67300
+1847,"Michel Debus
+Storig",SCHILTIGHEIM,"www.brasserie-storig.fr
+www.brasserie-michel-debus.com",2,TRUE,67300
+1848,Skilden,SCHILTIGHEIM,,2,TRUE,67300
+1849,La Mercière,COSSWILLER,www.la-merciere.fr,2,TRUE,67310
+1850,La Bière du Scharrach,SCHARRACHBERGHEIM-IRMSTETT,www.scharrach.fr,2,TRUE,67310
+1851,La Narcose,SCHARRACHBERGHEIM-IRMSTETT,www.lanarcose.com,2,TRUE,67310
+1852,des Vosges du Nord,SPARSBACH,brasseriebvn.fr,2,TRUE,67340
+1853,du Septénaire,NIEDERMODERN,www.microbrasserie-septenaire.fr,2,TRUE,67350
+1854,d'Uberach,UBERACH,www.brasserie-uberach.fr,2,TRUE,67350
+1855,de la Souffel,GRIESHEIM-SUR-SOUFFEL,www.brasserie-souffel.com,2,TRUE,67370
+1856,"RS
+du Rempart Sud",EGUISHEIM,,2,TRUE,68420
+1857,Les Vergers d'Arlette,VOELLERDINGEN,www.lesvergersdarlette.com,2,TRUE,67430
+1858,Blessing,WALDHAMBACH,www.brasserieblessing.fr,2,TRUE,67430
+1859,"BAT (Bière, Arômes à Tiser)",LOCHWILLER,www.brasseriebat.fr,2,TRUE,67440
+1860,Mogwaï Beer Company,MUNDOLSHEIM,www.mogwaibeercompany.fr,2,TRUE,67450
+1861,Le Refuge,HAGUENAU,brasserie-lerefuge.fr,2,TRUE,67500
+1862,Les Intenables,ROSHEIM,www.lesintenables.com,2,TRUE,67560
+1863,Les Semblables,MIETESHEIM,www.brasserie-semblables.fr,2,TRUE,67580
+1864,Les Brasseurs du Ried,MUTTERSHOLTZ,www.brasseurs-du-ried.fr,2,TRUE,67600
+1865,du Garçon Pointu,NIEDERLAUTERBACH,brasserie-du-garcon-pointu.fr,2,TRUE,67630
+1866,Guilhéon,BLIENSCHWILLER,brasserieguilheon.wixsite.com/website,2,TRUE,67650
+1867,Origin,DAMBACH-LA-VILLE,,2,TRUE,67650
+1868,"Licorne
+Karlsbräu France",SAVERNE,www.brasserielicorne.com,2,TRUE,67700
+1869,L'Altruiste,SCHERWILLER,brasserie-laltruiste.fr,2,TRUE,67750
+1870,Ellipsys,INNENHEIM,,2,TRUE,67880
+1871,La Bossue,OERMINGEN,,2,TRUE,67970
+1872,La Brasserie des Poules,HANGENBIETEN,labrasseriedespoules.fr,2,TRUE,67980
+1873,du Grillen,COLMAR,brasseriedugrillen.com,2,TRUE,68000
+1874,KS,COLMAR,www.brasserieks.fr,2,TRUE,68000
+1875,Sainte Crucienne,COLMAR,www.sainte-cru.com,2,TRUE,68000
+1876,des Halles,MULHOUSE,les-halles.fr/halles-nature-mulhouse,2,TRUE,68100
+1877,des Quatre Pays,HIRTZBACH,www.des4pays.com,2,TRUE,68118
+1878,de la Plaine,SAINTE-CROIX-EN-PLAINE,lorhinoise.fr,2,TRUE,68127
+1879,SPO,GRIESBACH-AU-VAL,,2,TRUE,68140
+1880,du Vignoble (Bra'v),RIBEAUVILLÉ,www.brasserie-vignoble.fr,2,TRUE,68150
+1881,"de la Pépie'te d'Argent
+Arts et Bières",SAINTE-MARIE-AUX-MINES,,2,TRUE,68160
+1882,Écomusée d’Alsace,UNGERSHEIM,www.ecomusee.alsace/experiences/la-brasserie-du-musee,2,TRUE,68190
+1883,La Potassine,UNGERSHEIM,,2,TRUE,68190
+1884,Les Breuvages des Anges,UNGERSHEIM,,2,TRUE,68190
+1885,Bières Taal,WIHR-AU-VAL,www.biere-taal.alsace,2,TRUE,68230
+1886,Bisaiguë,KAYSERSBERG,www.bisaigue.alsace,2,TRUE,68240
+1887,Dioller,DOLLEREN,www.brasseriedioller.com,2,TRUE,68290
+1888,Kirchberger,KIRCHBERG,,2,TRUE,68290
+1889,de Saint Louis,SAINT-LOUIS,www.saint-louis.biz,2,TRUE,68300
+1890,Doc Brau,KUNHEIM,,2,TRUE,68320
+1891,La B'ric,SOULTZ-HAUT-RHIN,bierelabric.fr,2,TRUE,68360
+1892,La Tintamarre,BREITENBACH,la-tintamarre.fr,2,TRUE,68380
+1893,du Marcaire,MUHLBACH-SUR-MUNSTER,,2,TRUE,68380
+1894,G'sundgo,ESCHENTZWILLER,brasseriegsundgo.alsace,2,TRUE,68440
+1895,de Lutterbach,LUTTERBACH,www.brasseriedelutterbach.fr,2,TRUE,68460
+1896,Cabrio,FELLERING,www.brasseriecabrio.com,2,TRUE,68470
+1897,du Réservoir,OLTINGUE,www.brasseriedureservoir.fr,2,TRUE,68480
+1898,Radwulf,VIEUX-FERRETTE,www.radwulf.fr,2,TRUE,68480
+1899,Sturchler,HOMBOURG,brasserie-sturchler.fr,2,TRUE,68490
+1900,d'Émile,GUEBWILLER,www.labrasseriedemile.fr,2,TRUE,68500
+1901,du Rhin - Site de Thierenbach,JUNGHOLTZ,bieredurhin.com,2,TRUE,68500
+1902,La Bicéphale,SIERENTZ,www.labicephale.fr,2,TRUE,68510
+1903,du Vallon,BOLLWILLER,brasserieduvallon.fr,2,TRUE,68540
+1904,Suff'Bier,OBERSAASHEIM,www.brasserie-suffbier.com,2,TRUE,68600
+1905,Saint Alphonse,VOGELGRUN,www.brasseriesaintalphonse.com,2,TRUE,68600
+1906,Banz,LAUTENBACH,,2,TRUE,68610
+1907,S'Humpaloch,LAUTENBACH,,2,TRUE,68610
+1908,du Pays Welche,LAPOUTROIE,www.brasseriedupayswelche.fr,2,TRUE,68650
+1909,Granica,ASPACH-MICHELBACH,,2,TRUE,68700
+1910,Love/Craft,CERNAY,,2,TRUE,68700
+1911,du Rhin - Site de Morschwiller,MORSCHWILLER-LE-BAS,bieredurhin.com,2,TRUE,68790
+1912,L'Aubièregiste,THANN,www.laubieregiste.sitew.fr,2,TRUE,68800
+1913,Le Comptoir du Brasseur,RÉGUISHEIM,www.lecomptoirdubrasseur.fr,2,TRUE,68890
+1914,Boum'R,WETTOLSHEIM,www.boum-r.com,2,TRUE,68920
+1915,La Beer Fabrique (Lyon),LYON,www.labeerfabrique.com,2,TRUE,69001
+1916,Georges,LYON,"www.brasseriegeorges.com
+www.bieresgeorges.com",2,TRUE,69002
+1917,de Montchat,LYON,bieredemontchat.com,2,TRUE,69003
+1918,Et la Bière Fût,LYON,www.etlabierefut.com,2,TRUE,69003
+1919,Malting-Pot (site de Lyon 3),LYON,www.malting-pot.com,2,TRUE,69003
+1920,Malting-Pot (site de Lyon 7),LYON,www.malting-pot.com,2,TRUE,69007
+1921,Cosson,LYON,www.brasseriecosson.fr,2,TRUE,69008
+1922,de l'Amour,VILLEURBANNE,www.brasseriedelamour.fr,2,TRUE,69100
+1923,des Fragments,VAULX-EN-VELIN,,2,TRUE,69120
+1924,Les 3 Brasseurs,ECULLY,www.les3brasseurs.com,2,TRUE,69130
+1925,Dulion,RILLIEUX-LA-PAPE,www.brasseriedulion.com,2,TRUE,69140
+1926,Mappiness,DÉCINES-CHARPIEU,www.mappinessbeer.com,2,TRUE,69150
+1927,Demi-Lune,TASSIN-LA-DEMI-LUNE,demilune-brasserie.fr,2,TRUE,69160
+1928,Hoodo,TARARE,www.hoodo.eu,2,TRUE,69170
+1929,Ninkasi Fabriques,TARARE,www.ninkasi.fr,2,TRUE,69170
+1930,Gones Brasseurs,VÉNISSIEUX,,2,TRUE,69200
+1931,La Fabrique du Faubourg,VÉNISSIEUX,"www.brasseriegeorges.com
+www.bieresgeorges.com",2,TRUE,69200
+1932,Les 3 Brasseurs,VÉNISSIEUX,www.3brasseurs.com,2,TRUE,69200
+1933,"Platypus - Brasserie
+BièreLab",VÉNISSIEUX,brasserieplatypus.com,2,TRUE,69200
+1934,Mutation,ÉVEUX,brasserie-mutation.fr,2,TRUE,69210
+1935,Virage Sept,L'ARBRESLE,www.virage-sept.fr,2,TRUE,69210
+1936,Prisca,SAIN-BEL,brasserie-prisca.fr,2,TRUE,69210
+1937,Les Danaïdes,SAINT-GENIS-LAVAL,brasserie-lesdanaides.fr,2,TRUE,69230
+1938,La Ronzynoise,THIZY-LES-BOURGS,,2,TRUE,69240
+1939,Nepo,NEUVILLE-SUR-SAÔNE,brasserienepo.fr,2,TRUE,69250
+1940,du Caillou,CAILLOUX-SUR-FONTAINES,www.brasserieducaillou.com,2,TRUE,69270
+1941,Single Track,FONTAINES-SUR-SAÔNE,www.brasserie-singletrack.fr,2,TRUE,69270
+1942,La Mousse du Hérisson,SAINTE-CONSORCE,la-mousse-du-herisson.business.site,2,TRUE,69280
+1943,Les Aubépines,SAINTE-CONSORCE,,2,TRUE,69280
+1944,ADN,GRÉZIEU-LA-VARENNE,www.brasserie-adn.com,2,TRUE,69290
+1945,La Canute Lyonnaise,PIERRE-BÉNITE,www.lacanutelyonnaise.fr,2,TRUE,69310
+1946,des Alpages,FEYZIN,brewma.fr,2,TRUE,69320
+1947,La Bière d'en-Haut,FRANCHEVILLE,www.labieredenhaut.fr,2,TRUE,69340
+1948,Krüger,SOLAIZE,,2,TRUE,69360
+1949,GreDam,CIVRIEUX-D'AZERGUES,gredambrasserie.com,2,TRUE,69380
+1950,Misso,MARCILLY-D'AZERGUES,,2,TRUE,69380
+1951,Caladoise,ARNAS,,2,TRUE,69400
+1952,Terre de Bières,VILLEFRANCHE-SUR-SAÔNE,www.terredebieres.com,2,TRUE,69400
+1953,La Vacherie,LONGES,,2,TRUE,69420
+1954,La Grobinette,MARCHAMPT,,2,TRUE,69430
+1955,AmbiGus,QUINCIÉ-EN-BEAUJOLAIS,www.brasserie-ambigus.fr,2,TRUE,69430
+1956,La Bière des Loups,CHAUSSAN,www.labieredesloups.fr,2,TRUE,69440
+1957,La Bière du Berger,SAINT-ANDRÉ-LA-CÔTE,labiereduberger.wordpress.com,2,TRUE,69440
+1958,Ferme de la Quintillière,SAINT-MAURICE-SUR-DARGOIRE,www.fermedelaquintilliere.com,2,TRUE,69440
+1959,Autour de la Bière,TALUYERS,www.autourdelabiere.fr,2,TRUE,69440
+1960,Kachmar,ANSE,www.brasserie-kachmar.com,2,TRUE,69480
+1961,Domaine du Manchot,LACHASSAGNE,www.domainedumanchot.com,2,TRUE,69480
+1962,du Mont Popey,SAINT-FORGEUX,,2,TRUE,69490
+1963,La Soyeuse,RONTALON,www.lasoyeuse.fr,2,TRUE,69510
+1964,Caribrew,SOUCIEU-EN-JARREST,microbrasseriecaribrew.fr,2,TRUE,69510
+1965,La Chénou,ORLIÉNAS,lachenou.fr,2,TRUE,69530
+1966,Bulles d'Orge,OULLINS,www.bullesdorge.fr,2,TRUE,69600
+1967,Malting-Pot (site d'Oullins),OULLINS,www.malting-pot.com,2,TRUE,69600
+1968,La Loupiote,SAINT-GENIS-L'ARGENTIÈRE,brasserielaloupiote.fr,2,TRUE,69610
+1969,Pix'ale,COLLONGES-AU-MONT-D'OR,www.pixale.fr,2,TRUE,69660
+1970,Animus,VAUGNERAY,,2,TRUE,69670
+1971,Sharoto,VAUGNERAY,sharohobrasserie.fr,2,TRUE,69670
+1972,Karnotzet,MONTAGNY,www.brasseriekarnotzet.com,2,TRUE,69700
+1973,La Beenouse,SAINT-BONNET-DE-MURE,,2,TRUE,69720
+1974,Nomade Brewery,GENAS,nomadebiere.fr,2,TRUE,69740
+1975,Kales,MONTROTTIER,www.kales-beer.fr,2,TRUE,69770
+1976,Bee King,SAINT-PRIEST,www.beeking.fr,2,TRUE,69800
+1977,Les 3 Brasseurs,SAINT-PRIEST,www.les3brasseurs.com,2,TRUE,69800
+1978,La Brasserie Beaujolaise,FLEURIE,www.brasseriebeaujolaise.fr,2,TRUE,69820
+1979,Ferme de la Poipe,SAINT-MARTIN-EN-HAUT,,2,TRUE,69850
+1980,Amalthée,LAMURE-SUR-AZERGUES,brasserieamalthee.fr,2,TRUE,69870
+1981,L'Affoleuse,SAINT-CYR-LE-CHATOUX,laffoleuse.net,2,TRUE,69870
+1982,La Cadole,VILLIÉ-MORGON,www.brasserielacadole.fr,2,TRUE,69910
+1983,de Chaponnay,CHAPONNAY,www.brasseriedechaponnay.fr,2,TRUE,69970
+1984,La Razade,RAZE,www.larazade.com,2,TRUE,70000
+1985,du 19 Juin,VESOUL,,2,TRUE,70000
+1986,de la Rente Rouge,CHARGEY-LÈS-GRAY,www.larenterouge-brasserie.fr,2,TRUE,70100
+1987,Redoutey,LAVIGNEY,www.brasserieredoutey.com,2,TRUE,70120
+1988,Ad Libitum,ÉTUZ,,2,TRUE,70150
+1989,L'Ours Brasseur,GRATTERY,www.loursbrasseur.fr,2,TRUE,70170
+1990,Com'Tois,BEAUMOTTE-AUBERTANS,,2,TRUE,70190
+1991,Dan's Beer,CIREY,,2,TRUE,70190
+1992,La Malach,LA MALACHÈRE,lamalach.com,2,TRUE,70190
+1993,Atypique,LURE,www.brasserie-atypique-lure.fr,2,TRUE,70200
+1994,Roussel,DAMPIERRE-SUR-LINOTTE,,2,TRUE,70230
+1995,Le Franc Brasseur,RONCHAMP,,2,TRUE,70250
+1996,Adomeit,LUXEUIL-LES-BAINS,brasserie-adomeit.fr,2,TRUE,70300
+1997,des 1000 Étangs,FAUCOGNEY-ET-LA-MER,www.brasseriedes1000etangs.fr,2,TRUE,70310
+1998,"Bières Ney
+La Patrimoine",BUCEY-LÈS-GY,,2,TRUE,70700
+1999,de la Comté,BONNEVENT-VELLOREILLE,,2,TRUE,70700
+2000,Belgo-Comtoise,GÉZIER-ET-FONTENELAY,www.brasseriebelgocomtoise.com,2,TRUE,70700
+2001,Mâconnaise Bartonn,VARENNES-LÈS-MÂCON,bartonn.com,2,TRUE,71000
+2002,"La Pompe à Bière
+Chalon Bière Nouvelle",CHALON-SUR-SAÔNE,www.murphys-chalon-71.com,2,TRUE,71100
+2003,Les 3 Brasseurs,CHALON-SUR-SAÔNE,www.les3brasseurs.com,2,TRUE,71100
+2004,MIB,CHALON-SUR-SAÔNE,brasserie-mib.fr,2,TRUE,71100
+2005,Kura,VENDENESSE-LÈS-CHAROLLES,kuradebourgogne.fr,2,TRUE,71120
+2006,"Les Plains Monts
+SAS Brasserie LPM",CHAGNY,www.brasserielesplainsmonts.com,2,TRUE,71150
+2007,Les Trois Croix,CHEILLY-LÈS-MARANGES,brasserie-les-trois-croix.business.site,2,TRUE,71150
+2008,Autre Monde,LE CREUSOT,brasserieautremonde.fr,2,TRUE,71200
+2009,"Teddy Beer
+SCOP Au-delà Des Nuages",PRESSY-SOUS-DONDIN,www.brasserieteddybeer.fr,2,TRUE,71220
+2010,Les Bières de Max,ÉTRIGNY,,2,TRUE,71240
+2011,de Corlay,NANTON,brasseriecorlay.wixsite.com/accueil,2,TRUE,71240
+2012,Ammonite,SENNECEY-LE-GRAND,brasserie-ammonite.com,2,TRUE,71240
+2013,de Cluny,CHÂTEAU,www.zouaffe.fr,2,TRUE,71250
+2014,Paille,LOURNAND,www.brasserie-paille.fr,2,TRUE,71250
+2015,L'Ours des Tavernes,MARY,,2,TRUE,71300
+2016,La Rustine,ÉPERVANS,larustine.net,2,TRUE,71380
+2017,Simone,JUIF,,2,TRUE,71440
+2018,La Mise en Bière,CONDAL,brasserie-lamiseenbiere.fr,2,TRUE,71480
+2019,Mala Maña,LOUHANS,,2,TRUE,71500
+2020,"de Sornay
+Bellion Boissons",SORNAY,www.brasseriedesornay.com,2,TRUE,71500
+2021,artisanale de Bourgogne (BAB),CHAMILLY,"brasserie-la-bab.fr
+audacieuse-bab.com",2,TRUE,71510
+2022,La Couleuvre,DOMPIERRE-LES-ORMES,,2,TRUE,71520
+2023,Terre de Possibles,SAINT-PIERRE-LE-VIEUX,,2,TRUE,71520
+2024,"La Ressource
+KRB",SAINT-AMOUR-BELLEVUE,laressource.bio,2,TRUE,71570
+2025,Roncier,MERCUREY,www.roncier.com,2,TRUE,71640
+2026,Two Dudes,CRÊCHES-SUR-SAÔNE,www.twodudes-brasserie.com,2,TRUE,71680
+2027,La Débeurdineuse,CHARMOY,,2,TRUE,71710
+2028,"La Sale Affaire
+Brasserie du Brionnais",CHÂTEAUNEUF,,2,TRUE,71740
+2029,Septante-Deux,LE MANS,www.brasserieseptantedeux.com,2,TRUE,72000
+2030,Bonn'et Ale,BONNÉTABLE,,2,TRUE,72110
+2031,"des Alpes Mancelles
+BAAM SAS",SAINT-OUEN-DE-MIMBRÉ,www.montrocheux.fr,2,TRUE,72130
+2032,"de la Basse Lande
+Ferme Brasserie Blossier",SÉGRIE,labasselande.fr,2,TRUE,72170
+2033,La Piraterie,ÉCOMMOY,lacorderaide.com,2,TRUE,72220
+2034,"Belle Vallée
+Jolicoeur",LAIGNÉ-EN-BELIN,www.bierejolicoeur.com,2,TRUE,72220
+2035,de Montmirail (BDM),MONTMIRAIL,www.brasseriedemontmirail.com,2,TRUE,72320
+2036,La Valennoise,VALENNES,,2,TRUE,72320
+2037,Saint Mars La Bière,SAINT-MARS-LA-BRIÈRE,www.brasseriesaintmarslabiere72.com,2,TRUE,72470
+2038,Pique-Prune,JUPILLES,www.brasseriepiqueprune.com,2,TRUE,72500
+2039,Nostradamousse,MONTVAL-SUR-LOIR,www.nostradamousse.fr,2,TRUE,72500
+2040,du Pic Vert,COULANS-SUR-GÉE,,2,TRUE,72550
+2041,Mage Malte,MAMERS,mage-malte.com,2,TRUE,72600
+2042,Les Délices de la Ferme,AIGNÉ,delicesdelaferme.e-monsite.com,2,TRUE,72650
+2043,Les 3 Brasseurs,SAINT-SATURNIN,www.les3brasseurs.com,2,TRUE,72650
+2044,Planète 9,ROUILLON,planete-9.fr,2,TRUE,72700
+2045,Coup de Mousse,CHAMBÉRY,coupdemousse.com,2,TRUE,73000
+2046,des Cimes,AIX-LES-BAINS,brasserie-des-cimes.com,2,TRUE,73100
+2047,Les Funambules,LA CROIX-DE-LA-ROCHETTE,www.microbrasserielesfunambules.fr,2,TRUE,73110
+2048,Orelle Caron,ORELLE,,2,TRUE,73140
+2049,La Bulle Carrée,SAINT-MARTIN-DE-LA-PORTE,,2,TRUE,73140
+2050,La Montagnarde - Site de Challes-les-Eaux,CHALLES-LES-EAUX,la-montagnarde.fr,2,TRUE,73190
+2051,du Merle,PUYGROS,brasseriedumerle.fr,2,TRUE,73190
+2052,Roving Hop,ALBERTVILLE,,2,TRUE,73200
+2053,Guet Apinte,GRIGNON,brasserie-guet-apinte.business.site,2,TRUE,73200
+2054,Brassin Versant,AIME-LA-PLAGNE,,2,TRUE,73210
+2055,Les Ceutrons,AIME-LA-PLAGNE,,2,TRUE,73210
+2056,Sapaudia,AIME-LA-PLAGNE,sapaudiabrewing.co,2,TRUE,73210
+2057,La Peiserote,PEISEY-NANCROIX,,2,TRUE,73210
+2058,du Grand Pic,ÉPIERRE,www.brasseriegrandpic.com,2,TRUE,73220
+2059,Archimalt,SAINT-ALBAN-LEYSSE,www.archimalt.fr,2,TRUE,73230
+2060,La Montagnarde - Site de Saint-Jean-d'Arvey,SAINT-JEAN-D'ARVEY,la-montagnarde.fr,2,TRUE,73230
+2061,La Mousse du Guiers,SAINT-GENIX-LES-VILLAGES,www.la-mousse-du-guiers.fr,2,TRUE,73240
+2062,La Roteuse de l'Arclusaz,SAINT-JEAN-DE-LA-PORTE,laroteusedelarclus.wixsite.com/le-site,2,TRUE,73250
+2063,du Beaufortain,BEAUFORT,,2,TRUE,73270
+2064,du Mont Blanc,LA MOTTE-SERVOLEX,www.brasserie-montblanc.com,2,TRUE,73290
+2065,Jananka,FONTCOUVERTE-LA-TOUSSUIRE,,2,TRUE,73300
+2066,de Chanaz,CHANAZ,www.brasserie-de-chanaz.fr,2,TRUE,73310
+2067,Les Croqueurs de Lune,SERRIÈRES-EN-CHAUTAGNE,croqueursdelune.com,2,TRUE,73310
+2068,L'Ecume du Guiers,DOMESSIN,,2,TRUE,73330
+2069,La Baujue,LESCHERAINES,biere-labaujue.com,2,TRUE,73340
+2070,L'Antidote,BOZEL,www.antidote-brasserie.com,2,TRUE,73350
+2071,Les Mousses du Dahu,LE PLANAY,www.lesmoussesdudahu.com,2,TRUE,73350
+2072,Caquot,ENTRELACS,brasseriecaquot.fr,2,TRUE,73410
+2073,Colibri,LA BIOLLE,,2,TRUE,73410
+2074,Artisanale de Sabaudia (B.A.S),VOGLANS,b-a-s.fr,2,TRUE,73420
+2075,"Brâva Vela
+ART2O",LES BELLEVILLE,bravavela.fr,2,TRUE,73440
+2076,Galibier,VALLOIRE,www.biere-galibier.com,2,TRUE,73450
+2077,La Gwape,VALMEINIER,,2,TRUE,73450
+2078,Yolhop,GRÉSY-SUR-ISÈRE,,2,TRUE,73460
+2079,La Barbue,LA RAVOIRE,brasserielabarbue.fr,2,TRUE,73490
+2080,d'Oé,AUSSOIS,www.bieredoe.fr,2,TRUE,73500
+2081,L'Arplanaise,FOURNEAUX,www.brasserie-arplanaise.fr,2,TRUE,73500
+2082,des Sources de Vanoise,VILLARODIN-BOURGET,www.brasserievanoise.com,2,TRUE,73500
+2083,Alpine,MOÛTIERS,www.brasseriealpine.fr,2,TRUE,73600
+2084,Les Névés,BOURG-SAINT-MAURICE,www.lesneves.fr,2,TRUE,73700
+2085,du Petit St Bernard,BOURG-SAINT-MAURICE,brasseriepsb.com,2,TRUE,73700
+2086,Tarine,BOURG-SAINT-MAURICE,www.labrasserietarine.com,2,TRUE,73700
+2087,Spartan,ROGNAIX,microbrasserie-spartan.business.site,2,TRUE,73730
+2088,Quardin,CHIGNIN,,2,TRUE,73800
+2089,Faye,MONTMÉLIAN,www.brasseriefaye.fr,2,TRUE,73800
+2090,La Cuvée des Aulps,PORTE-DE-SAVOIE,www.lacuveedesaulps.fr,2,TRUE,73800
+2091,du Claret,SAINT-JULIEN-MONT-DENIS,,2,TRUE,73870
+2092,Bec Jaune Brewery,MORZINE,becjaunebrewery.com,2,TRUE,74110
+2093,IBEX,MORZINE,www.ibexbeer.com,2,TRUE,74110
+2094,du Fayard,DOUVAINE,,2,TRUE,74140
+2095,Veyrat,MARCELLAZ-ALBANAIS,www.brasserie-veyrat.com,2,TRUE,74150
+2096,Mordorée,MOYE,,2,TRUE,74150
+2097,du Mont Salève,FEIGÈRES,labrasseriedumontsaleve.com,2,TRUE,74160
+2098,Adennes,SAINT-JULIEN-EN-GENEVOIS,brasserie-adennes.com,2,TRUE,74160
+2099,Marmotte Beer,SAINT-GERVAIS-LES-BAINS,www.marmotte-beer.com,2,TRUE,74170
+2100,Big Mountain Brewing Co.,PASSY,www.bigmtnbrew.co,2,TRUE,74190
+2101,Le Blaireau Qui Brasse,PASSY,www.blaireau-brasserie.com,2,TRUE,74190
+2102,du Léman,ALLINGES,www.biere-leman.com,2,TRUE,74200
+2103,Alchimie Brewery,FAVERGES-SEYTHENEX,www.bierealchimie.fr,2,TRUE,74210
+2104,L'Aravissante,LES VILLARDS-SUR-THÔNES,brasserielaravissante.jimdo.com,2,TRUE,74230
+2105,La Brasserie 744,LA TOUR,labrasserie744.fr,2,TRUE,74250
+2106,La Mam,MARCELLAZ,,2,TRUE,74250
+2107,Bières du Faucigny,VIUZ-EN-SALLAZ,www.bieres-du-faucigny.fr,2,TRUE,74250
+2108,Le Pub Irlandais,LES GETS,,2,TRUE,74260
+2109,Les Brasseurs du Dragon,CHÊNE-EN-SEMINE,www.draconides.com,2,TRUE,74270
+2110,de l'Escargot,THYEZ,,2,TRUE,74300
+2111,Maelström,LA BALME-DE-SILLINGY,brasserie-maelstrom.com,2,TRUE,74330
+2112,du Farfadet,CRUSEILLES,www.brasserie-du-farfadet.com,2,TRUE,74350
+2113,La Maison du Père Georges (Le Fer Rouge),LA CHAPELLE D'ABONDANCE,www.leferrouge.fr,2,TRUE,74360
+2114,du Baigneur,ANNECY,www.brasseriedubaigneur.com,2,TRUE,74370
+2115,"ArtMalté
+Capsule & Co",EPAGNY METZ-TESSY,www.artmalte.com,2,TRUE,74370
+2116,"des Voirons
+SARL Criba",LUCINGES,www.labrasseriedesvoirons.com,2,TRUE,74380
+2117,"Micro Brasserie de Chamonix
+L'Arva",CHAMONIX,www.mbchx.com,2,TRUE,74400
+2118,du Bruant,BURDIGNIN,brasserie-bruant.fr,2,TRUE,74420
+2119,Fermenterie des Champs Marmo,SEYTROUX,fermenteriedeschampsmarmo.blogspot.com,2,TRUE,74430
+2120,K&G Green Valley,MIEUSSY,kg-brasserie.com,2,TRUE,74440
+2121,de la Vallée du Giffre,VERCHAIX,bieres-du-giffre.com,2,TRUE,74440
+2122,d'Oche,BERNEX,www.brasseriedoche.fr,2,TRUE,74500
+2123,Le Mazot,CHAMPANGES,www.brasserielemazot.com,2,TRUE,74500
+2124,Brasseurs Alpins,ÉVIAN-LES-BAINS,www.brasseursalpins.fr,2,TRUE,74500
+2125,Picobrasserie de Concise,FÉTERNES,,2,TRUE,74500
+2126,Brasseurs Savoyards,ALBY-SUR-CHÉRAN,www.bs.fr,2,TRUE,74540
+2127,La Ringale,CERVENS,www.brasserie-la-ringale.fr,2,TRUE,74550
+2128,Arpitan,GROISY,www.arpitan-bieres.com,2,TRUE,74570
+2129,La Gabelle,VIRY,,2,TRUE,74580
+2130,"Bacchante
+Ludeli",SALLANCHES,biere-bacchante.com,2,TRUE,74700
+2131,Outer Range Alps,SALLANCHES,outerrangealps.com,2,TRUE,74700
+2132,La Rochoise,AMANCY,larochoise.com,2,TRUE,74800
+2133,Bruchet,REIGNIER-ÉSERY,,2,TRUE,74930
+2134,Karamazov,ANNECY,karamazov.fr,2,TRUE,74940
+2135,1151 Microbrasserie du Béol,LE REPOSOIR,,2,TRUE,74950
+2136,Bombardos,ANNECY,www.bombardos.beer,2,TRUE,74960
+2137,"La Démarrante
+La Chaudronnerie",ANNECY,lademarrante.com,2,TRUE,74960
+2138,Brew Unique,PARIS,www.brewunique.com,2,TRUE,75002
+2139,The Frog & Rosbif,PARIS,www.frogpubs.com,2,TRUE,75002
+2140,Rupture Brewing Company,PARIS,www.rupturebrew.com,2,TRUE,75004
+2141,"O' Neil
+SARL du Puits",PARIS,www.brasserieoneil.com,2,TRUE,75006
+2142,Craft Beers & Cie - Paris,PARIS,www.craftbeersetcie.com,2,TRUE,75008
+2143,"Fauve Craft Bière - Site de Paris
+Les Cuves de Fauve",PARIS,fauvebiere.com,2,TRUE,75011
+2144,La Beer Fabrique (Paris),PARIS,www.labeerfabrique.com,2,TRUE,75011
+2145,"Les Brasseries Parisiennes
+BAPBAP - Site de Paris",PARIS,www.bapbap.paris,2,TRUE,75011
+2146,We Are Brewers,PARIS,www.wab.beer,2,TRUE,75011
+2147,Payuss,PARIS,www.payuss.com,2,TRUE,75012
+2148,The Frog at Bercy Village,PARIS,www.frogpubs.com,2,TRUE,75012
+2149,Ma Bière,PARIS,www.mabiere.fr,2,TRUE,75013
+2150,The Frog & British Library,PARIS,www.frogpubs.com,2,TRUE,75013
+2151,Bonjour Brasserie,PARIS,,2,TRUE,75014
+2152,Frog XVI,PARIS,www.frogpubs.com,2,TRUE,75016
+2153,"Les Houblonneurs
+SOFRABRA",PARIS,www.leshoublonneurs.com,2,TRUE,75017
+2154,"Stream Beer
+Topager",PARIS,topager.com/micro-brasserie,2,TRUE,75017
+2155,La Goutte d'Or,PARIS,www.brasserielagouttedor.com,2,TRUE,75018
+2156,Le Bar Fondamental,PARIS,www.lbf-biere.fr,2,TRUE,75018
+2157,Mashrooms,PARIS,mashrooms.fr,2,TRUE,75018
+2158,Patoche,PARIS,brasseriepatoche.fr,2,TRUE,75018
+2159,Archipel,PARIS,archipelkombucha.com,2,TRUE,75019
+2160,de l'Être,PARIS,www.brasseriedeletre.paris,2,TRUE,75019
+2161,Paname Brewing Company (Brewpub),PARIS,www.panamebrewingcompany.com,2,TRUE,75019
+2162,Balthazar,PARIS,,2,TRUE,75020
+2163,La Baleine,PARIS,www.brasserie-la-baleine.com,2,TRUE,75020
+2164,Les Bières de Belleville,PARIS,,2,TRUE,75020
+2165,"Oskare
+The Ale Wall SAS",PARIS,oskare.fr,2,TRUE,75020
+2166,"Soquee Brewing
+DDW Handcrafted SAS",PARIS,,2,TRUE,75020
+2167,"The Brew Society
+Brasseurs Normands
+TBS Distribution",ROUEN,"www.brewsociety.fr
+brasseursnormands.fr",2,TRUE,76000
+2168,La Brique,ROUEN,,2,TRUE,76100
+2169,"de Saint Aignan
+ERÉIB",SAINT-AIGNAN-SUR-RY,ereib.fr,2,TRUE,76116
+2170,Les 3 Brasseurs,LE GRAND QUEVILLY,www.les3brasseurs.com,2,TRUE,76120
+2171,Co-Kot',SAINT-LÉGER-DU-BOURG-DENIS,,2,TRUE,76160
+2172,Ma Première Bière,BELBEUF,www.ma-premiere-biere.fr,2,TRUE,76240
+2173,Bakbuk,SOTTEVILLE-LÈS-ROUEN,www.brasserie-bakbuk.com,2,TRUE,76300
+2174,"Septante Six
+SAS Brasserie Normande",CAUDEBEC-LÈS-ELBEUF,www.septantesix.fr,2,TRUE,76320
+2175,Ragnar,OISSEL,www.brasserieragnar.com,2,TRUE,76350
+2176,Les 3 Brasseurs,BARENTIN,www.les3brasseurs.com,2,TRUE,76360
+2177,Dieppoise,MARTIN-ÉGLISE,www.brasseriedieppoise.fr,2,TRUE,76370
+2178,du Chant du Loup,CANTELEU,brasseriechantduloup.pagesperso-orange.fr,2,TRUE,76380
+2179,"La Môme
+Le Môme Qui Pisse",CANTELEU,,2,TRUE,76380
+2180,Sainte Beuve,LE CAULE-SAINTE-BEUVE,www.brasseriesaintebeuve.fr,2,TRUE,76390
+2181,Les 3 Brasseurs,TOURVILLE-LA-RIVIÈRE,www.les3brasseurs.com,2,TRUE,76410
+2182,Yata,GOMMERVILLE,,2,TRUE,76430
+2183,JJAP,SAINT-ROMAIN-DE-COLBOSC,,2,TRUE,76430
+2184,La Brasserie du Phare,CANY-BARVILLE,,2,TRUE,76450
+2185,Abbaye de Saint-Wandrille,RIVES-EN-SEINE,www.st-wandrille.com,2,TRUE,76490
+2186,Brew'meersch,LA NEUVILLE-CHANT-D'OISEL,,2,TRUE,76520
+2187,La Mousse des Temps,MOULINEAUX,www.lamoussedestemps.com,2,TRUE,76530
+2188,L'Onomathoppée,OFFRANVILLE,,2,TRUE,76550
+2189,Fabrik2Bulles,AMFREVILLE-LES-CHAMPS,fabrik2bulles.fr,2,TRUE,76560
+2190,Cauchoise,BOUDEVILLE,,2,TRUE,76560
+2191,du Zink,PAVILLY,,2,TRUE,76570
+2192,Be News,LE HAVRE,,2,TRUE,76600
+2193,L'Havrais Bière,LE HAVRE,lhavraisbiere.fr,2,TRUE,76600
+2194,"Saint Joseph
+LH Beer Factory",LE HAVRE,"www.brasseriesaintjoseph.com
+normandale.fr",2,TRUE,76600
+2195,Volcanik,LE HAVRE,,2,TRUE,76600
+2196,Ekino,LE HAVRE,,2,TRUE,76620
+2197,La P'tiote,PETIT-CAUX,,2,TRUE,76630
+2198,Ferme-Brasserie Albâtre n'Caux,BENNETOT,,2,TRUE,76640
+2199,Pointe de Bray,OSMOY-SAINT-VALERY,,2,TRUE,76660
+2200,Bakpaker,SAINT-SAËNS,www.brasserie-bakpaker.fr,2,TRUE,76680
+2201,"Marcelle
+EIRL Maxime Mauger",MONTVILLE,,2,TRUE,76710
+2202,Monolith Brewery,LE HOULME,www.monolithbrewery.com,2,TRUE,76770
+2203,Union-B,MALAUNAY,www.union-b.fr,2,TRUE,76770
+2204,Northmaen,LA CHAPELLE-SAINT-OUEN,www.northmaen.com,2,TRUE,76780
+2205,de l'Ère Liquide,QUEVILLON,,2,TRUE,76840
+2206,des Marronniers,CALLEVILLE-LES-DEUX-ÉGLISES,www.fermedesmarronniers.fr,2,TRUE,76890
+2207,de la Presqu'île de Brotonne,ARELAUNE-EN-SEINE,www.brotonia.com,2,TRUE,76940
+2208,de Meaux,MEAUX,www.brasseriedemeaux.com,2,TRUE,77100
+2209,Belladone,VILLENOY,,2,TRUE,77124
+2210,Bières du Saule,VILLENOY,,2,TRUE,77124
+2211,Les 3 Brasseurs,LIEUSAINT,www.les3brasseurs.com,2,TRUE,77127
+2212,Bières de la Vallée Javot,MACHAULT,srouhen.wixsite.com/biere-de-javot,2,TRUE,77133
+2213,du Pont de Coude,DAMMARTIN-SUR-TIGEAUX,www.bieres-grandmorin.fr,2,TRUE,77163
+2214,Reboot,FERRIÈRES-EN-BRIE,,2,TRUE,77164
+2215,La Germenoise,EMERAINVILLE,brasserie-la-germenoise.business.site,2,TRUE,77184
+2216,J.A.M.E.S.,DAMMARTIN-EN-GOËLE,,2,TRUE,77230
+2217,du Boschet,SAINT-MARTIN-DU-BOSCHET,www.brasserieduboschet.fr,2,TRUE,77320
+2218,L'Instant,PONTAULT-COMBAULT,www.bieres-linstant.fr,2,TRUE,77340
+2219,des Grottes,BOISSISE-LA-BERTRAND,,2,TRUE,77350
+2220,Parisis,COMBS-LA-VILLE,www.brasserie-parisis.com,2,TRUE,77380
+2221,BrewLab,CLAYE-SOUILLY,brewlab.blog,2,TRUE,77410
+2222,La Guinche,CHELLES,www.laguinche.net,2,TRUE,77500
+2223,Rabourdin,COURPALAY,www.biere-de-brie.com,2,TRUE,77540
+2224,Saint Fiacre,CRÉCY-LA-CHAPELLE,bieressaintfiacre.fr,2,TRUE,77580
+2225,"Bacotte
+La Mousse de Bleau",CHARTRETTES,lamoussedebleau.fr,2,TRUE,77590
+2226,Pachamama,LA GENEVRAYE,www.pachamama.bio,2,TRUE,77690
+2227,Second Degré,MAGNY-LE-HONGRE,auseconddegre.shop,2,TRUE,77700
+2228,Ziegler,NANTEAU-SUR-LUNAIN,www.luna-in.fr,2,TRUE,77710
+2229,Crazy Hops,VAUX-SUR-LUNAIN,www.brasserie-crazyhops.fr,2,TRUE,77710
+2230,77CRAFT - Brasserie Artisanale de Villiers-sous-Grez,VILLIERS-SOUS-GREZ,www.brasserie77craft.com,2,TRUE,77760
+2231,Le K1 10,BOURRON-MARLOTTE,,2,TRUE,77780
+2232,La Montmach',MONTMACHOUX,,2,TRUE,77940
+2233,La Brasserie du Roi,VERSAILLES,labrasserieduroi.com,2,TRUE,78000
+2234,The Beer Garage,TOUSSUS-LE-NOBLE,www.thebeergarage.fr,2,TRUE,78117
+2235,de la Reine,RAMBOUILLET,,2,TRUE,78120
+2236,La Brasserie Barge,RAMBOUILLET,labrasseriebarge.fr,2,TRUE,78120
+2237,Les 3 Brasseurs,RAMBOUILLET,www.les3brasseurs.com,2,TRUE,78120
+2238,Tricyclhop,MANTES-LA-JOLIE,tricyclhop.fr,2,TRUE,78200
+2239,Respekt,ACHÈRES,brasserie-respekt.fr,2,TRUE,78260
+2240,La Voisine,COIGNIÈRES,brasserielavoisine.com,2,TRUE,78310
+2241,"O'Clock Brewing
+Be More Creative",BOIS-D'ARCY,www.oclockbrewing.fr,2,TRUE,78390
+2242,Onirique,BOIS-D'ARCY,www.brasserie-onirique.fr,2,TRUE,78390
+2243,Toussaint,LOUVECIENNES,www.brasserietoussaint.com,2,TRUE,78430
+2244,The Chubby Brewing Company,BOISSY-SANS-AVOIR,,2,TRUE,78490
+2245,Les Brasseurs du Val de Seine,SARTROUVILLE,www.laptitesoeur.com,2,TRUE,78500
+2246,La Cacatoès,TRIEL-SUR-SEINE,,2,TRUE,78510
+2247,Distrikt,MAULE,www.distriktbeer.com,2,TRUE,78580
+2248,"La Mauloise - ABAM
+Association des Brasseurs Amateurs de Maule",MAULE,www.lamauloise.com,2,TRUE,78580
+2249,de la Vallée de Chevreuse,LE PERRAY-EN-YVELINES,"www.volcelest.fr
+www.brasseriechevreuse.com",2,TRUE,78610
+2250,TRBL Compagnie SAS,ORGEVAL,www.trbl.fr,2,TRUE,78630
+2251,Le Soupir,JOUARS-PONTCHARTRAIN,,2,TRUE,78760
+2252,de l'Equipage,BONNELLES,www.brasserie2lequipage.fr,2,TRUE,78830
+2253,La Chamoise,BESSINES,www.lachamoise.com,2,TRUE,79000
+2254,Atelier Brasserie Pompois,SAINTE-VERGE,www.lathouarsaise.fr,2,TRUE,79100
+2255,Au P’tit Brasseur d’Argentonnay,ARGENTONNAY,www.argentonnay-biere.com,2,TRUE,79150
+2256,Louis et Marguerite,LA CHAPELLE-THIREUIL,brasserielouisetmarguerite.fr,2,TRUE,79160
+2257,Atelier de Brassage Collaboratif,PARTHENAY,atelierdebrassage.xyz,2,TRUE,79200
+2258,Le Coupe Gorge,PARTHENAY,www.lecoupegorge.fr,2,TRUE,79200
+2259,LAPC,FORS,www.lapc.fr,2,TRUE,79230
+2260,La Ferme de la Martinière,VERNOUX-EN-GÂTINE,,2,TRUE,79240
+2261,A Portée de Bière,VOUHÉ,www.aporteedebiere.fr,2,TRUE,79310
+2262,La Gabarde,CLESSÉ,www.lagabarde.com,2,TRUE,79350
+2263,La Guiche,PRAILLES-LA COUARDE,,2,TRUE,79370
+2264,en Brouette,COURLAY,www.brouette.eu,2,TRUE,79440
+2265,Pelboise,MELLE,"labrasseriepelboise.fr
+www.lecafeduboulevard.com",2,TRUE,79500
+2266,"du Marais
+SARL Brasserie des Copains",COULON,www.brasseriedumarais.fr,2,TRUE,79510
+2267,La Hase,AIRVAULT,biere-lahase.com,2,TRUE,79600
+2268,du Val de Sèvre,SALLES,www.brasserie-du-val-de-sevre.fr,2,TRUE,79800
+2269,Ambiani,AMIENS,www.brasserie-ambiani.com,2,TRUE,80000
+2270,Charles & Vianney,AMIENS,www.charlesetvianney.fr,2,TRUE,80000
+2271,La Filature,AMIENS,,2,TRUE,80000
+2272,Bears'Tavern,AMIENS,www.bears-tavern.com,2,TRUE,80080
+2273,Le Comptoir du Malt,AMIENS,www.lecomptoirdumalt.fr,2,TRUE,80090
+2274,de la Baie de Somme,ABBEVILLE,brasseurdelabaie.fr,2,TRUE,80100
+2275,De Clerck,PÉRONNE,www.brasseriedeclerck.com,2,TRUE,80200
+2276,Rollus,LOUVRECHY,www.rollus.fr,2,TRUE,80250
+2277,À La Noye,QUIRY-LE-SEC,www.brasseriealanoye.fr,2,TRUE,80250
+2278,BrewZik,VILLE-SUR-ANCRE,,2,TRUE,80300
+2279,La Bellequesnoise,BEAUQUESNE,,2,TRUE,80600
+2280,du Bosquet,RAINCHEVAL,,2,TRUE,80600
+2281,de la Somme,DOMART EN PONTHIEU,www.brasseriedelasomme.fr,2,TRUE,80620
+2282,"Picardennes
+La Mascotte",CORBIE,,2,TRUE,80800
+2283,Margot,ALBI,,2,TRUE,81000
+2284,Bombero,CASTRES,bombero.fr,2,TRUE,81100
+2285,Burtonian Beers,CASTRES,burtonian.fr,2,TRUE,81100
+2286,La Gardienne,CAMPAGNAC,www.lagardienne81.fr,2,TRUE,81140
+2287,Artisanale de Puycelsi,PUYCELSI,brasserie-artisanale-de-puycelsi.fr,2,TRUE,81140
+2288,Que d'Ale,MARSSAC-SUR-TARN,www.quedale.fr,2,TRUE,81150
+2289,Auros,CORDES-SUR-CIEL,brasserieauros.com,2,TRUE,81170
+2290,Lézard Noir,PAMPELONNE,www.bierelezardnoir.com,2,TRUE,81190
+2291,Montéliote,LAMONTÉLARIÉ,www.brasserie-monteliote.fr,2,TRUE,81260
+2292,du Sidobre,LE BEZ,,2,TRUE,81260
+2293,Olffabrick,ESCOUSSENS,,2,TRUE,81290
+2294,des Vignes,GRAULHET,brasseriedesvignes.blogspot.com,2,TRUE,81300
+2295,du Castel,NAGES,,2,TRUE,81320
+2296,Belles de Trébas,TRÉBAS,www.belles-de-trebas.com,2,TRUE,81340
+2297,Garland,ALGANS,www.brasseriegarland.fr,2,TRUE,81470
+2298,Tanis,GARRIGUES,www.tanis-paysanbrasseur.fr,2,TRUE,81500
+2299,L'Arsouille,GIROUSSENS,www.brasserielarsouille.fr,2,TRUE,81500
+2300,de l'Oustal,LAVAUR,,2,TRUE,81500
+2301,Eighty One Brewing,SOUAL,www.eightyonebrewing.fr,2,TRUE,81580
+2302,La Berlue,GAILLAC,www.brasserie-laberlue.com,2,TRUE,81600
+2303,des Coteaux,BEAUVAIS-SUR-TESCOU,www.oxit.fr,2,TRUE,81630
+2304,Gilbert's,RABASTENS,www.brasserie-gilberts.com,2,TRUE,81800
+2305,Abracada'Brasserie,MONTAUBAN,abracadabrasserie.fr,2,TRUE,82000
+2306,de la Halle,MONTAUBAN,www.brasseriedelahalle.com,2,TRUE,82000
+2307,Iron,MONTAUBAN,,2,TRUE,82000
+2308,Bélier,SAINT-ANTONIN-NOBLE-VAL,,2,TRUE,82140
+2309,La Cabane,CAYLUS,www.brasserielacabane.com,2,TRUE,82160
+2310,Baltringue,PARISOT,www.brasseriebaltringue.fr,2,TRUE,82160
+2311,Joli Rouge,CANALS,brasseriejolirouge.eklablog.com,2,TRUE,82170
+2312,HopDuk,CAMPSAS,hopduk.com,2,TRUE,82370
+2313,MX,PERVILLE,,2,TRUE,82400
+2314,Oc'Ale,BRESSOLS,www.bieres-ocale.fr,2,TRUE,82710
+2315,Bière de la Rade,TOULON,www.bieredelarade.com,2,TRUE,83000
+2316,Chez Le Brasseur,TOULON,www.chezlebrasseur.com,2,TRUE,83000
+2317,La Blonde & La Brune,NÉOULES,lablondelabrune.com,2,TRUE,83136
+2318,Pépiole,SIX-FOURS-LES-PLAGES,www.bieredepepiole.com,2,TRUE,83140
+2319,des Sortilèges,BRAS,,2,TRUE,83149
+2320,Chez le Brasseur,LA VALETTE-DU-VAR,chezlebrasseur.com,2,TRUE,83160
+2321,Provence Ales,LA FARLÈDE,,2,TRUE,83210
+2322,La Maure,BORMES-LES-MIMOSAS,,2,TRUE,83230
+2323,La Bière Dracénoise,DRAGUIGNAN,,2,TRUE,83300
+2324,"La Brasserie d'à Côté
+Madame Dusse",LE BEAUSSET,madamedusse.com,2,TRUE,83330
+2325,Varaï,LE LUC,varai.beer,2,TRUE,83340
+2326,Carteron,HYÈRES,"www.brasseriecarteron.com
+www.latrop.fr",2,TRUE,83400
+2327,La Bière des Îles d'Or,HYÈRES,www.labieredesilesdor.fr,2,TRUE,83400
+2328,La Brasserie Porquerollaise,HYÈRES,www.brasserie-porquerollaise.com,2,TRUE,83400
+2329,Moonshiners Kraft Brewery,HYÈRES,,2,TRUE,83400
+2330,Neuja,SAINT-MANDRIER-SUR-MER,,2,TRUE,83430
+2331,La Base,CALLIAN,,2,TRUE,83440
+2332,Gekko Brewing Company,TOURRETTES,www.gekkobeers.com,2,TRUE,83440
+2333,Les 3 Brasseurs,PUGET-SUR-ARGENS,www.les3brasseurs.com,2,TRUE,83480
+2334,La Cig',LA SEYNE-SUR-MER,brasserie-la-cig.fr,2,TRUE,83500
+2335,"Les Enfûtés
+Raffut SAS",LA SEYNE-SUR-MER,,2,TRUE,83500
+2336,La Snook,ESPARRON DE PALLIÈRES,,2,TRUE,83560
+2337,Le Brasseur Varois,CARCÈS,,2,TRUE,83570
+2338,Le Tailleur de Bière,COTIGNAC,latufcraftbeer.com,2,TRUE,83570
+2339,de l'Âne Volant,GONFARON,anevolant.fr,2,TRUE,83590
+2340,de l'Aréna,FRÉJUS,,2,TRUE,83600
+2341,Les Brasseurs de l'Estérel,SAINT-RAPHAËL,"www.riviera-beer.com
+brasseurs-de-lesterel.com",2,TRUE,83700
+2342,La Bas Varoise,LA CADIÈRE-D'AZUR,www.bas-varoise.fr,2,TRUE,83740
+2343,Bozzzale,FIGANIÈRES,www.bozzzale.fr,2,TRUE,83830
+2344,Ale Et Hop,TRIGANCE,,2,TRUE,83840
+2345,du Castellet,SIGNES,brasserieducastellet.com,2,TRUE,83870
+2346,La Comédienne,AVIGNON,www.lacomedienne.beer,2,TRUE,84000
+2347,Gramiller,RASTEAU,www.domainegramiller.com,2,TRUE,84110
+2348,Chante-Grenouille,SÉGURET,,2,TRUE,84110
+2349,du Luberon,PERTUIS,www.brasserie-luberon.com,2,TRUE,84120
+2350,La Brasserie Interdite,PERTUIS,labrasserieinterdite.com,2,TRUE,84120
+2351,Quartier d'Eté,PERTUIS,,2,TRUE,84120
+2352,Les 3 Brasseurs,LE PONTET,www.les3brasseurs.com,2,TRUE,84130
+2353,Efferv & Sciences,AVIGNON,iut.univ-avignon.fr,2,TRUE,84140
+2354,AGORA,CARPENTRAS,www.agora-biere.com,2,TRUE,84200
+2355,Artisanale du Mont Ventoux,CARPENTRAS,www.brasserie-ventoux.com,2,TRUE,84200
+2356,Le Mas Courbet,CARPENTRAS,mascourbet.com,2,TRUE,84200
+2357,La Déjantée,PERNES-LES-FONTAINES,www.brasserie-la-dejantee.fr,2,TRUE,84210
+2358,PacaP,SAINT-DIDIER,www.vinodrive.fr,2,TRUE,84210
+2359,La Machotte,SARRIANS,,2,TRUE,84260
+2360,Benouz,SARRIANS,,2,TRUE,84260
+2361,L'Imprévue,VEDÈNE,www.brasserielimprevue.com,2,TRUE,84270
+2362,BOC,CAIRANNE,,2,TRUE,84290
+2363,Lub',LES TAILLADES,www.brasserielub.com,2,TRUE,84300
+2364,du Chevalier Blanc,ENTRAIGUES-SUR-LA-SORGUE,,2,TRUE,84320
+2365,Mas Ribelly,ENTRAIGUES-SUR-LA-SORGUE,ribelly.fr,2,TRUE,84320
+2366,La Chauvette,MALAUCÈNE,lachauvette.com,2,TRUE,84340
+2367,La Pagaille,MÉRINDOL,www.brasserielapagaille.com,2,TRUE,84360
+2368,Les Bières du Bigourd,MAZAN,www.lesbieresdubigourd.fr,2,TRUE,84380
+2369,"La Géante de Provence
+Bière du Ventoux",BRANTES,,2,TRUE,84390
+2370,de Durfort,SAULT,www.brasserie-durfort.com,2,TRUE,84390
+2371,Les Brassins de Rustrel,RUSTREL,ocria.fr,2,TRUE,84400
+2372,Latriche,ROBION,www.brasserielatriche.fr,2,TRUE,84440
+2373,Les Ouailles du Luberon,CHEVAL-BLANC,www.ouailles-luberon.fr,2,TRUE,84460
+2374,du Comtat,MALEMORT-DU-COMTAT,www.brasserieducomtat.com,2,TRUE,84570
+2375,Ventopp,VILLES-SUR-AUZON,www.ventopp.fr,2,TRUE,84570
+2376,des Gueux,SORGUES,brasseriedesgueux.com,2,TRUE,84700
+2377,Viensoise,VIENS,brasserieviensoise.com,2,TRUE,84750
+2378,du Pays des Sorgues,L' ISLE-SUR-LA-SORGUE,,2,TRUE,84800
+2379,Ameno,CAMARET-SUR-AIGUES,,2,TRUE,84850
+2380,Les 3 Brasseurs,LA ROCHE-SUR-YON,www.3brasseurs.com,2,TRUE,85000
+2381,"Beer Workshop
+La Fabrik",LA ROCHE-SUR-YON,beerworkshop.fr,2,TRUE,85000
+2382,de l'Orgelie,SAINT-MARTIN-DES-TILLEULS,lorgelie.com,2,TRUE,85130
+2383,des Chats Noirs,LANDERONDE,,2,TRUE,85150
+2384,Garatelle - Brasserie Bio du Pays des Olonnes,VAIRÉ,www.garatelle.fr,2,TRUE,85150
+2385,Labo du Brasseur,SAINT-JEAN-DE-MONTS,,2,TRUE,85160
+2386,Elaphe,MONTRÉVERD,www.elaphebrasserie.fr,2,TRUE,85260
+2387,Hope,MONTRÉVERD,,2,TRUE,85260
+2388,du Grand Zig,LA FERRIÈRE,www.bieres-zig.fr,2,TRUE,85280
+2389,Les Coureurs de Lune,LA FERRIÈRE,www.lescoureursdelune.fr,2,TRUE,85280
+2390,Mortania,MORTAGNE-SUR-SÈVRE,,2,TRUE,85290
+2391,La Danse de l'Ours,RIVES DE L'YON,ladansedelours.fr,2,TRUE,85310
+2392,Opé,LES SABLES-D'OLONNE,ope.beer,2,TRUE,85340
+2393,La Cabaude,OLONNE-SUR-MER,,2,TRUE,85340
+2394,Les Fous Brassant,L'ÎLE-D'YEU,www.lesfousbrassant.fr,2,TRUE,85350
+2395,Tabernaude,L'ÎLE-D'YEU,,2,TRUE,85350
+2396,"La Muette
+Stabul",BAZOGES-EN-PAREDS,"www.brasserie-la-muette.fr
+www.lamusse.net",2,TRUE,85390
+2397,La Coopine,LUÇON,www.lacoopine.fr,2,TRUE,85400
+2398,Smeele,LUÇON,www.biere-polder.fr,2,TRUE,85400
+2399,La Cibulle,MAILLÉ,www.lacibulle.fr,2,TRUE,85420
+2400,No Panic,TALMONT-SAINT-HILAIRE,,2,TRUE,85440
+2401,du Marsouin,BRETIGNOLLES-SUR-MER,www.brasseriedumarsouin.fr,2,TRUE,85470
+2402,Mélusine,CHANVERRIE,www.brasserie-melusine.com,2,TRUE,85500
+2403,La Louette,LES HERBIERS,brasserie-la-louette.fr,2,TRUE,85500
+2404,des Islattes,JARD-SUR-MER,www.brasserie-des-islattes.com,2,TRUE,85520
+2405,La Torche,MONTAIGU-VENDÉE,www.microbrasserielatorche.fr,2,TRUE,85600
+2406,"Galu
+BG'S",LA GUÉRINIÈRE,,2,TRUE,85680
+2407,de l'Île de Noirmoutier,LA GUÉRINIÈRE,brasserie-noirmoutier.fr,2,TRUE,85680
+2408,La Petite Ramonière,NOTRE-DAME-DE-MONTS,www.lapetiteramoniere.fr,2,TRUE,85690
+2409,Les Brasseurs de la Vie,SAINT-GILLES-CROIX-DE-VIE,www.lesbrasseursdelavie.com,2,TRUE,85800
+2410,BEOIR,POITIERS,,2,TRUE,86000
+2411,La Manufacture de Bières,POITIERS,www.lamanufacturedebieres.fr,2,TRUE,86000
+2412,Les 3 Brasseurs,POITIERS,www.les3brasseurs.com,2,TRUE,86000
+2413,Ninja Craft Brewery,POITIERS,,2,TRUE,86000
+2414,Leclerc Poitiers,POITIERS,www.e-leclerc.com/poitiers,2,TRUE,86036
+2415,"La Micro-Winerie
+LNK (Les Brasseurs de Roiffé)",ROIFFÉ,www.lamicrowinerie.fr,2,TRUE,86120
+2416,du XIII,SAINT-GEORGES-LÈS-BAILLARGEAUX,,2,TRUE,86130
+2417,de Bellefois,NEUVILLE DE POITOU,www.brasserie-de-bellefois.fr,2,TRUE,86170
+2418,X Poitou,VOUILLÉ,www.brasserie-x-poitou.fr,2,TRUE,86190
+2419,Thirsty Steves,LOUDUN,fr.thirstysteves.com,2,TRUE,86200
+2420,Little Belgique,POUANT,www.littlebelgique.fr,2,TRUE,86200
+2421,Pirates du Clain,LIGUGÉ,piratesduclain.org,2,TRUE,86240
+2422,"De Mysteriis Pictavis
+Mandon",SMARVES,brasseriedmp.weezbe.com,2,TRUE,86240
+2423,Difré,VALDIVIENNE,brasseriedifre.fr,2,TRUE,86300
+2424,Aslonnoise,ASLONNES,,2,TRUE,86340
+2425,La Nobilienne,NOUAILLÉ-MAUPERTUIS,www.lanobilienne.com,2,TRUE,86340
+2426,La Moujasse,VIVONNE,,2,TRUE,86370
+2427,Bières de Montmorillon,MONTMORILLON,www.bieresdemontmorillon.fr,2,TRUE,86500
+2428,"La Brasserie Clando
+Casaland T.A.",CHAUNAY,,2,TRUE,86510
+2429,La Linaroise,LINIERS,,2,TRUE,86800
+2430,RockTisch,TERCÉ,,2,TRUE,86800
+2431,"Michard
+Le Brasseur",LIMOGES,www.bieres-michard.com,2,TRUE,87100
+2432,de la Combade,CHÂTEAUNEUF-LA-FORÊT,,2,TRUE,87130
+2433,Kalybeer,SAINT-JUNIEN,www.kalybeer.fr,2,TRUE,87200
+2434,Cerva d'Oc,FLAVIGNAC,www.cervadoc.com,2,TRUE,87230
+2435,Brâm,SAINT-LAURENT-LES-ÉGLISES,www.brasseriebram.org,2,TRUE,87240
+2436,des Monts d'Ambazac,SAINT-SYLVESTRE,,2,TRUE,87240
+2437,Ô'Lim,BELLAC,,2,TRUE,87300
+2438,de Bel-Air,SAINT-BONNET-DE-BELLAC,www.biere-la-bergere.fr,2,TRUE,87300
+2439,Arti Brassage 87,SAINT-SULPICE-LAURIÈRE,www.artibrassage87.com,2,TRUE,87370
+2440,Barbe en Bulle,PEYRAT-LE-CHÂTEAU,,2,TRUE,87470
+2441,Ferme collective La Tournerie,COUSSAC-BONNEVAL,terredeliens.org/la-tournerie,2,TRUE,87500
+2442,Bières Lémovice,RAZÈS,,2,TRUE,87640
+2443,La Stour,RILHAC-LASTOURS,www.brasserie-la-stour.fr,2,TRUE,87800
+2444,La Fouillotte,ÉPINAL,www.lafouillotte.fr,2,TRUE,88000
+2445,Les 3 Brasseurs,ÉPINAL,www.les3brasseurs.com,2,TRUE,88000
+2446,Matrina America,SAINT-DIÉ-DES-VOSGES,matrina.fr,2,TRUE,88100
+2447,du Pays des Lacs,CELLES-SUR-PLAINE,brasserieartisanaledupaysdeslacs.blogspot.fr,2,TRUE,88110
+2448,La Chèvre Vagabonde,LUVIGNY,,2,TRUE,88110
+2449,Marcellou,SAPOIS,,2,TRUE,88120
+2450,La Pimbêche,VAGNEY,,2,TRUE,88120
+2451,Le Domaine du Houblon,THAON-LES-VOSGES,ledomaineduhoublon.com,2,TRUE,88150
+2452,"Marie-Thérèse
+SAS du Pas de l'Âne",REMIREMONT,www.brasserie-marie-therese.fr,2,TRUE,88200
+2453,Artisanale des Vosges,SAINT-ÉTIENNE-LÈS-REMIREMONT,www.brasserie-lamadelon.fr,2,TRUE,88200
+2454,ESAT Les Ateliers du Bois Joli,SAINT-NABORD,,2,TRUE,88200
+2455,de Quat'Sous,VECOUX,,2,TRUE,88200
+2456,L'Opercule,SENONES,www.lopercule.fr,2,TRUE,88210
+2457,La Golaye,XERTIGNY,www.lagolaye.fr,2,TRUE,88220
+2458,La Clandestine,LES VOIVRES,,2,TRUE,88240
+2459,du Chajoux,LA BRESSE,,2,TRUE,88250
+2460,Kaméléon,LA BRESSE,,2,TRUE,88250
+2461,La Rételère,LA BRESSE,aubergedelaretelere.fr,2,TRUE,88250
+2462,Schott,LA BRESSE,www.brasserie-schott.fr,2,TRUE,88250
+2463,Musée Vosgien de la Brasserie,VILLE-SUR-ILLON,museevosgiendelabrasserie.com,2,TRUE,88270
+2464,La Bière du Musher,CORNIMONT,,2,TRUE,88310
+2465,des Sapins,VENTRON,,2,TRUE,88310
+2466,de Girmont-Val-d'Ajol,GIRMONT-VAL-D'AJOL,,2,TRUE,88340
+2467,Burval,LE VAL D'AJOL,www.val-heureuse.com,2,TRUE,88340
+2468,du Roulier,LE VAL D'AJOL,brasserieduroulier.free.fr,2,TRUE,88340
+2469,des Buissons,RUPT-SUR-MOSELLE,labrasseriedesbuissons.wordpress.com,2,TRUE,88360
+2470,du Meix Blanc,GÉRARDMER,gite-gerardmer.pagesperso-orange.fr,2,TRUE,88400
+2471,La Bolonhi,GÉRARDMER,www.labonlohi.fr,2,TRUE,88400
+2472,La Gérômoise,GÉRARDMER,www.lageromoise.fr,2,TRUE,88400
+2473,La Moussière,LA HOUSSIÈRE,,2,TRUE,88430
+2474,du Thoné,LA BOURGONCE,,2,TRUE,88470
+2475,La Bourlingueuse,BERTRIMOUTIER,brasserielabourlingueuse.fr,2,TRUE,88520
+2476,Pikadili,MANDRAY,pikadili-brasserie.com,2,TRUE,88650
+2477,Beer Of No Nation,VITTEL,www.beerofnonation.com,2,TRUE,88800
+2478,Larché,SENS,www.brasserie-larche.fr,2,TRUE,89100
+2479,La 5 d'Angy,LÉZINNES,la5dangy.wordpress.com,2,TRUE,89160
+2480,Odile t'en brasse,AVALLON,odiletenbrasse.fr,2,TRUE,89200
+2481,La Dégust'station,CHEMILLY-SUR-YONNE,,2,TRUE,89250
+2482,La Cuverie,IRANCY,brasserie-lacuverie.fr,2,TRUE,89290
+2483,Popihn,VAUMORT,,2,TRUE,89320
+2484,La Truite,BUTTEAUX,,2,TRUE,89360
+2485,de Vézelay,SAINT-PÈRE,www.brasseriedevezelay.com,2,TRUE,89450
+2486,Bières de la Colline,VÉZELAY,www.bieresdelacolline.fr,2,TRUE,89450
+2487,Fayyar,SAINT-BRIS-LE-VINEUX,www.fayyar.fr,2,TRUE,89530
+2488,La Fringale,LASSON,ferme.delafringale.free.fr,2,TRUE,89570
+2489,Grand Duc,SORMERY,legrandduc-microbrasserie.fr,2,TRUE,89570
+2490,"de Chablis
+Maddam",CHABLIS,www.maddam-chablis.com,2,TRUE,89800
+2491,La Vaugermaine,SAINT-CYR-LES-COLONS,www.lavaugermaine.fr,2,TRUE,89800
+2492,MicroBrasserie & Compagnie (MBC),BELFORT,microbrasserie-et-compagnie.fr,2,TRUE,90000
+2493,MMC,BELFORT,,2,TRUE,90000
+2494,du Territoire,AUXELLES-BAS,oxlbiere.fr,2,TRUE,90200
+2495,Franc Comtoise,GIROMAGNY,www.larebelle.net,2,TRUE,90200
+2496,Belfortaine,VALDOIE,,2,TRUE,90300
+2497,La Bouledogue,VILLEBON-SUR-YVETTE,www.labouledogue.com,2,TRUE,91140
+2498,Kings of Nawak Brewery,ÉTAMPES,www.kingsofnawakbrewery.com,2,TRUE,91150
+2499,Les 3 Brasseurs,BRÉTIGNY-SUR-ORGE,www.3brasseurs.com,2,TRUE,91220
+2500,Gus,VERRIÈRES-LE-BUISSON,,2,TRUE,91370
+2501,OX,MARCOUSSIS,brasserie-ox.fr,2,TRUE,91460
+2502,de la Juine,JANVILLE-SUR-JUINE,www.brasseriedelajuine.fr,2,TRUE,91510
+2503,Galilée,ANGERVILLE,www.brasserie-galilee.fr,2,TRUE,91670
+2504,Morel,SACLAS,,2,TRUE,91690
+2505,Inkraft Beer Company,SAINT-JEAN-DE-BEAUREGARD,www.inkraft.beer,2,TRUE,91940
+2506,"Nemeto
+O2 Seine",NANTERRE,www.brasserienemeto.fr,2,TRUE,92000
+2507,Seguin Sound,BOULOGNE-BILLANCOURT,www.seguin-sound.com,2,TRUE,92100
+2508,Craft Beers & Cie - Saint-Cloud,SAINT-CLOUD,www.craftbeersetcie.com,2,TRUE,92210
+2509,"Petite Couronne
+SAS Les Deux Frères",GENNEVILLIERS,www.petite-couronne.fr,2,TRUE,92230
+2510,Rive Droite Rive Gauche,SÈVRES,www.bieres-rivedroiterivegauche.fr,2,TRUE,92310
+2511,Les 3 Lézards,CHAVILLE,,2,TRUE,92370
+2512,Demory,BOBIGNY,demoryparis.com,2,TRUE,93000
+2513,Croix de Chavaux,MONTREUIL,croixdechavaux.com,2,TRUE,93100
+2514,La Montreuilloise,MONTREUIL,la-montreuilloise.com,2,TRUE,93100
+2515,La Française,NOISY-LE-GRAND,brasserielafrancaise.fr,2,TRUE,93160
+2516,de la Fontaine,BAGNOLET,,2,TRUE,93170
+2517,"Brasserie du Grand Paris
+My Beer Company",SAINT-DENIS,www.bgp.paris,2,TRUE,93200
+2518,Bière MIЯ,ROMAINVILLE,www.biere-mir.fr,2,TRUE,93230
+2519,FrogBeer,PIERREFITTE-SUR-SEINE,www.frogpubs.com,2,TRUE,93380
+2520,Saint Ouen Paris,SAINT-OUEN-SUR-SEINE,saint-ouen-paris.com,2,TRUE,93400
+2521,Bières Nimbus,PANTIN,bieresnimbus.fr,2,TRUE,93500
+2522,Gallia - Site de Pantin,PANTIN,www.galliaparis.com,2,TRUE,93500
+2523,La Parisienne,PANTIN,brasserielaparisienne.com,2,TRUE,93500
+2524,Paname Brewing Company (L'Atelier),PANTIN,www.panamebrewingcompany.com,2,TRUE,93500
+2525,3ienchs,SAINT-MAUR-DES-FOSSÉS,,2,TRUE,94100
+2526,Outland,FONTENAY-SOUS-BOIS,outland-beer.com,2,TRUE,94120
+2527,L'Alfortvillaise,ALFORTVILLE,lalfortvillaise.com,2,TRUE,94140
+2528,Gallia - Site de Sucy-en-Brie,SUCY-EN-BRIE,www.galliaparis.com,2,TRUE,94370
+2529,"Les Brasseries Parisiennes
+BAPBAP - Site de Sucy-en-Brie",SUCY-EN-BRIE,www.bapbap.paris,2,TRUE,94370
+2530,Deck & Donohue,BONNEUIL-SUR-MARNE,www.deck-donohue.com,2,TRUE,94380
+2531,Breuvages et Bavardages,VITRY-SUR-SEINE,,2,TRUE,94400
+2532,Artemus,LIMEIL-BRÉVANNES,www.brasserie-artemus.fr,2,TRUE,94450
+2533,925,CHAMPIGNY-SUR-MARNE,www.brasserie925.com,2,TRUE,94500
+2534,Le Micro Kombinat,LA QUEUE-EN-BRIE,larepublikdesmousses.fr,2,TRUE,94510
+2535,Nous Douze,CHOISY-LE-ROI,nousdouze.blogspot.com,2,TRUE,94600
+2536,S'tache,CHOISY-LE-ROI,brasseriestache.fr,2,TRUE,94600
+2537,Le Sapeur Brasseur,SANNOIS,www.lesapeurbrasseur.com,2,TRUE,95110
+2538,Terrabière,DEUIL-LA-BARRE,www.brasserie-terrabiere.com,2,TRUE,95170
+2539,Les 3 Brasseurs,CORMEILLES-EN-PARISIS,www.les3brasseurs.com,2,TRUE,95240
+2540,The BeerWitched,CHAUMONTEL,,2,TRUE,95270
+2541,"E&B Bière Compagnie
+La Bière Saint Loupienne",SAINT-LEU-LA-FORÊT,la-biere-saint-loupienne.fr,2,TRUE,95320
+2542,d'Orville,LOUVRES,brasseriedorville.com,2,TRUE,95380
+2543,Hespebay,GROSLAY,hespebay.fr,2,TRUE,95410
+2544,Ferme-Brasserie du Vexin,THEMERICOURT,www.biere-du-vexin.com,2,TRUE,95450
+2545,Les 3 Brasseurs,ERAGNY SUR OISE,www.les3brasseurs.com,2,TRUE,95610
+2546,830,BOISSY-L'AILLERIE,www.brasserie830.fr,2,TRUE,95650
+2547,Roissy Craft House,ROISSY-EN-FRANCE,www.crafthousepub.fr,2,TRUE,95700
+2548,Les Brasseurs de Guadeloupe,BAIE-MAHAULT (Guadeloupe),gwadabeer.com,2,TRUE,97122
+2549,de Deshaies,DESHAIES (Guadeloupe),www.karett.fr,2,TRUE,97126
+2550,Lékouz,GOYAVE (Guadeloupe),www.lekouz.com,2,TRUE,97128
+2551,Lost SXM,SAINT-MARTIN,,2,TRUE,97150
+2552,Bières de la Lézarde,PETIT-BOURG (Guadeloupe),,2,TRUE,97170
+2553,Petite Brasserie Martiniquaise,SAINTE-LUCE (Martinique),,2,TRUE,97228
+2554,Lorraine,LE LAMANTIN (Martinique),www.brasserielorraine.com,2,TRUE,97232
+2555,Le Deck,SCHOELCHER (Martinique),le-deck-restaurant.restaurantmartinique.net,2,TRUE,97233
+2556,Guyanaise,MATOURY (Guyane),www.jeunegueule.com,2,TRUE,97351
+2557,Origin'Ale,MONTSINÉRY-TONNEGRANDE (Guyane),origin-ale.com,2,TRUE,97356
+2558,Bourbon,SAINT-DENIS (La Réunion),www.ladodo.com,2,TRUE,97400
+2559,Dalons,SAINT-DENIS (La Réunion),www.bieredalons.com,2,TRUE,97400
+2560,La Peïzane,SAINT-PIERRE (La Réunion),,2,TRUE,97410
+2561,Les 3 Brasseurs,SAINT-PIERRE (La Réunion),www.les3brasseurs.re,2,TRUE,97410
+2562,Picaro,SAINT-PIERRE (La Réunion),www.brasseriepicaro.com,2,TRUE,97410
+2563,La BIB – Atelier de brassage,ENTRE-DEUX (LA RÉUNION),labib.re,2,TRUE,97414
+2564,La Mafataise,LA POSSESSION (LA RÉUNION),,2,TRUE,97419
+2565,des Couleurs,SAINT-LEU (LA RÉUNION),brasseriedescouleurs.fr,2,TRUE,97424
+2566,du Yab,LES AVIRONS (La Réunion),,2,TRUE,97425
+2567,de l'Ilet,LA PLAINE-DES-PALMISTES (La Réunion),brasseriedelilet.pourchez.com,2,TRUE,97431
+2568,Spot,SAINT-LEU,lespot.re,2,TRUE,97436
+2569,Les 3 Brasseurs,SAINTE-MARIE (La Réunion),www.les3brasseurs.re,2,TRUE,97438
+2570,Sorebra,SAINT-LOUIS (La Réunion),www.sorebra.re,2,TRUE,97450
+2571,Le Demeter,SAINT-PAUL (La Réunion),www.manzel.fr,2,TRUE,97460
+2572,Les 3 Brasseurs,SAINT-PAUL (La Réunion),www.les3brasseurs.re,2,TRUE,97460
+2573,de l'Anse,MIQUELON-LANGLADE (Saint-Pierre-et-Miquelon),,2,TRUE,97500
+2574,Aqua Service Mayotte (Hipo),MAMOUDZOU (Mayotte),,2,TRUE,97600
+2575,de Mayotte,KOUNGOU (Mayotte),,2,TRUE,97690
+2576,de Monaco,MONACO,www.brasseriedemonaco.com,2,TRUE,98000
+2577,Matavai,ARUE (Tahiti),,2,TRUE,98701
+2578,Hoa,PAPEETE (Tahiti),www.hoa.pf,2,TRUE,98713
+2579,Les 3 Brasseurs,PAPEETE (Tahiti),www.3brasseurs-pacific.com,2,TRUE,98713
+2580,de Tahiti,PAPEETE (Tahiti),www.brasseriedetahiti.pf,2,TRUE,98713
+2581,Brouss'Mousse,NOUMÉA (Nouvelle-Calédonie),,2,TRUE,98800
+2582,de Nouvelle Calédonie,NOUMÉA (Nouvelle-Calédonie),www.gbnc.nc,2,TRUE,98800
+2583,Neocallitropsis,NOUMÉA (Nouvelle-Calédonie),,2,TRUE,98800
+2584,Le Froid,NOUMÉA (Nouvelle-Calédonie),lefroid.nc,2,TRUE,98800
+2585,Les 3 Brasseurs,NOUMÉA (Nouvelle-Calédonie),www.cuenet.nc/3-brasseurs.html,2,TRUE,98800
