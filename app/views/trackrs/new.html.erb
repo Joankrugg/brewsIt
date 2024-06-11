@@ -9,28 +9,29 @@
         <%= simple_form_for @trackr do |f|%>
           <div class="form-inputs">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-4">
                 <%= f.association :color, label: 'Couleur' %>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-4">
                 <%= f.association :yeast, label: 'Fermentation' %>
+              </div>
+              <div class="col-lg-4">
+                <%= f.association :taste, label: 'Tendance' %>
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-3">
-                <%= f.association :taste, label: 'Tendance' %>
-              </div>
-              <div class="col-lg-3">
+
+              <div class="col-lg-6">
                 <%= f.input :level_min, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Minimum" %>
               </div>
-              <div class="col-lg-3">
+              <div class="col-lg-6">
                 <%= f.input :level_max, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Maximum"  %>
               </div>
             </div>
             <%= f.association :textures, as: :check_boxes, required: false,
                             input_html: { class: "squaretag-selector" },
                             item_wrapper_class: 'squaretag-item' %>
-            <%= f.association :flavours, as: :check_boxes, required: false,
+            <%= f.association :flavours, as: :check_boxes, label: 'Arômes',required: false,
                             input_html: { class: "squaretag-selector" },
                             item_wrapper_class: 'squaretag-item' %>
           </div>

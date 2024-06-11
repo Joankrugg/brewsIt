@@ -29,6 +29,7 @@ class StylesController < ApplicationController
   end
 
   def show
+    @beers = Beer.all
   end
 
   def edit
