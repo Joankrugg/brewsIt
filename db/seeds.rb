@@ -1,37 +1,22 @@
 require "csv"
 require "open-uri"
-require 'logger'
 
-# Initialize the logger
-logger = Logger.new(STDOUT)
-
-# Set the delay in seconds between each request to respect rate limits
-delay_seconds = 1
 
 CSV.foreach(Rails.root.join('db', 'seeds', 'brasseries2024.csv'), headers: true) do |row|
   model_id = row['id']
   model = Spot.find_by(id: model_id)
-
   if model
-    begin
-      logger.info "Updating Spot ID #{model_id} with data from CSV row"
-      model.update!(
-        name: row['name'],
-        city: row['city'],
-        zipcode: row['zipcode'],
-        website: row['website'],
-        type_id: row['type_id'],
-        active: ActiveRecord::Type::Boolean.new.cast(row['active'])
-      )
-      logger.info "Updated Spot ID #{model_id} with latitude: #{model.latitude}, longitude: #{model.longitude}"
-    rescue ActiveRecord::RecordInvalid => e
-      logger.error "Failed to update Spot ID #{model_id}: #{e.message}"
-    end
-
-    # Introduce delay to respect rate limit
-    sleep(delay_seconds)
+    model.update(
+      name: row['name'],
+      type_id: row['type_id'],
+      zipcode: row['zipcode'],
+      city: row['city'],
+      active: row['active'],
+      website: row['website']
+    )
+    puts "Updated model #{model_id}"
   else
-    logger.warn "Spot with ID #{model_id} does not exist"
+    puts "Model with id #{model_id} does not exist"
   end
 end
 
