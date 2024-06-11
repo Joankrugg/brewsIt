@@ -1,5 +1,5 @@
 class TrackrsController < ApplicationController
-  def new
+  skip_before_action :authenticate_user!
     @trackr = Trackr.new
   end
 

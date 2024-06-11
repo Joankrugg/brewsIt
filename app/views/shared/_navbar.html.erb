@@ -17,9 +17,6 @@
           </div>
           <div class="modal-body">
             <% if user_signed_in? %>
-              <%= link_to root_path do %>
-                <div class="link">Accueil</div>
-              <% end %>
               <%= link_to new_trackr_path do %>
                 <div class="link">Beertrackr</div>
               <% end %>
@@ -36,6 +33,18 @@
                 <div class="link">Déconnexion</div>
               <% end %>
             <% else %>
+              <%= link_to new_trackr_path do %>
+                <div class="link">Beertrackr</div>
+              <% end %>
+              <%= link_to beers_path do %>
+                <div class="link">Bières</div>
+              <% end %>
+              <%= link_to styles_path do %>
+                <div class="link">Styles</div>
+              <% end %>
+              <%= link_to spots_path do %>
+                <div class="link">Spots</div>
+              <% end %>
               <%= link_to new_user_session_path do %>
                 <div class="link">Connexion</div>
               <% end %>

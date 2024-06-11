@@ -1,4 +1,5 @@
 class PlacesController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:new, :create ]
   before_action :set_beer
   before_action :set_place, only: [:show, :edit, :update, :destroy]
 

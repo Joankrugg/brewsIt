@@ -7,44 +7,50 @@
 <div class="content-container">
   <div class="content">
     <div class="container wall">
-      <%= link_to edit_beer_path(beer) do %>
-        <div class="row">
-          <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= beer.name %></h1>
-          <div class="col-12 col-lg-4 card-space mx-auto">
-            <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
-          </div>
-          <div class=" col-8 col-lg-6 mx-auto card-space">
-            <div class="description">
-              <p class='card-subtitle'>Niveau d'alcool : <%= beer.level %> % </p>
-              <% if beer.yeast.present? %>
-                <p class='card-subtitle'>Fermentation : <%= beer.yeast.name %> </p>
+      <div class="row">
+        <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= beer.name %></h1>
+        <div class="col-12 col-lg-4 card-space mx-auto">
+          <%= cl_image_tag beer.photo.key, height: 400, width: 300, crop: :fill, class: 'img-fluid card-image' %>
+        </div>
+        <div class=" col-8 col-lg-6 mx-auto card-space">
+          <div class="description">
+            <p class='card-subtitle'>Niveau d'alcool : <%= beer.level %> % </p>
+            <% if beer.yeast.present? %>
+              <p class='card-subtitle'>Fermentation : <%= beer.yeast.name %> </p>
+            <% end %>
+            <% if beer.color.present? %>
+              <p class='card-subtitle'>Couleur : <%= beer.color.name %></p>
+            <% end %>
+            <% if beer.style.present? %>
+              <p class='card-subtitle'>Style : <%= beer.style.name %></p>
+            <% end %>
+            <% if beer.taste.present? %>
+              <p class='card-subtitle'>Goût pricipal : <%= beer.taste.name %></p>
+            <% end %>
+            <% if beer.textures.present? %>
+              <p class='card-subtitle'>Textures :
+              <% beer.textures.each do |bt|%>
+                <%= bt.name %>
               <% end %>
-              <% if beer.color.present? %>
-                <p class='card-subtitle'>Couleur : <%= beer.color.name %></p>
-              <% end %>
-              <% if beer.taste.present? %>
-                <p class='card-subtitle'>Goût pricipal : <%= beer.taste.name %></p>
-              <% end %>
-              <% if beer.textures.present? %>
-                <p class='card-subtitle'>Textures :
-                <% beer.textures.each do |bt|%>
-                  <%= bt.name %>
+              </p>
+            <% end %>
+            <% if beer.flavours.present? %>
+              <p class='card-subtitle'>Arômes :
+                <% beer.flavours.each do |bf|%>
+                  <%= bf.name %>
                 <% end %>
-                </p>
+              </p>
+            <% end %>
+            <% if user_signed_in? %>
+              <%= link_to edit_beer_path(beer) do %>
+                <div class='action-btn' style='margin-top: 20px;'> Modifier des infos </div>
               <% end %>
-              <% if beer.flavours.present? %>
-                <p class='card-subtitle'>Arômes :
-                  <% beer.flavours.each do |bf|%>
-                    <%= bf.name %>
-                  <% end %>
-                </p>
-              <% end %>
-            </div>
+            <% end %>
           </div>
         </div>
-      <% end %>
+      </div>
     </div>
-    <div class="container">
+    <div class="container" style="margin-bottom: 20px;">
       <div class="row">
         <div class="actions">
           <div class="first"><p class='subtitle'>Où la trouver ?</p></div>
