@@ -17,17 +17,21 @@
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-4 mx-auto">
         <div class="item">
-          <p>Signaler un bug</p>
-          <p>Mentions légales</p>
+          <a href='mailto:modernboxrecords@gmail.com' target='_blank'><p>Signaler un bug</p></a>
+          <%= link_to politics_path do %>
+            <p>Mentions légales</p>
+          <% end %>
           <p>Conditions générales d'utilisation</p>
-          <p>Politique de confidentialité</p>
+          <%= link_to datas_path do %>
+            <p>Politique de confidentialité</p>
+          <% end %>
 
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 mx-auto">
         <div class="item">
           <p>Philippe Chambon</p>
-          <p>Envoyer un message</p>
+          <a href='mailto:modernboxrecords@gmail.com' target='_blank'><p>Envoyer un message</p></a>
           <p>BEERTRACKR 2024 <i class="far fa-copyright"></i></p>
           <p> <a href="#"><i class="fab fa-instagram footer-link"></i></a>
             <a href="#"><i class="fab fa-youtube footer-link"></i></a>

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
+  get 'politics', to: 'pages#politics'
+  get 'datas', to: 'pages#datas'
   resources :beers do
     resources :places
   end
