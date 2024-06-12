@@ -1,0 +1,6 @@
+<%= turbo_frame_tag "publications" do %>
+  <%= render publications %>
+  <div class="apple_pagination">
+    <%= will_paginate publications, previous_label: 'Précédent', next_label: 'Suivant' %>
+  </div>
+<% end %>

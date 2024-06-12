@@ -1,0 +1,38 @@
+<div class="background-wrapper">
+  <div class="background-moods"></div>
+</div>
+<div class="content-container">
+  <div class="content">
+    <div class="row">
+      <div class="col-lg-6 mx-auto wall">
+        <h2>Nouvelle publication</h2>
+        <%= simple_form_for @publication, data: {turbo: false} do |f|%>
+          <div class="form-inputs">
+            <div class="row">
+              <div class="col-lg-6">
+                <%= f.input :photo, label: "Illustration", required: false %>
+              </div>
+              <div class="col-lg-6">
+                <%= f.input :title, label: "Titre", required: false  %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <%= f.input :content, as: :text, label: "Texte", required: false %>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <%= f.input :link, label: "Lien", required: false %>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <%= f.button :submit, "Valider", class: 'action-btn' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

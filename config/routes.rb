@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :beers do
     resources :places
   end
+  resources :publications
   resources :spots
   resources :styles
   resources :trackrs, only: [:new, :create, :show]

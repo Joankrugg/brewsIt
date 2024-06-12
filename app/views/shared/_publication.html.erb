@@ -1,0 +1,30 @@
+<div class="background-wrapper">
+  <div class="background-moods"></div>
+</div>
+<div class="page">
+
+</div>
+<div class="content-container">
+  <div class="content">
+    <div class="container wall">
+      <%= link_to edit_publication_path(publication) do %>
+        <div class="row">
+          <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= publication.title %></h1>
+          <div class="col-12 col-lg-4 card-space mx-auto">
+
+          </div>
+          <div class="col-8 col-lg-6 mx-auto card-space">
+            <div class="description">
+              <p class='card-subtitle'><%= publication.content %></p>
+              <% if publication.link.present? %>
+                <%= link_to "<%= publication.link %>" do %>
+                  <p class='card-subtitle'>En savoir plus</p>
+                <% end %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

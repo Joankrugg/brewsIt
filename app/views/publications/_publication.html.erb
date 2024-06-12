@@ -1,0 +1,14 @@
+<div id="<%= dom_id publication %>">
+  <div class="row line align-items-center">
+    <div class="col-8 col-lg-4">
+      <% if publication.title.present? %>
+        <p class="mb-0"><%= publication.title %></p>
+      <% end %>
+    </div>
+    <div class="col-4 d-none d-lg-block col-lg-4">
+      <% if publication.created_at.present? %>
+        <p class="mb-0"><%= publication.created_at %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
