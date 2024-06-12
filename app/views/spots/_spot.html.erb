@@ -1,6 +1,6 @@
 <div id="<%= dom_id spot %>">
   <div class="row line align-items-center">
-    <div class="col-8 col-lg-4">
+    <div class="col-10 col-lg-4">
 
         <% if spot.type.present? && spot.name.present? %>
           <% if spot.type.name == 'Brasserie artisanale' %>
@@ -11,14 +11,14 @@
         <% end %>
 
     </div>
-    <div class="col-2 d-none d-lg-block col-lg-3">
+    <div class="d-none d-lg-block col-lg-3">
 
         <% if spot.city.present? %>
           <p class="mb-0"><%= spot.city %></p>
         <% end %>
 
     </div>
-    <div class="col-2 col-lg-3">
+    <div class="d-none d-lg-block col-lg-3">
 
         <% if spot.active.present? %>
           <% if spot.active? %>

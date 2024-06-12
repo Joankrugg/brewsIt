@@ -1,7 +1,7 @@
 <div id="<%= dom_id style %>">
   <%= link_to style_path(style), data: { turbo: false } do %>
     <div class="row line">
-      <div class="col-5 col-lg-2">
+      <div class="col-6 col-lg-2">
         <% if style.name.present? %>
           <p><%= style.name %></p>
         <% end %>
@@ -11,7 +11,7 @@
           <p><%= style.yeast.name %></p>
         <% end %>
       </div>
-      <div class="col-3 col-lg-2">
+      <div class="col-2 col-lg-2">
         <% if style.color.present? %>
           <p><%= style.color.name %></p>
         <% end %>
