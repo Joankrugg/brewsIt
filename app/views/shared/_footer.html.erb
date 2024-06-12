@@ -8,11 +8,12 @@
     <div class="row">
       <div class="col-12 col-sm-6 col-md-4 col-lg-4 mx-auto">
         <div class="item">
-          <p>Ajouter un spot</p>
-          <p>Publier une actu</p>
-          <p>Devenir cowboy</p>
-          <p>Créer un festival</p>
-          <p>Mersh</p>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSfq5-0O5hDNobYufaFYwLa6i68KIb0WPG7GkJxnKzVAd6YDZg/viewform?usp=sf_link' target='_blank'><p>Ajouter un spot</p></a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScePya6MrSdgvuDWmJcsVk5wunO1rssEkXLP6c_9F5CgIcZoA/viewform?usp=sf_link" target='_blank'><p>Publier une actualité</p></a>
+          <%= link_to new_user_registration_path do %>
+            <p>Créer un compte</p>
+          <% end %>
+          <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTl9AxzLrv9_mCpigKNtlDDEQZnk0dWYFWP4mW6cN9pJkqBA/viewform?usp=sf_link' target='_blank'><p>Devenir cowboy</p></a>
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 col-lg-4 mx-auto">
@@ -21,11 +22,9 @@
           <%= link_to politics_path do %>
             <p>Mentions légales</p>
           <% end %>
-          <p>Conditions générales d'utilisation</p>
           <%= link_to datas_path do %>
             <p>Politique de confidentialité</p>
           <% end %>
-
         </div>
       </div>
       <div class="col-12 col-sm-6 col-md-4 mx-auto">
