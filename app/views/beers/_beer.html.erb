@@ -8,14 +8,22 @@
     <div class="col-6 col-lg-2">
       <%= link_to beer_path(beer), data: { turbo: false } do %>
         <% if beer.name.present? %>
-          <p><%=beer.name %></p>
+          <% if beer.name.length > 20 %>
+            <p><%= "#{beer.name[0, 20]}..."%></p>
+          <% else %>
+            <p><%= beer.name %></p>
+          <% end %>
         <% end %>
       <% end %>
     </div>
     <div class="col-2">
       <%= link_to beer_path(beer), data: { turbo: false } do %>
         <% if beer.yeast.present? %>
-          <p><%=beer.yeast.name %></p>
+          <% if beer.yeast.name.length > 5 %>
+            <p><%= "#{beer.yeast.name[0, 5]}..."%></p>
+          <% else %>
+            <p><%= beer.yeast.name %></p>
+          <% end %>
         <% end %>
       <% end %>
     </div>
@@ -29,7 +37,7 @@
     <div class="col-2">
       <%= link_to beer_path(beer), data: { turbo: false } do %>
         <% if beer.level.present? %>
-          <p><%=beer.level %></p>
+          <p><%=beer.level %> % </p>
         <% end %>
       <% end %>
     </div>
