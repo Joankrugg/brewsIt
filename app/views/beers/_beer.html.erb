@@ -9,7 +9,7 @@
       <%= link_to beer_path(beer), data: { turbo: false } do %>
         <% if beer.name.present? %>
           <% if beer.name.length > 20 %>
-            <p><%= "#{beer.name[0, 20]}..."%></p>
+            <p><%= "#{beer.name[0, 17]}..."%></p>
           <% else %>
             <p><%= beer.name %></p>
           <% end %>
