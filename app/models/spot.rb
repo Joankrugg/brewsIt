@@ -1,6 +1,9 @@
 class Spot < ApplicationRecord
   include PgSearch::Model
   pg_search_scope :search_by_name, against: :city,
+  associated_against: {
+  type: [:name]
+  },
   using: {
     tsearch: { prefix: true }
   }

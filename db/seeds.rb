@@ -2,7 +2,7 @@ require "csv"
 require "open-uri"
 
 
-CSV.foreach(Rails.root.join('db', 'seeds', 'brasseriesupdate.csv'), headers: true) do |row|
+CSV.foreach(Rails.root.join('db', 'seeds', 'bordeaux.csv'), headers: true) do |row|
   begin
     spot = Spot.new
     spot.name = row['name']
@@ -10,7 +10,6 @@ CSV.foreach(Rails.root.join('db', 'seeds', 'brasseriesupdate.csv'), headers: tru
     spot.zipcode = row['zipcode']
     spot.city = row['city']
     spot.active = row['active']
-    spot.website = row['website']
 
 
     # Attribuer l'image à la bière
