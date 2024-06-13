@@ -37,7 +37,7 @@
     <div class="col-2">
       <%= link_to beer_path(beer), data: { turbo: false } do %>
         <% if beer.level.present? %>
-          <p><%=beer.level %> % </p>
+          <p><%=beer.level %>%</p>
         <% end %>
       <% end %>
     </div>
