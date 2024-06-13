@@ -66,17 +66,25 @@
                   <%= cl_image_tag beer.photo.key, height: 30, width: 30, crop: :fill, class: "img-fluid thumbnail" %>
                 <% end %>
               </div>
-              <div class="col-6 col-lg-2">
+              <div class="col-5 col-lg-2">
                 <%= link_to beer_path(beer), data: { turbo: false } do %>
                   <% if beer.name.present? %>
-                    <p><%=beer.name %></p>
+                    <% if beer.name.length > 20 %>
+                      <p><%= "#{beer.name[0, 17]}..."%></p>
+                    <% else %>
+                      <p><%= beer.name %></p>
+                    <% end %>
                   <% end %>
                 <% end %>
               </div>
               <div class="col-2">
                 <%= link_to beer_path(beer), data: { turbo: false } do %>
                   <% if beer.yeast.present? %>
-                    <p><%=beer.yeast.name %></p>
+                    <% if beer.yeast.name.length > 5 %>
+                      <p><%= "#{beer.yeast.name[0, 5]}..."%></p>
+                    <% else %>
+                      <p><%= beer.yeast.name %></p>
+                    <% end %>
                   <% end %>
                 <% end %>
               </div>
@@ -94,12 +102,9 @@
                   <% end %>
                 <% end %>
               </div>
-              <div class="col-2">
-
-              </div>
-              <div class="col-4 col-lg-1">
+              <div class="col-2 col-lg-1">
                 <% if beer.level.present? %>
-                  <p><%= beer.level %> %</p>
+                  <p><%= beer.level %>%</p>
                 <% end %>
               </div>
               <div class="col-1 d-none d-lg-block">
