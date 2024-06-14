@@ -2,12 +2,11 @@ require "csv"
 require "open-uri"
 
 
-CSV.foreach(Rails.root.join('db', 'seeds', 'bretagne.csv'), headers: true) do |row|
+CSV.foreach(Rails.root.join('db', 'seeds', 'nouvelle_a.csv'), headers: true) do |row|
   begin
     spot = Spot.new
     spot.name = row['name']
     spot.type= Type.find(row['type_id'])
-    spot.zipcode = row['zipcode']
     spot.city = row['city']
     spot.active = row['active']
 

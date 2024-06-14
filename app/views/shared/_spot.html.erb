@@ -17,7 +17,7 @@
             <div class="description">
               <p class='card-subtitle'>ville <%= spot.city %></p>
               <% if spot.zipcode.present? %>
-                <p class='card-subtitle'>Couleur : <%= spot.zipcode %></p>
+                <p class='card-subtitle'><%= spot.zipcode %></p>
               <% end %>
               <% if spot.type.present? %>
                 <p class='card-subtitle'><%= spot.type.name %> </p>

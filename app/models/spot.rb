@@ -10,7 +10,6 @@ class Spot < ApplicationRecord
   belongs_to :type
   validates :name, presence: true
   validates :city, presence: true
-  validates :zipcode, presence: true
 
   geocoded_by :location
   after_validation :geocode, if: :location_changed?
