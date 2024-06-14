@@ -2,7 +2,7 @@ require "csv"
 require "open-uri"
 
 
-CSV.foreach(Rails.root.join('db', 'seeds', 'loire.csv'), headers: true) do |row|
+CSV.foreach(Rails.root.join('db', 'seeds', 'hauts_france.csv'), headers: true) do |row|
   begin
     spot = Spot.new
     spot.name = row['name']
