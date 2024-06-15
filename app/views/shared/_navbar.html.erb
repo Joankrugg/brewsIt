@@ -18,35 +18,35 @@
           <div class="modal-body">
             <% if user_signed_in? %>
               <%= link_to new_trackr_path do %>
-                <div class="link">Beertrackr</div>
+                <div class="link">Recherche Beertrackr</div>
               <% end %>
               <%= link_to beers_path do %>
-                <div class="link">Bières</div>
+                <div class="link">Toutes les bières</div>
               <% end %>
               <%= link_to styles_path do %>
-                <div class="link">Styles</div>
+                <div class="link">Tous les styles</div>
               <% end %>
               <%= link_to spots_path do %>
-                <div class="link">Spots</div>
+                <div class="link">Tous les spots</div>
               <% end %>
               <%= link_to destroy_user_session_path, data: {turbo_method: :delete} do %>
                 <div class="link">Déconnexion</div>
               <% end %>
             <% else %>
-              <%= link_to new_trackr_path do %>
-                <div class="link">Beertrackr</div>
-              <% end %>
-              <%= link_to beers_path do %>
-                <div class="link">Bières</div>
-              <% end %>
-              <%= link_to styles_path do %>
-                <div class="link">Styles</div>
-              <% end %>
-              <%= link_to spots_path do %>
-                <div class="link">Spots</div>
-              <% end %>
               <%= link_to new_user_session_path do %>
                 <div class="link">Connexion</div>
+              <% end %>
+              <%= link_to new_trackr_path do %>
+                <div class="link">Recherche Beertrackr</div>
+              <% end %>
+              <%= link_to beers_path do %>
+                <div class="link">Toutes les bières</div>
+              <% end %>
+              <%= link_to styles_path do %>
+                <div class="link">Tous les styles</div>
+              <% end %>
+              <%= link_to spots_path do %>
+                <div class="link">Tous les spots</div>
               <% end %>
             <% end %>
           </div>

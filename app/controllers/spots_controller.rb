@@ -25,7 +25,8 @@ class SpotsController < ApplicationController
     if @spot.save
       redirect_to spots_path
     else
-      render new
+      flash[:alert] = "Tous les champs sont à remplir"
+      redirect_to new_spot_path
     end
   end
 

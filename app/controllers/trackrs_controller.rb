@@ -9,7 +9,8 @@ class TrackrsController < ApplicationController
     if @trackr.save
       redirect_to trackr_path(@trackr)
     else
-      render new
+      flash[:alert] = "Tous les champs sont à remplir"
+      redirect_to new_trackr_path
     end
   end
 

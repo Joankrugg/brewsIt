@@ -25,7 +25,8 @@ class StylesController < ApplicationController
     if @style.save
       redirect_to styles_path
     else
-      render new
+      flash[:alert] = "Tous les champs sont à remplir"
+      redirect_to new_style_path
     end
   end
 
