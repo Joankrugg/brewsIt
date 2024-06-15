@@ -1,6 +1,29 @@
 .alert {
+  background: white;
   position: fixed;
-  bottom: 16px;
-  right: 16px;
-  z-index: 1000;
+  top: 0;
+  height: 66px;
+  width: 100%;
+  z-index: 11;
+}
+.alert-info {
+  background-image: linear-gradient(-180deg, #efe79e, white);
+}
+.alert-warning {
+  background-image: linear-gradient(-180deg, black, #3C3C3C);
+  h2 {
+    color: #3C3C3C;
+  }
+}
+
+.message{
+  text-align: center;
+  color: black;
+  margin-top: 6px;
+}
+
+.advice{
+  text-align: center;
+  color: white;
+  margin-top: 6px;
 }

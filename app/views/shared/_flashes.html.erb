@@ -1,14 +1,30 @@
 <% if notice %>
-  <div class="alert alert-info alert-dismissible fade show m-1" role="alert">
-    <%= notice %>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-    </button>
+  <div id="flash-notice-wrapper" class="alert alert-info alert-dismissible" role="alert">
+    <div class="message"> <%= notice %></div>
   </div>
 <% end %>
 <% if alert %>
-  <div class="alert alert-warning alert-dismissible fade show m-1" role="alert">
-    <%= alert %>
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
-    </button>
+  <div id="flash-alert-wrapper" class="alert alert-warning alert-dismissible" role="alert">
+    <div class="advice"><%= alert %></div>
   </div>
 <% end %>
+
+<script>
+  $(document).ready(function(){
+    setTimeout(function(){
+      $('#flash-notice-wrapper').fadeOut("slow", function(){
+        $('#flash-notice-wrapper').remove();
+      })
+    }, 2000 );
+  });
+</script>
+
+<script>
+  $(document).ready(function(){
+    setTimeout(function(){
+      $('#flash-alert-wrapper').fadeOut("slow", function(){
+        $('#flash-alert-wrapper').remove();
+      })
+    }, 3000 );
+  });
+</script>
