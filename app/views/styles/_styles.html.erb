@@ -1,6 +1,6 @@
 <%= turbo_frame_tag "styles" do %>
   <%= render styles %>
   <div class="apple_pagination">
-    <%= will_paginate styles, inner_window: 2, outer_window: 2, previous_label: 'Précédent', next_label: 'Suivant' %>
+    <%= will_paginate styles, inner_window: 1, outer_window: 1, previous_label: 'Précédent', next_label: 'Suivant' %>
   </div>
 <% end %>
