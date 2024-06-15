@@ -5,7 +5,7 @@ class StylesController < ApplicationController
     if params[:query].present?
       @styles = Style.search_by_name(params[:query]).paginate(page: params[:page], per_page: 15)
     else
-      @styles = Style.all.paginate(page: params[:page], per_page: 15)
+      @styles = Style.all.order(:name).paginate(page: params[:page], per_page: 15)
     end
 
     # Not too clean but it works!

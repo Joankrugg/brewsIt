@@ -7,7 +7,7 @@ class BeersController < ApplicationController
     if params[:query].present?
       @beers = Beer.search_by_name(params[:query]).paginate(page: params[:page], per_page: 15)
     else
-      @beers = Beer.all.paginate(page: params[:page], per_page: 15)
+      @beers = Beer.all.order(:name).paginate(page: params[:page], per_page: 15)
     end
 
     # Not too clean but it works!

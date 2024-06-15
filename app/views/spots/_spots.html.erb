@@ -1,6 +1,6 @@
 <%= turbo_frame_tag "spots" do %>
   <%= render spots %>
   <div class="apple_pagination">
-    <%= will_paginate spots, previous_label: 'Précédent', next_label: 'Suivant' %>
+    <%= will_paginate spots, inner_window: 2, outer_window: 2, previous_label: 'Précédent', next_label: 'Suivant' %>
   </div>
 <% end %>
