@@ -8,7 +8,9 @@ Rails.application.routes.draw do
     resources :places
   end
   resources :publications
-  resources :spots
+  resources :spots do
+    resources :specificities, only: [:new, :create, :edit, :update, :show]
+  end
   resources :styles
   resources :trackrs, only: [:new, :create, :show]
 

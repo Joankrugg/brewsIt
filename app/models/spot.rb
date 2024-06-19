@@ -1,4 +1,6 @@
 class Spot < ApplicationRecord
+  has_one :specificity, dependent: :destroy
+  accepts_nested_attributes_for :specificity
   include PgSearch::Model
   pg_search_scope :search_by_name, against: :city,
   associated_against: {

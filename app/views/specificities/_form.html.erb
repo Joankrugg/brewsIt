@@ -1,0 +1,25 @@
+<%= simple_form_for([spot, specificity], remote: true, authenticity_token: true) do |form| %>
+  <div class="row">
+    <div class='col-6'>
+      <%= form.input :snack, as: :boolean, input_html: { data: { action: "change->specificity#submitForm" }, checked: specificity.snack, class: "toggle" }, label_html: { class: 'custom-label' }, label: 'Fingerfood' %>
+    </div>
+    <div class='col-6'>
+      <%= form.input :happy_hour, as: :boolean, input_html: { data: { action: "change->specificity#submitForm" }, checked: specificity.happy_hour, class: "toggle" }, label_html: { class: 'custom-label' } %>
+    </div>
+  </div>
+  <div class="row">
+    <div class='col-6'>
+      <%= form.input :cheapest_beer, input_html: { step: 0.01, data: { action: "change->specificity#submitForm" }, value: specificity.cheapest_beer }, label: 'Prix de la pinte la moins chère'  %>
+    </div>
+    <div class='col-6'>
+    <%= form.input :draft_number, as: :integer, input_html: { data: { action: "change->specificity#submitForm" }, value: specificity.draft_number } , label: 'Nombre de tireuses' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class='col-8'>
+    </div>
+    <div class='col-4 form-actions'>
+      <%= form.button :submit, "Valider", class: 'action-btn' %>
+    </div>
+  </div>
+<% end %>

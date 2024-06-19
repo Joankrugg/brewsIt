@@ -31,6 +31,7 @@ class SpotsController < ApplicationController
   end
 
   def show
+    @specificity = Specificity.new
 
   end
 
@@ -39,7 +40,7 @@ class SpotsController < ApplicationController
 
   def update
     if @spot.update(spot_params)
-      redirect_to spots_path
+      redirect_to spot_path(@spot)
     else
       render :edit
     end

@@ -2,30 +2,27 @@
   <div class="background-spots"></div>
 </div>
 <div class="page">
-
 </div>
 <div class="content-container">
   <div class="content">
     <div class="container wall">
-      <%= link_to edit_style_path(spot) do %>
-        <div class="row">
-          <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= spot.name %></h1>
-          <div class="col-12 col-lg-4 card-space mx-auto">
-
-          </div>
-          <div class="col-8 col-lg-6 mx-auto card-space">
-            <div class="description">
-              <p class='card-subtitle'>ville <%= spot.city %></p>
-              <% if spot.zipcode.present? %>
-                <p class='card-subtitle'><%= spot.zipcode %></p>
-              <% end %>
-              <% if spot.type.present? %>
-                <p class='card-subtitle'><%= spot.type.name %> </p>
-              <% end %>
-            </div>
+      <h1 class="title" style='text-align: center; padding: 40px 0px 0px 0px;'><%= spot.name %></h1>
+      <div class="row">
+        <div class="col-lg-6">
+          <p class='card-subtitle'>ville <%= spot.city %></p>
+          <% if spot.zipcode.present? %>
+            <p class='card-subtitle'><%= spot.zipcode %></p>
+          <% end %>
+          <% if spot.type.present? %>
+            <p class='card-subtitle'><%= spot.type.name %> </p>
+          <% end %>
+        </div>
+        <div class="col-lg-6">
+          <div id="specificity-details" data-controller="specificity">
+            <%= render 'specificities/form', spot: @spot, specificity: @spot.specificity || @spot.build_specificity %>
           </div>
         </div>
-      <% end %>
+      </div>
     </div>
   </div>
 </div>

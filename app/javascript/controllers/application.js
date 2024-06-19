@@ -8,3 +8,14 @@ window.Stimulus   = application
 
 export { application }
 
+import Rails from "@rails/ujs";
+Rails.start();
+
+document.addEventListener("turbolinks:load", () => {
+  let token = document.querySelector('meta[name="csrf-token"]').content;
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-Token': token
+    }
+  });
+});

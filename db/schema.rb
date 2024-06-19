@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_12_150734) do
+ActiveRecord::Schema[7.1].define(version: 2024_06_16_121226) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -105,6 +105,17 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_12_150734) do
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "specificities", force: :cascade do |t|
+    t.bigint "spot_id", null: false
+    t.boolean "snack"
+    t.boolean "happy_hour"
+    t.float "cheapest_beer"
+    t.integer "draft_number"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["spot_id"], name: "index_specificities_on_spot_id"
   end
 
   create_table "spots", force: :cascade do |t|
@@ -238,6 +249,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_12_150734) do
   add_foreign_key "beers", "tastes"
   add_foreign_key "beers", "yeasts"
   add_foreign_key "places", "beers"
+  add_foreign_key "specificities", "spots"
   add_foreign_key "spots", "types"
   add_foreign_key "style_flavours", "flavours"
   add_foreign_key "style_flavours", "styles"
