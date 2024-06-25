@@ -10,8 +10,5 @@ application.register("hello", HelloController)
 import SearchFormController from "./search_form_controller"
 application.register("search-form", SearchFormController)
 
-
-import { Application } from "stimulus"
 import SpecificityController from "./specificity_controller"
-
 application.register("specificity", SpecificityController)

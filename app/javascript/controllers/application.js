@@ -20,22 +20,4 @@ document.addEventListener("turbolinks:load", () => {
   });
 });
 
-// app/javascript/packs/application.js
 
-import Rails from "@rails/ujs";
-import * as ActiveStorage from "@rails/activestorage";
-import "channels";
-
-Rails.start();
-ActiveStorage.start();
-
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service_worker.js')
-      .then(registration => {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }).catch(error => {
-        console.log('ServiceWorker registration failed: ', error);
-      });
-  });
-}
