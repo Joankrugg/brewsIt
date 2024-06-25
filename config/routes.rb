@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   root to: "pages#home"
+  get '/service_worker.js' => 'service_worker#index'
   get 'politics', to: 'pages#politics'
   get 'datas', to: 'pages#datas'
   resources :beers do
