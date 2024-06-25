@@ -4,6 +4,7 @@ const CACHE_NAME = "my-pwa-cache-v1";
 const urlsToCache = [
   '/',
   '/manifest.json',
+  '/icons/android-icon-192x192.png'
   // Ajoutez les autres URLs que vous souhaitez mettre en cache
 ];
 

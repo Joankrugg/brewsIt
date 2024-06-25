@@ -14,5 +14,4 @@ application.register("search-form", SearchFormController)
 import { Application } from "stimulus"
 import SpecificityController from "./specificity_controller"
 
-const application = Application.start()
 application.register("specificity", SpecificityController)
