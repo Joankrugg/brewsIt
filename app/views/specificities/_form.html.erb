@@ -1,4 +1,4 @@
-<%= simple_form_for([spot, specificity], remote: true, authenticity_token: true) do |form| %>
+<%= simple_form_for([@spot, @spot.build_specificity], remote: true, authenticity_token: true, data: { controller: "specificity", action: "change->specificity#submitForm" }) do |form| %>
   <div class="row">
     <div class='col-6'>
       <%= form.input :snack, as: :boolean, input_html: { data: { action: "change->specificity#submitForm" }, checked: specificity.snack, class: "toggle" }, label_html: { class: 'custom-label' }, label: 'Fingerfood' %>
@@ -13,13 +13,6 @@
     </div>
     <div class='col-6'>
     <%= form.input :draft_number, as: :integer, input_html: { data: { action: "change->specificity#submitForm" }, value: specificity.draft_number } , label: 'Nombre de tireuses' %>
-    </div>
-  </div>
-  <div class="row">
-    <div class='col-8'>
-    </div>
-    <div class='col-4 form-actions'>
-      <%= form.button :submit, "Valider", class: 'action-btn' %>
     </div>
   </div>
 <% end %>
