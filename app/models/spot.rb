@@ -1,20 +1,23 @@
 class Spot < ApplicationRecord
+  belongs_to :type
   has_one :specificity, dependent: :destroy
   accepts_nested_attributes_for :specificity
-  include PgSearch::Model
-  pg_search_scope :search_by_name, against: :city,
-  associated_against: {
-  type: [:name]
-  },
-  using: {
-    tsearch: { prefix: true }
-  }
-  belongs_to :type
-  validates :name, presence: true
-  validates :city, presence: true
+
+  validates :name, :city, presence: true
 
   geocoded_by :location
   after_validation :geocode, if: :location_changed?
+
+  include PgSearch::Model
+
+  pg_search_scope :search_by_keywords,
+    against: [:name], # Add other text fields if necessary
+    associated_against: {
+      specificity: [:cheapest_beer, :draft_number]
+    },
+    using: {
+      tsearch: { prefix: true }
+    }
 
   private
 
@@ -23,12 +26,6 @@ class Spot < ApplicationRecord
   end
 
   def location_changed?
-    name_changed? || city_changed?
-  end
-
-  def geocode
-    Rails.logger.info "Geocoding for Spot ID #{id}: #{location}"
-    super
-    Rails.logger.info "Result for Spot ID #{id}: latitude #{latitude}, longitude #{longitude}"
+    will_save_change_to_name? || will_save_change_to_city?
   end
 end

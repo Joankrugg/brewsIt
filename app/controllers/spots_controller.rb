@@ -3,7 +3,7 @@ class SpotsController < ApplicationController
   before_action :set_spot, only: [:show, :edit, :update, :destroy]
   def index
     if params[:query].present?
-      @spots = Spot.search_by_name(params[:query]).paginate(page: params[:page], per_page: 14)
+      @spots = Spot.search_by_keywords(params[:query]).paginate(page: params[:page], per_page: 14)
     else
       @spots = Spot.all.order(:city).paginate(page: params[:page], per_page: 14)
     end
