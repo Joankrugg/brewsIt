@@ -1,26 +1,26 @@
-require "csv"
-require "open-uri"
+#require "csv"
+#require "open-uri"
 
 
-CSV.foreach(Rails.root.join('db', 'seeds', 'hauts_france.csv'), headers: true) do |row|
-  begin
-    spot = Spot.new
-    spot.name = row['name']
-    spot.type= Type.find(row['type_id'])
-    spot.city = row['city']
-    spot.active = row['active']
+#CSV.foreach(Rails.root.join('db', 'seeds', 'hauts_france.csv'), headers: true) do |row|
+#  begin
+#    spot = Spot.new
+#    spot.name = row['name']
+#    spot.type= Type.find(row['type_id'])
+#    spot.city = row['city']
+#    spot.active = row['active']
 
 
     # Attribuer l'image à la bière
 
-    spot.save!
-    puts "Modèle créé : #{spot.name}"
+#    spot.save!
+#    puts "Modèle créé : #{spot.name}"
 
-  rescue => e
-    puts "Erreur lors de la création du modèle pour #{row['name']}: #{e.message}"
-    next # Passe à la ligne suivante
-  end
-end
+#  rescue => e
+#    puts "Erreur lors de la création du modèle pour #{row['name']}: #{e.message}"
+#    next # Passe à la ligne suivante
+#  end
+#end
 
 
 
@@ -166,4 +166,4 @@ end
 #Type.create({name: 'Festival'})
 
 puts 'Done !'
-AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+#AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
