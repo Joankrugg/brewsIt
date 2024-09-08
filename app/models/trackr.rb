@@ -7,4 +7,6 @@ class Trackr < ApplicationRecord
 
   has_many :trackr_flavours
   has_many :flavours, through: :trackr_flavours
+  validates :level_min, :level_max, presence: true
+
 end
