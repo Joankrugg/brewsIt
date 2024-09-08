@@ -25,7 +25,7 @@
                 <%= f.input :level_min, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Minimum" %>
               </div>
               <div class="col-6 col-lg-6">
-                <%= f.input :level_max, input_html: { min: 0, step: 0.01 }, label: "Niveau d'alcool Maximum"  %>
+                <%= f.input :level_max, input_html: { min: 0, step: 1 }, label: "Niveau d'alcool Maximum"  %>
               </div>
             </div>
             <%= f.association :textures, as: :check_boxes, required: false,
