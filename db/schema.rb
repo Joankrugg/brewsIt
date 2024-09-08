@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_06_16_121226) do
+ActiveRecord::Schema[7.1].define(version: 2024_09_08_190812) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -201,7 +201,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_06_16_121226) do
 
   create_table "trackrs", force: :cascade do |t|
     t.float "level_min"
-    t.integer "level_max"
+    t.float "level_max"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "taste_id"
